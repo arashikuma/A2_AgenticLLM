@@ -60,13 +60,27 @@ python -m experiment.analyze --agent naive
 ## 4. How to Run Exercise 3 
 The execution workflow follows the same pipeline as Exercise 1.
 
-**Step 1: Execute the Reflection Benchmark**
+**Step 1: Integrating Custom Agents (`__init__.py`)**
+To ensure BALROG can recognize the newly implemented `ReflectionAgent`, it must be registered in the agent registry located at `balrog/agents/__init__.py`. Append the following lines to map the `--agent reflection` argument to your code:
+
+This line adds to the begining
+```bash
+from experiment.reflection import ReflectionAgent
+```
+
+Thie line adds to the end
+```bash
+elif self.config.agent.type == "reflection":
+            return ReflectionAgent(client_factory, prompt_builder)
+```
+
+**Step 2: Execute the Reflection Benchmark**
 ```bash
 python -m experiment.runner --model qwen2.5:7b --agent reflection
 python -m experiment.runner --model llama3.1:8b --agent reflection
 ```
 
-**Step 2: Generate the Performance Matrix**
+**Step 3: Generate the Performance Matrix**
 ```bash
 python -m experiment.analyze --agent reflection
 ```
