@@ -63,12 +63,11 @@ The execution workflow follows the same pipeline as Exercise 1.
 **Step 1: Integrating Custom Agents (`__init__.py`)**
 To ensure BALROG can recognize the newly implemented `ReflectionAgent`, it must be registered in the agent registry located at `balrog/agents/__init__.py`. Append the following lines to map the `--agent reflection` argument to your code:
 
-This line adds to the begining
+Add to the begining
 ```bash
 from experiment.reflection import ReflectionAgent
 ```
-
-Thie line adds to the end
+Add to the end
 ```bash
 elif self.config.agent.type == "reflection":
             return ReflectionAgent(client_factory, prompt_builder)
