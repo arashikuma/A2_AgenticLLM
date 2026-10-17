@@ -56,3 +56,17 @@ python -m experiment.runner --model llama3.1:8b --agent naive
 ```bash
 python -m experiment.analyze --agent naive
 ```
+
+## 4. How to Run Exercise 3 (Self-Reflection Agent)
+The execution workflow follows the same pipeline as Exercise 1.
+
+**Step 1: Execute the Reflection Benchmark**
+```bash
+python -m experiment.runner --model qwen2.5:7b --agent reflection
+python -m experiment.runner --model llama3.1:8b --agent reflection
+```
+
+**Step 2: Generate the Performance Matrix**
+```bash
+python -m experiment.analyze --agent reflection
+```
