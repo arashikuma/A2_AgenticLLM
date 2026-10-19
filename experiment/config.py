@@ -1,8 +1,11 @@
+import os
 from pathlib import Path
-
 
 SEEDS = [42, 100, 2026]
 ENVIRONMENTS = ["babyai", "textworld"]
+
+# SEEDS = [42, 100, 2026]
+# ENVIRONMENTS = ["babyai", "textworld"]
 
 # dir
 BASE_DIR = Path(__file__).resolve().parent.parent
