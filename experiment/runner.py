@@ -179,12 +179,15 @@ def execute_run(
     model_key: str,
     env: str,
     seed: int,
+    label: str | None = None,
 ) -> tuple[int, float | None]:
+    # agent_type = what BALROG runs (agent.type=...); label = the name results are saved under.
+    label = label or agent_type
 
-    if is_already_success(agent_type, model_key, env, seed):
-        print(f"skip {agent_type}_{model_key}_{env}_seed{seed}")
+    if is_already_success(label, model_key, env, seed):
+        print(f"skip {label}_{model_key}_{env}_seed{seed}")
         return 0, None
-        
+
 
     cfg = MODEL_CONFIGS[model_key]
 
@@ -196,7 +199,7 @@ def execute_run(
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
 
     run_id = (
-        f"{agent_type}_{safe_model}_{env}_"
+        f"{label}_{safe_model}_{env}_"
         f"seed{seed}_{timestamp}"
     )
 
@@ -205,13 +208,13 @@ def execute_run(
 
     run_result_dir = (
         result_root
-        / agent_type
+        / label
         / safe_model
         / env
         / f"seed_{seed}_{timestamp}"
     ).resolve()
 
-    run_log_dir = log_root / agent_type / safe_model / env
+    run_log_dir = log_root / label / safe_model / env
     run_log_dir.mkdir(parents=True, exist_ok=True)
     run_result_dir.mkdir(parents=True, exist_ok=True)
 
@@ -340,7 +343,7 @@ def execute_run(
         append_manifest({
             "timestamp": timestamp,
             "run_id": run_id,
-            "agent": agent_type,
+            "agent": label,
             "model": model_key,
             "env": env,
             "seed": seed,
@@ -386,8 +389,14 @@ if __name__ == "__main__":
         "--agent",
         type=str,
         default="naive",
-        choices=["naive", "custom", "reflection"],
-        help="Agent",
+        help="BALROG agent.type to run, e.g. naive, custom, custom_task2 "
+             "(must be registered in balrog/agents/__init__.py)",
+    )
+    parser.add_argument(
+        "--label",
+        type=str,
+        default=None,
+        help="Name to save results under (manifest, results/, logs/). Default: the agent name",
     )
     parser.add_argument(
         "--model",
@@ -403,6 +412,7 @@ if __name__ == "__main__":
     )
 
     print("\n" + "=" * 60)
+    print(f"agent={args.agent} label={args.label or args.agent}")
     print(f"model={models_to_run}")
     print(f"game={ENVIRONMENTS}")
     print(f"seed={SEEDS}")
@@ -416,6 +426,7 @@ if __name__ == "__main__":
                     model_key=model_key,
                     env=env,
                     seed=seed,
+                    label=args.label,
                 )
 
     print("\n done")
