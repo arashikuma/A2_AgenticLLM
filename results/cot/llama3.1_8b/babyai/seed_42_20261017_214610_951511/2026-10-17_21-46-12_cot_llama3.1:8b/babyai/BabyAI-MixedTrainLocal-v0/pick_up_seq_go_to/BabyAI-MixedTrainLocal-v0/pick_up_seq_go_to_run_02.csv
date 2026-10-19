@@ -1,0 +1,1533 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,go forward,"To reach the blue ball, I need to move forward and then left. Since there's a wall 4 steps forward, I'll move forward until I'm in front of the blue ball.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 1 step forward",0,False
+1,go forward,"Since I'm now in front of the blue ball, I need to pick it up. I'll use the 'toggle' action to pick up the blue ball.
+
+However, I need to make sure I'm directly above the blue ball to use the 'toggle' action effectively. I'll move forward one step to be directly above the blue ball.
+
+ACTION: go forward","a wall 2 steps forward
+a blue ball 1 step left",0,False
+2,go forward,"Now that I have the blue ball, I need to get to the yellow key. Since the blue ball is now in my inventory, I can move around it. 
+
+First, I need to move to the left to get around the blue ball. I'll use the 'turn left' action to change my direction.
+
+Next, I'll move forward to get around the blue ball and move towards the yellow key.
+
+However, I need to make sure I'm not moving into a wall. I'll use the 'go forward' action to move one step forward.
+
+ACTION: go forward","a wall 1 step forward
+a wall 2 steps left",0,False
+3,turn right,"Now that I've moved around the blue ball, I need to get to the yellow key. Since I'm currently facing the wall, I need to turn around to face the direction of the yellow key.
+
+I'll use the 'turn right' action to change my direction.
+
+Next, I need to move forward to get closer to the yellow key. However, I need to make sure I'm not moving into a wall. I'll use the 'go forward' action to move one step forward.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 1 step left",0,False
+4,pick up,"Since I'm currently facing the wrong direction, I need to turn around to face the direction of the yellow key. I'll use the 'turn right' action to change my direction.
+
+Next, I need to move forward to get closer to the yellow key. However, I need to make sure I'm not moving into a wall. I'll use the 'go forward' action to move one step forward.
+
+After that, I need to pick up the blue ball that's in front of me. I'll use the 'pick up' action to do so.
+
+Finally, I need to move forward to get closer to the yellow key. I'll use the 'go forward' action to move one step forward.
+
+ACTION: pick up","a wall 5 steps forward
+a wall 1 step left",0,False
+5,pick up,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move forward to get closer to the yellow key. However, I need to make sure I'm not moving into a wall. I'll use the 'go forward' action to move one step forward.
+
+After that, I need to move forward again to get closer to the yellow key. I'll use the 'go forward' action to move one step forward.
+
+ACTION: pick up","a wall 5 steps forward
+a wall 1 step left",0,False
+6,turn right,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move to the right to get away from the wall that's currently in the way.
+
+Then, I need to move forward to get closer to the yellow key.
+
+ACTION: turn right","a wall 2 steps right
+a yellow key 5 steps forward
+a blue ball 1 step right and 1 step forward",0,False
+7,go forward,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move to the right to get away from the wall that's currently in the way.
+
+Then, I need to move forward to get closer to the yellow key.
+
+Finally, I can move forward again to reach the yellow key.
+
+ACTION: go forward","a yellow key 4 steps forward
+a blue ball 1 step right",0,False
+8,go forward,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move forward to get closer to the yellow key.
+
+Then, I need to move forward again to reach the yellow key.
+
+ACTION: go forward","a wall 2 steps right
+a yellow key 3 steps forward",0,False
+9,go forward,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move forward to get closer to the yellow key.
+
+Then, I need to move forward again to reach the yellow key.
+
+However, since the yellow key is now only 3 steps forward, I can skip the second step and just move forward to reach it.
+
+ACTION: go forward","a wall 2 steps right
+a yellow key 2 steps forward",0,False
+10,go forward,"To get to the yellow key, I need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move forward to get closer to the wall that blocks the path to the yellow key.
+
+Then, I need to move forward again to reach the yellow key.
+
+ACTION: go forward","a wall 2 steps right
+a yellow key 1 step forward",0,False
+11,toggle,"Since the yellow key is now in front of me, I can simply pick it up. 
+
+However, I still need to pick up the blue ball first. Since it's in front of me, I can use the 'toggle' action to pick it up.
+
+ACTION: toggle","a wall 2 steps right
+a yellow key 1 step forward",0,False
+12,toggle,"To achieve the goal, I need to pick up the blue ball first, then I can pick up the yellow key.
+
+Since the blue ball is in front of me, I can use the 'toggle' action to pick it up.
+
+Next, I need to move to the yellow key, which is 1 step forward. I can use the 'go forward' action to move to the yellow key.
+
+However, since the yellow key is in front of me, I can simply use the 'toggle' action to pick it up.
+
+ACTION: toggle","a wall 2 steps right
+a yellow key 1 step forward",0,False
+13,turn right,"To achieve the goal, I need to pick up the blue ball first. It's currently 1 step right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'toggle' action to pick it up.
+
+After picking up the blue ball, I can move to the yellow key, which is 1 step forward. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn right","a wall 2 steps forward
+a yellow key 1 step left
+a blue ball 3 steps right and 1 step forward",0,False
+14,turn right,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'toggle' action to pick it up.
+
+After picking up the blue ball, I can move to the yellow key, which is 1 step left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 3 steps forward",0,False
+15,turn left,"To achieve the goal, I need to pick up the blue ball first. It's currently 1 step left and 3 steps forward. I can move to it by turning left.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I can move to the yellow key, which is 2 steps left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn left","a wall 2 steps forward
+a yellow key 1 step left
+a blue ball 3 steps right and 1 step forward",0,False
+16,turn right,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 1 step left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 3 steps forward",0,False
+17,turn left,"To achieve the goal, I need to pick up the blue ball first. It's currently 1 step left and 3 steps forward. I can move to it by turning left.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 2 steps left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn left","a wall 2 steps forward
+a yellow key 1 step left
+a blue ball 3 steps right and 1 step forward",0,False
+18,turn right,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 1 step left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 3 steps forward",0,False
+19,turn left,"To achieve the goal, I need to pick up the blue ball first. It's currently 1 step left and 3 steps forward. I can move to it by turning left.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 5 steps forward. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn left","a wall 2 steps forward
+a yellow key 1 step left
+a blue ball 3 steps right and 1 step forward",0,False
+20,turn right,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 1 step left. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 3 steps forward",0,False
+21,turn left,"To achieve the goal, I need to pick up the blue ball first. It's currently 1 step left and 3 steps forward. I can move to it by turning left.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 5 steps forward. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: turn left","a wall 2 steps forward
+a yellow key 1 step left
+a blue ball 3 steps right and 1 step forward",0,False
+22,turn left,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 1 step left. I can use the 'go forward' action to move to the yellow key.
+
+However, since the yellow key is 1 step left, I need to turn left first to face it.
+
+ACTION: turn left","a wall 2 steps right
+a yellow key 1 step forward",0,False
+23,pick up,"To achieve the goal, I need to pick up the blue ball first. It's currently 3 steps right and 1 step forward. I can move to it by turning right.
+
+Next, I need to pick up the blue ball. I can use the 'pick up' action to pick it up.
+
+After picking up the blue ball, I need to move to the yellow key, which is 1 step forward. I can use the 'go forward' action to move to the yellow key.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps forward
+a wall 2 steps right",0,False
+24,go forward,"Since I already have the yellow key, my goal is to move to the location where the yellow key is. I need to move 2 steps forward to reach the location of the yellow key.
+
+ACTION: go forward","You carry a yellow key
+a wall 1 step forward
+a wall 2 steps right",0,False
+25,go forward,"To reach the yellow key, I need to move 1 step forward to the wall, and then I can pick up the blue ball. After that, I can move to the location of the yellow key.
+
+First, I need to move to the wall, so I will go forward.
+
+ACTION: go forward","You carry a yellow key
+a wall 1 step forward
+a wall 2 steps right",0,False
+26,turn right,"To reach the yellow key, I need to pick up the blue ball first. The blue ball is 2 steps right and 1 step forward from the current location. 
+
+First, I need to move to the location of the blue ball, so I will turn right.
+
+Next, I will move forward to pick up the blue ball.
+
+Next, I will move forward to the location of the yellow key.
+
+ ACTION: turn right","You carry a yellow key
+a wall 2 steps forward
+a wall 1 step left",0,False
+27,turn right,"Since I already have the yellow key, my goal is to go back to the location where I can pick up the blue ball. 
+
+First, I need to move to the location of the blue ball, so I will turn right.
+
+Next, I will move forward to pick up the blue ball.
+
+Next, I will move forward to the location of the yellow key.
+
+ ACTION: turn right","You carry a yellow key
+a wall 6 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 4 steps forward",0,False
+28,go forward,"To pick up the blue ball, I need to move to its location. Since I'm currently 6 steps away from the blue ball, I need to move forward to get closer.
+
+However, I'm also carrying the yellow key, and I don't want to drop it yet. So, I'll move forward to get closer to the blue ball without dropping the key.
+
+Next, I'll need to move forward again to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 5 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 3 steps forward",0,False
+29,go forward,"To pick up the blue ball, I need to move to its location. Since I'm currently 5 steps away from the blue ball, I need to move forward to get closer.
+
+However, I'm also carrying the yellow key, and I don't want to drop it yet. So, I'll move forward to get closer to the blue ball without dropping the key.
+
+Next, I'll need to move forward again to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 4 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 2 steps forward",0,False
+30,go forward,"To pick up the blue ball, I need to move to its location. Since I'm currently 2 steps away from the blue ball, I need to move forward to get closer.
+
+However, I'm also carrying the yellow key, and I don't want to drop it yet. So, I'll move forward to get closer to the blue ball without dropping the key.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 3 steps forward
+a wall 2 steps left
+a blue ball 1 step left and 1 step forward",0,False
+31,go forward,"To pick up the blue ball, I need to move to its location. Since I'm currently 1 step away from the blue ball, I need to move forward to get closer.
+
+However, I'm also carrying the yellow key, and I don't want to drop it yet. So, I'll move forward to get closer to the blue ball without dropping the key.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps forward
+a blue ball 1 step left",0,False
+32,turn left,"To pick up the blue ball, I need to move to its location. Since I'm currently 1 step away from the blue ball, I need to move left to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: turn left","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+33,turn right,"To pick up the blue ball, I need to move right to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: turn right","You carry a yellow key
+a wall 2 steps forward
+a blue ball 1 step left",0,False
+34,turn left,"To pick up the blue ball, I need to move left to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move forward to the location of the yellow key.
+
+ ACTION: turn left","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+35,go forward,"To pick up the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the blue ball.
+
+Then, I can move left to get closer to the yellow key.
+
+Finally, I can drop the yellow key and pick up the blue ball.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+36,go forward,"To pick up the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the blue ball.
+
+Then, I can move left to get closer to the yellow key.
+
+Finally, I can drop the yellow key and pick up the blue ball.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+37,go forward,"To pick up the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the blue ball.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+38,pick up,"To pick up the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the blue ball.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+39,pick up,"To pick up the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the blue ball.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+40,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+41,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+42,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+43,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+44,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+45,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+46,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+47,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+48,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the yellow key, and then move forward to the location of the yellow key.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+49,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the blue ball, and then move forward to the location of the blue ball.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+50,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can drop the yellow key.
+
+Then, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Finally, I can move left to get closer to the blue ball, and then move forward to the location of the blue ball.
+
+ ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+51,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Then, I can move left to get closer to the blue ball, and then move forward to the location of the blue ball.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+52,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Then, I can move left to get closer to the wall, and then move forward to the location of the wall.
+
+ ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+53,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+Then, I can move left to get closer to the wall, and then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+54,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can move forward again to pick up the blue ball.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+55,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can move forward again to pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the yellow key. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+56,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+57,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+58,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+59,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+60,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+61,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+62,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Next, I'll need to pick up the blue ball.
+
+After picking up the blue ball, I can move right to get closer to the wall, then move forward to the location of the wall.
+
+However, since I already have the yellow key, I don't need to move around the wall. I can simply move forward to get closer to the blue ball.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+63,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, my goal is to get to the location where the yellow key is. Since it's already in my inventory, I don't need to move it.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+64,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+65,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+66,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+67,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+68,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+69,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+70,toggle,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: toggle","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+71,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+72,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+73,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+74,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+75,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+76,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+77,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+78,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+79,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+80,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+81,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+82,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+83,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+84,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+85,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+86,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+87,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+88,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+89,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+90,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+91,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+92,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+93,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+94,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+95,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+96,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+97,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+98,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+99,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+100,toggle,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: toggle","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+101,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+102,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+103,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+104,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+105,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+106,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+107,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+108,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+109,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+110,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+111,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+112,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+113,pick up,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: pick up","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+114,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+115,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+116,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+117,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+118,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+119,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+120,toggle,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: toggle","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+121,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+122,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+123,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+124,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+125,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+126,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,False
+127,go forward,"To get the blue ball, I need to move forward to get closer.
+
+Then, I can pick up the blue ball.
+
+Now that I have the blue ball, I need to move to the right to get around the wall.
+
+Then, I can move forward to get to the location where the blue ball is.
+
+Now that I have the blue ball, I can move forward to get to the location where the yellow key is.
+
+ACTION: go forward","You carry a yellow key
+a wall 2 steps right
+a blue ball 1 step forward",0,True

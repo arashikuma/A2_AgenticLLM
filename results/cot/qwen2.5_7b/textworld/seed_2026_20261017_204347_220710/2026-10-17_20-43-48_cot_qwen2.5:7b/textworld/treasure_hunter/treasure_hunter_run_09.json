@@ -1,0 +1,51 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 8,
+        "go north": 4,
+        "go west": 7,
+        "take key": 1,
+        "go south": 25,
+        "unlock passageway with key": 13,
+        "inventory": 3,
+        "It seems like the passageway is already unlocked but you still cant go south Lets check the room more carefully to see if there are any other objects or containers we need to interact with\n\nAction: look": 1,
+        "look": 13,
+        "First lets explore the laundromat more thoroughly to see if there are any clues or objects we can use to help us find the target object\n\nAction: look": 1,
+        "Action: take drawer from shelf": 1,
+        "Action: open shelf": 1,
+        "take drawer from shelf": 1,
+        "take key from floor": 1
+    },
+    "input_tokens": 99502,
+    "output_tokens": 3698,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

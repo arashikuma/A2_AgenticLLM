@@ -1,0 +1,59 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "look": 8,
+        "go east": 11,
+        "take keycard": 2,
+        "examine keycard": 3,
+        "examine hatch": 18,
+        "unlock hatch with keycard": 1,
+        "open hatch": 7,
+        "open safe": 1,
+        "open box": 1,
+        "examine keycard and latchkey to see if they match any locks": 1,
+        "unlock hatch with latchkey": 1,
+        "examine latchkey": 1,
+        "unlock Hendersons limited edition hatch with keycard": 1,
+        "unlock Hendersons limited edition hatch with latchkey": 2,
+        "take latchkey": 1,
+        "go north": 5,
+        "go west": 5,
+        "take box": 2,
+        "examine table": 2,
+        "go south": 4,
+        "open toolbox": 2,
+        "examine box": 1
+    },
+    "input_tokens": 88228,
+    "output_tokens": 10643,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

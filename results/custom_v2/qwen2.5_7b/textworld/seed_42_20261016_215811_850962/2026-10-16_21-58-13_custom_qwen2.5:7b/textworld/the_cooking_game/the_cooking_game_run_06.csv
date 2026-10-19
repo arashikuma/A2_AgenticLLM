@@ -1,0 +1,699 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,go north,"THINK: The entranceway to the north seems more promising than the closed door to the west.
+PLAN: ","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is a closed fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-0/2",0,False
+1,go south,"THINK: The current observation does not provide a direct path to the goal, but it confirms the need to find a door to open.
+PLAN: ","-= Street =-
+You find yourself in a street. A normal one.
+
+
+
+There is a closed commercial glass door leading west. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Street =-0/3",0,False
+2,go north,"THINK: The goal is to find the recipe, find and prepare food, and then prepare and eat the meal. The current location (Street) does not have any obvious clues or items related to the goal.
+PLAN: ","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is a closed fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-0/4",0,False
+3,go east,"THINK: The current observation shows that the fiberglass door leads east, but there is no other exit mentioned. I should explore the east direction.
+PLAN: go east","You have to open the fiberglass door first.
+
+
+>                                                                                                                                -= Driveway =-0/5",0,False
+4,examine fiberglass door,"THINK: The fiberglass door needs to be opened before proceeding.
+PLAN: go east","It's a rugged fiberglass door It is closed.
+
+
+>                                                                                                                                -= Driveway =-0/6",0,False
+5,open fiberglass door,"THINK: The fiberglass door needs to be opened to proceed.
+PLAN: go east","You open fiberglass door.
+
+
+>                                                                                                                                -= Driveway =-0/7",0,False
+6,go east,"THINK: The door is now open, allowing access to the next room.
+PLAN: go east","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-0/8",0,False
+7,go north,"THINK: The corridor has exits in multiple directions, but going east leads to the driveway with a door.
+PLAN: go east","-= Bathroom =-
+You are in a bathroom. A typical kind of place.
+
+You scan the room for a toilet, and you find a toilet. The toilet is white. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+There is an exit to the south.
+
+
+>                                                                                                                                -= Bathroom =-0/9",0,False
+8,go east,"THINK: The bathroom does not have any relevant items for the goal, and there are exits in other directions.
+PLAN: go east","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-0/10",0,False
+9,go south,"THINK: The bathroom does not have an exit to the east.
+PLAN: go east","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-0/11",0,False
+10,go east,"THINK: The corridor has an exit to the east without a door, which is useful for progress.
+PLAN: go east","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. On the counter you make out a tomato and a knife. Something scurries by right in the corner of your eye. Probably nothing. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is a closed plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-0/12",0,False
+11,examine cookbook,"THINK: The kitchen contains ingredients and a cookbook, which are necessary to find the recipe and prepare the meal.
+PLAN: go east","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  pork chop
+  red hot pepper
+  tomato
+  yellow apple
+
+Directions:
+slice the block of cheese
+  fry the block of cheese
+  chop the pork chop
+  grill the pork chop
+  dice the red hot pepper
+  fry the red hot pepper
+  chop the tomato
+  grill the tomato
+  dice the yellow apple
+  fry the yellow apple
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-0/13",0,False
+12,go east,"THINK: The observation confirms the ingredients and steps needed for the recipe.
+PLAN: go east","You have to open the plain door first.
+
+
+>                                                                                                                                -= Kitchen =-0/14",0,False
+13,open plain door,"THINK: The plain door needs to be opened before proceeding east.
+PLAN: go east","You open plain door.
+
+
+>                                                                                                                                -= Kitchen =-0/15",0,False
+14,go east,"THINK: The plain door was closed, and now it's open, so I can proceed east.
+PLAN: go east","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-0/16",0,False
+15,go west,"THINK: The pantry does not contain the required ingredients, so we need to find them in other rooms.
+PLAN: go east","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. On the counter you make out a tomato and a knife. Something scurries by right in the corner of your eye. Probably nothing. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-0/17",0,False
+16,go east,"THINK: The observation confirms the presence of the cookbook and ingredients in the kitchen, but the fridge is closed and the stove is empty.
+PLAN: go east","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-0/18",0,False
+17,go west,"THINK: The pantry does not contain any ingredients needed for the recipe.
+PLAN: go east","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. On the counter you make out a tomato and a knife. Something scurries by right in the corner of your eye. Probably nothing. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-0/19",0,False
+18,take tomato from counter,"THINK: The observation confirms the need to find the ingredients and prepare the meal in the kitchen.
+PLAN: go east","You take the tomato from the counter.
+
+
+Your score has just gone up by one point.
+
+>                                                                                                                                -= Kitchen =-1/20",1,False
+19,go east,"THINK: The tomato is now in my inventory, but I need to find the other ingredients.
+PLAN: go east","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-1/21",1,False
+20,go west,"THINK: The tomato is in the Kitchen, not the Pantry. Need to return to the Kitchen to find other ingredients.
+PLAN: go west","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. On the counter you make out a knife. Something scurries by right in the corner of your eye. Probably nothing. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/22",1,False
+21,take knife from counter,"THINK: The tomato is already taken, and going west leads back to the pantry.
+PLAN: go west","You take the knife from the counter.
+
+
+>                                                                                                                                -= Kitchen =-1/23",1,False
+22,go west,"THINK: The knife is now in my inventory, but I need to find the other ingredients.
+PLAN: go west","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/24",1,False
+23,go east,"THINK: The knife and tomato are in the kitchen, but I need to find the other ingredients.
+PLAN: go west","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/25",1,False
+24,go west,"THINK: The tomato and knife are already in the kitchen, but I need to find the other ingredients.
+PLAN: go west","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/26",1,False
+25,go east,"THINK: The knife and tomato are in the kitchen, but I need to go to the pantry to find the block of cheese, pork chop, red hot pepper, and yellow apple.
+PLAN: go east, take tomato from counter, go west","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/27",1,False
+26,take knife from counter,"THINK: The plan needs to be adjusted as the tomato is already taken from the counter.
+PLAN: go west, take knife from counter","You can't see any such thing.
+
+>                                                                                                                                -= Kitchen =-1/27",1,False
+27,examine table,"THINK: The counter does not have a knife; I should check other rooms for the knife.
+PLAN: go west, examine table","The table is balanced.
+
+On the table is a cookbook.
+
+
+>                                                                                                                                -= Kitchen =-1/28",1,False
+28,examine cookbook,"THINK: The cookbook is now visible, which is important for finding the recipe.
+PLAN: go west, examine table","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  pork chop
+  red hot pepper
+  tomato
+  yellow apple
+
+Directions:
+slice the block of cheese
+  fry the block of cheese
+  chop the pork chop
+  grill the pork chop
+  dice the red hot pepper
+  fry the red hot pepper
+  chop the tomato
+  grill the tomato
+  dice the yellow apple
+  fry the yellow apple
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-1/29",1,False
+29,go west,"THINK: The observation confirms the ingredients and steps needed for the recipe. The knife is already in the inventory, and the tomato is also available.
+PLAN: go west, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/30",1,False
+30,go west,"THINK: The observation confirms the need to find the missing ingredients and prepare them according to the recipe.
+PLAN: go west, examine table","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/31",1,False
+31,go east,"THINK: The observation confirms there is no knife on the table, so I need to find one.
+PLAN: go west, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/32",1,False
+32,go south,"THINK: The observation confirms the table has the cookbook, but there are no ingredients in the current rooms.
+PLAN: go west, examine table","-= Livingroom =-
+A well framed board tells you that you are now in the livingroom.
+
+You scan the room, seeing a sofa. The sofa is comfy. But oh no! there's nothing on this piece of junk. Hm. Oh well
+
+You need an exit without a door? You should try going east. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Livingroom =-1/33",1,False
+33,go north,"THINK: The living room does not contain any ingredients or the fridge, so it's not the right place. The table in the kitchen is empty, and I need to find the missing ingredients.
+PLAN: go west, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/34",1,False
+34,go west,"THINK: The observation confirms the need to find the missing ingredients in the recipe.
+PLAN: go west, examine table","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/35",1,False
+35,go east,"THINK: The observation confirms the presence of the knife and the need to find the ingredients.
+PLAN: go west, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/36",1,False
+36,examine table,"THINK: The observation confirms the presence of the knife on the table and the cookbook with the recipe.
+PLAN: go west, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Corridor =-1/36",1,False
+37,go west,"THINK: The table in the kitchen is empty, so I need to find the ingredients elsewhere.
+PLAN: go west, examine table","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/37",1,False
+38,go south,"THINK: The table in the corridor is not visible, so it's not in the current room.
+PLAN: go west, examine table","-= Street =-
+You find yourself in a street. A normal one.
+
+
+
+There is a closed commercial glass door leading west. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Street =-1/38",1,False
+39,go east,"THINK: The table is not in the street, so it must be in the kitchen.
+PLAN: go west, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/39",1,False
+40,examine table,"THINK: The table in the kitchen is the only place with an object to examine.
+PLAN: go west, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/39",1,False
+41,go west,"THINK: The table is not visible in the street, so it must be in the corridor or kitchen.
+PLAN: go west, examine table","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/40",1,False
+42,open commercial glass door with key,"THINK: The commercial glass door needs to be opened before proceeding.
+PLAN: go west, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/40",1,False
+43,go west,"THINK: The observation indicates there is no key available to open the door.
+PLAN: go west, examine table","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/41",1,False
+44,go west,"THINK: The commercial glass door needs to be opened with a key, but I don't have a key.
+PLAN: go west, examine table","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/42",1,False
+45,examine table,"THINK: The commercial glass door needs to be opened with a key to proceed.
+PLAN: go west, take key from table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/42",1,False
+46,go east,"THINK: The observation confirms there is no table to examine, so the key is not available here.
+PLAN: go west, take key from table","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/43",1,False
+47,go west,"THINK: The observation confirms there is no way to proceed without opening the commercial glass door.
+PLAN: go west, take key from table","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/44",1,False
+48,take key from table,"THINK: The commercial glass door needs to be opened to proceed.
+PLAN: go west, take key from table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/44",1,False
+49,go west,"THINK: The observation confirms there is no table to examine, so the key is likely not on a table.
+PLAN: go west, open commercial glass door with key","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/45",1,False
+50,go west,"THINK: The observation confirms the need to open the commercial glass door with the key.
+PLAN: go west, open commercial glass door with key","You have to open the commercial glass door first.
+
+
+>                                                                                                                                -= Street =-1/46",1,False
+51,open commercial glass door with key,"THINK: The commercial glass door is still closed, so I need the key to proceed.
+PLAN: go west, open commercial glass door with key","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/46",1,False
+52,go east,"THINK: The key is not on the table, and I cannot go west without opening the door.
+PLAN: go west, open commercial glass door with key","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/47",1,False
+53,go north,"THINK: The key is not on the table, and I cannot go west. I need to find the key to open the commercial glass door.
+PLAN: go west, open commercial glass door with key","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/48",1,False
+54,go east,"THINK: The observation shows the commercial glass door is now open, allowing access to the east.
+PLAN: go west, open commercial glass door with key","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/49",1,False
+55,go west,"THINK: The corridor has no commercial glass door, so opening one is not necessary.
+PLAN: go west, open commercial glass door with key","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/50",1,False
+56,go south,"THINK: The observation shows there is no commercial glass door in this area, so opening one with a key is not applicable.
+PLAN: go west, open commercial glass door with key","-= Street =-
+You find yourself in a street. A normal one.
+
+
+
+There is a closed commercial glass door leading west. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Street =-1/51",1,False
+57,go north,"THINK: The commercial glass door is still there, so I need the key to open it.
+PLAN: go west, open commercial glass door with key","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/52",1,False
+58,go east,"THINK: The commercial glass door is now open, allowing access to the interior.
+PLAN: go west, open commercial glass door with key","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/53",1,False
+59,open commercial glass door with key,"THINK: The commercial glass door is still blocking the way, so I need to use the key to open it.
+PLAN: go west, open commercial glass door with key","You can't see any such thing.
+
+>                                                                                                                                -= Corridor =-1/53",1,False
+60,examine table,"THINK: The key is not visible, so it won't work on the door.
+PLAN: go west, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Corridor =-1/53",1,False
+61,go west,"THINK: The table is not visible, and I need to find the key to open the commercial glass door.
+PLAN: go west, examine table","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/54",1,False
+62,go south,"THINK: The commercial glass door is closed, and there is no table to examine.
+PLAN: go west, examine table","-= Street =-
+You find yourself in a street. A normal one.
+
+
+
+There is a closed commercial glass door leading west. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Street =-1/55",1,False
+63,go north,"THINK: The commercial glass door is closed, and there is no table to examine.
+PLAN: go west, examine table","-= Driveway =-
+You are in a driveway. A standard one.
+
+
+
+There is an open fiberglass door leading east. You need an exit without a door? You should try going south.
+
+
+>                                                                                                                                -= Driveway =-1/56",1,False
+64,examine table,"THINK: The commercial glass door is closed, indicating there might be a key required to open it.
+PLAN: go west, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Driveway =-1/56",1,False
+65,go west,"THINK: The table is not visible, so it's not in this room.
+PLAN: go west, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Driveway =-1/57",1,False
+66,go east,"THINK: The table is not in the driveway, so it must be in the corridor.
+PLAN: go east, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/58",1,False
+67,go north,"THINK: The corridor has no table to examine.
+PLAN: go east, examine table","-= Bathroom =-
+You are in a bathroom. A typical kind of place.
+
+You scan the room for a toilet, and you find a toilet. The toilet is white. But the thing hasn't got anything on it. Oh! Why couldn't there just be stuff on it?
+
+There is an exit to the south.
+
+
+>                                                                                                                                -= Bathroom =-1/59",1,False
+68,go south,"THINK: The bathroom does not contain any relevant items for the goal.
+PLAN: go east, examine table","-= Corridor =-
+Look around you. Take it all in. It's not every day someone gets to be in a corridor.
+
+
+
+There is an open fiberglass door leading west. There is an exit to the east. Don't worry, there is no door. You need an exit without a door? You should try going north. There is an exit to the south.
+
+
+>                                                                                                                                -= Corridor =-1/60",1,False
+69,go east,"THINK: The corridor does not have a table to examine.
+PLAN: go east, examine table","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/61",1,False
+70,examine table,"THINK: The cookbook on the table in the kitchen is likely the key to finding the recipe.
+PLAN: go east, examine table","The table is balanced.
+
+On the table is a cookbook.
+
+
+>                                                                                                                                -= Kitchen =-1/62",1,False
+71,examine cookbook,"THINK: The cookbook on the table is a key to finding the recipe.
+PLAN: go east, examine table","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+block of cheese
+  pork chop
+  red hot pepper
+  tomato
+  yellow apple
+
+Directions:
+slice the block of cheese
+  fry the block of cheese
+  chop the pork chop
+  grill the pork chop
+  dice the red hot pepper
+  fry the red hot pepper
+  chop the tomato
+  grill the tomato
+  dice the yellow apple
+  fry the yellow apple
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-1/63",1,False
+72,go east,"THINK: The cookbook provides the recipe for the meal, which requires specific ingredients and steps.
+PLAN: go east, examine table","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-1/64",1,False
+73,go west,"THINK: The pantry does not contain the ingredients needed for the recipe.
+PLAN: go east, examine table","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/65",1,False
+74,examine table,"THINK: The cookbook is on the table, which provides the recipe needed to prepare the meal.
+PLAN: go east, examine table","The table is balanced.
+
+On the table is a cookbook.
+
+
+>                                                                                                                                -= Kitchen =-1/66",1,False
+75,go east,"THINK: The observation confirms the cookbook is on the table, but there are no ingredients or tools.
+PLAN: go east, examine table","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-1/67",1,False
+76,go west,"THINK: The pantry does not have the ingredients, and the table still has the cookbook.
+PLAN: go east, examine table","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. On the table you see a cookbook. Huh, weird. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/68",1,False
+77,take cookbook from table,"THINK: The table has the cookbook, but the pantry is empty. Need to find the ingredients.
+PLAN: go east, examine table","You take the cookbook from the table.
+
+
+>                                                                                                                                -= Kitchen =-1/69",1,False
+78,go east,"THINK: The cookbook is now in my inventory, but the table is still empty.
+PLAN: go east, examine table","-= Pantry =-
+You are in a pantry. A standard kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You make out a shelf. The shelf is wooden. But there isn't a thing on it.
+
+There is an open plain door leading west.
+
+
+>                                                                                                                                -= Pantry =-1/70",1,False
+79,go west,"THINK: The pantry is empty, and going east leads to the pantry again, so I need to find ingredients in the kitchen.
+PLAN: go east, examine table","-= Kitchen =-
+You've just sauntered into a kitchen.
+
+You can make out a closed fridge nearby. You hear a noise behind you and spin around, but you can't see anything other than an oven. Oh wow! Is that what I think it is? It is! It's a table. But the thing is empty. What's that over there? It looks like it's a counter. But the thing hasn't got anything on it. You see a stove. Looks like someone's already been here and taken everything off it, though. It would have been so cool if there was stuff on the stove! oh well.
+
+There is an open plain door leading east. There is a closed screen door leading north. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Kitchen =-1/71",1,True

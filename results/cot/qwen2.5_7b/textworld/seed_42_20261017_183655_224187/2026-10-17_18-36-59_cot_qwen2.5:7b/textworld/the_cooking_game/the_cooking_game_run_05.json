@@ -1,0 +1,53 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 8,
+        "go west": 10,
+        "examine closed fiberglass door": 1,
+        "look": 7,
+        "go south": 8,
+        "examine commercial glass door": 1,
+        "examine commercial glass door lid": 2,
+        "open commercial glass door": 1,
+        "go east": 12,
+        "eat meal": 1,
+        "examine showcase": 7,
+        "take block of cheese from showcase": 9,
+        "take raw white tuna from showcase": 1,
+        "examine raw white tuna": 3,
+        "inventory": 2,
+        "examine cookbook": 7
+    },
+    "input_tokens": 128979,
+    "output_tokens": 3068,
+    "done": true,
+    "episode_return": 58.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 5,
+        "go south": 5,
+        "go east": 5,
+        "examine fiberglass door": 7,
+        "look": 4,
+        "examine surroundings": 3,
+        "examine commercial glass door": 1,
+        "open fiberglass door": 1,
+        "examine toilet": 1,
+        "examine cookbook\ntake tomato\ntake knife\nexamine screen door\nopen screen door\ngo north": 1,
+        "take cookbook from table": 4,
+        "examine counter": 1,
+        "open plain door": 1,
+        "open fridge": 1,
+        "take yellow onion from fridge": 1,
+        "take pork chop from fridge": 1,
+        "take carrot from fridge": 1,
+        "examine cookbook": 2,
+        "slice pork chop with knife": 1
+    },
+    "input_tokens": 74821,
+    "output_tokens": 1260,
+    "done": true,
+    "episode_return": 20.0,
+    "num_steps": 46,
+    "failed_candidates": [],
+    "progression": 0.11764705882352941,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

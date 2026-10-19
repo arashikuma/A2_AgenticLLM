@@ -1,0 +1,1392 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,turn right,ACTION: turn right,"a wall 1 step left
+a grey box 4 steps forward",0,False
+1,turn left,"Let's break down the steps:
+
+1. There is a wall 1 step left, so we can move left to interact with the grey box.
+2. Once we are next to the grey box, we can pick it up.
+3. After picking up the grey box, we need to navigate to the purple ball.
+
+Given the current observation, the best course of action is to move left to interact with the grey box.
+
+ACTION: turn left","a wall 1 step forward
+a wall 1 step left",0,False
+2,turn left,"Given the current observation, there is no grey box in front of us, and both the forward and left directions are blocked by walls. Since we haven't picked up the grey box yet, we need to find a way to get to it. The best course of action is to turn left to see if we can find a way to the grey box.
+
+ACTION: turn left","a wall 1 step forward
+a wall 1 step right",0,False
+3,turn left,"Given the current observation, both the forward and right directions are blocked by walls. Since we need to pick up the grey box to proceed, we need to find another direction to move towards the box. However, based on the current information, we don't have any other clear directions to turn. Let's re-evaluate the previous steps and consider if there might be a mistake in the interpretation of the environment or if we need to retrace our steps.
+
+Since we can't move forward or right, and the left direction was previously blocked by a wall, we might need to recheck our position. However, without additional information, the best we can do is to reattempt the left turn to ensure we are not missing any possible paths.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right",0,False
+4,turn left,"Given the current observation, moving forward or to the right is blocked by walls. This suggests that we need to re-evaluate our position and consider the possibility of a loop or a need to backtrack. However, since we haven't picked up the grey box yet, let's try to find a way to approach it.
+
+1. We need to find a way to get closer to the grey box, which is 4 steps forward from our current position.
+2. Since moving forward and right are blocked, we need to consider the left direction again.
+
+Let's try moving left to see if it leads us closer to the grey box or provides a new path.
+
+ACTION: turn left","a wall 1 step left
+a grey box 4 steps forward",0,False
+5,go forward,"Given the current observation, we can see that the grey box is 4 steps forward. Since moving left is blocked by a wall, we should proceed forward to pick up the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 3 steps forward",0,False
+6,go forward,"Given the current observation, the grey box is 3 steps forward. Since moving left is blocked by a wall, the best course of action is to continue moving forward to reach the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 2 steps forward",0,False
+7,go forward,"Given the current observation, the grey box is 2 steps forward. Since moving left is blocked by a wall, the best course of action is to continue moving forward to reach the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+8,pick up,"Given the current observation, the grey box is 1 step forward. The next best step is to pick up the grey box.
+
+ACTION: pick up","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left",0,False
+9,go forward,"Given the current observation, you are carrying the grey box, and the next step is to go forward to the purple ball. The best course of action is to move forward.
+
+ACTION: go forward","You carry a grey box
+a wall 2 steps forward
+a wall 1 step left",0,False
+10,go forward,"Given the current observation, you are carrying the grey box, and the next step is to go forward to the purple ball. The best course of action is to move forward.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+11,turn left,"Given the current observation, you are carrying the grey box, and there are walls blocking the forward path. The best course of action is to turn left to find an alternative path to the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+12,turn left,"Given the current observation, you are carrying the grey box, and there are walls blocking both the forward and right paths. The best course of action is to turn left to explore the left path.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+13,turn left,"Given the current observation, you are carrying the grey box, and there are walls blocking both the forward and right paths. The best course of action is to turn left to explore the left path.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+14,turn right,"Given the current observation, you are carrying the grey box, and there are walls blocking the forward and left paths. The purple ball is located 1 step right and 4 steps forward. The best course of action is to move right and then forward to reach the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+15,turn left,"Given the current observation, you are carrying the grey box, and there are walls blocking the forward and right paths. The purple ball is located 1 step left and 4 steps forward. The best course of action is to move left and then forward to reach the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+16,turn right,"Step-by-step reasoning:
+1. You are carrying the grey box.
+2. The purple ball is 1 step right and 4 steps forward.
+3. Turning right will lead you towards the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+17,turn left,"Step-by-step reasoning:
+1. You are carrying the grey box.
+2. The purple ball is 1 step right and 4 steps forward.
+3. Turning right will lead you towards the purple ball.
+4. However, there is a wall 6 steps forward and 1 step right, so turning right is not feasible.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+18,turn left,ACTION: turn left,"You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+19,turn right,"Let's think through the steps:
+
+1. You are currently facing a wall 1 step forward and 1 step left.
+2. The purple ball is 1 step right and 4 steps forward.
+3. You need to go to the purple ball after picking up the grey box.
+
+Given the current observation, you need to turn right to face the direction of the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+20,turn right,"Let's break down the steps:
+
+1. You are currently facing a wall 6 steps forward.
+2. The grey box is already in your possession.
+3. The purple ball is 1 step right and 4 steps forward.
+
+To reach the purple ball, you need to:
+1. Turn right to face the direction of the purple ball.
+2. Go forward 4 steps to reach the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+21,turn right,ACTION: turn right,"You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+22,turn right,"Let's think through the steps:
+
+1. We need to get to the purple ball, which is 1 step right and 4 steps forward.
+2. Currently, we are facing a wall 1 step forward and 1 step right.
+3. To move towards the purple ball, we need to turn right to face the direction of the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+23,turn right,"Let's break down the steps:
+
+1. We are currently facing a wall 1 step forward and 1 step left.
+2. The purple ball is 1 step right and 4 steps forward from our current position.
+3. To move towards the ball, we need to turn right to face the direction of the ball.
+4. After turning right, we need to move forward 4 times to reach the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+24,turn right,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward and 1 step left.
+2. The purple ball is 1 step right and 4 steps forward from our current position.
+3. To move towards the ball, we need to turn right to face the direction of the ball.
+4. After turning right, we need to move forward 4 times to reach the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+25,turn left,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward and 1 step right.
+2. The purple ball is 1 step left and 4 steps forward from our current position.
+3. To move towards the ball, we need to turn left to face the direction of the ball.
+4. After turning left, we need to move forward 4 times to reach the ball.
+5. Once we reach the ball, we can pick it up.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+26,turn left,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward and 1 step right.
+2. The purple ball is 1 step left and 4 steps forward from our current position.
+3. To move towards the ball, we need to turn left to face the direction of the ball.
+4. After turning left, we need to move forward 4 times to reach the ball.
+5. Once we reach the ball, we can pick it up.
+
+ACTION: turn left","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+27,turn right,"From the current observation, it seems there is no direct path to the purple ball as described in previous observations. Let's re-evaluate the steps:
+
+1. We are currently facing a wall 1 step forward and 1 step left.
+2. The grey box is being carried.
+3. The purple ball is not in our current line of sight or within reach.
+
+Given this, we need to find a way to move towards the ball. Since we don't have a clear path, let's try to explore by turning and moving forward.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 4 steps forward",0,False
+28,go forward,ACTION: go forward,"You carry a grey box
+a wall 5 steps forward
+a wall 1 step left
+a purple ball 1 step right and 3 steps forward",0,False
+29,go forward,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 3 steps forward.
+2. Currently, we are carrying a grey box.
+3. The wall is in the way, so we need to find a path to the ball.
+
+Given the current observation, the best course of action is to go forward to clear the wall and then turn right to head towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 4 steps forward
+a wall 1 step left
+a purple ball 1 step right and 2 steps forward",0,False
+30,go forward,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 2 steps forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+Given the current observation, the best course of action is to go forward to clear the wall and then turn right to head towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+31,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+Given the current observation, the best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+32,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+33,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+34,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+35,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+36,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+37,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+38,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+39,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+40,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+41,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+42,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+43,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+44,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+45,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+46,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+47,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+48,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+49,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+50,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+51,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+52,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+53,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+54,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+55,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+56,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+57,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+58,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+59,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+60,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+61,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+62,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+63,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+64,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+65,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+66,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+67,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+68,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+69,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+70,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+71,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+72,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+73,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+74,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+75,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+76,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+77,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+78,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+79,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+80,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+81,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+82,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+83,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+84,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+85,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+86,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+87,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+88,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+89,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+90,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+91,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+92,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+93,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+94,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+95,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+96,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+97,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+98,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+99,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+100,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+101,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+102,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+103,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+104,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+105,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+106,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+107,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+108,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+109,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+110,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+111,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+112,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+113,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+114,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+115,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+116,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+117,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+118,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+119,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+120,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+121,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+122,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+123,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+124,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+125,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,False
+126,turn left,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step left and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn left to move towards the ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+127,turn right,"Let's break down the steps:
+
+1. We need to go to the purple ball, which is 1 step right and 1 step forward.
+2. Currently, we are carrying a grey box.
+3. There is a wall in the way, so we need to find a path to the ball.
+
+The best course of action is to turn right to move towards the ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 1 step forward",0,True

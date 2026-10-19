@@ -1,0 +1,63 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 3,
+        "examine cookbook": 7,
+        "take white onion from table": 1,
+        "examine table": 3,
+        "go south": 2,
+        "go east": 3,
+        "go west": 3,
+        "take raw purple potato from counter": 1,
+        "take knife from counter": 5,
+        "examine stove": 2,
+        "examine oven": 2,
+        "examine counter": 9,
+        "examine red apple": 2,
+        "take red apple from counter": 2,
+        "examine raw yellow potato": 1,
+        "take raw yellow potato from counter": 3,
+        "take orange bell pepper from counter": 1,
+        "examine fridge": 8,
+        "open fridge": 1,
+        "take raw yellow bell pepper from fridge\n\nNext we need to dice the yellow bell pepper with the knife Lets find the knife first": 1,
+        "take orange bell pepper from fridge\n\nNext we need to dice the orange bell pepper with the knife": 1,
+        "take orange bell pepper from fridge": 7,
+        "examine toolbox": 1,
+        "inventory": 2,
+        "examine inventory": 2,
+        "take yellow bell pepper from fridge": 7
+    },
+    "input_tokens": 140116,
+    "output_tokens": 3031,
+    "done": true,
+    "episode_return": 71.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

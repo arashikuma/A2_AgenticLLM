@@ -1,0 +1,368 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,look,"THINK: The Microsoft box is out of place in a laundry room, which might be important.
+PLAN: ","-= Laundry Place =-
+You are in a laundry place. An ordinary one.
+
+You see a Microsoft box. There's something strange about this being here, but you can't put your finger on it.
+
+There is a closed portal leading north. There is a closed type 0 gateway leading south.",0,False
+1,take Microsoft box,"THINK: The Microsoft box is out of place but might be the target object.
+PLAN: ",That's fixed in place.,0,False
+2,look north,"THINK: The Microsoft box is fixed in place and cannot be taken.
+PLAN: ",You see nothing unexpected in that direction.,0,False
+3,look north,"THINK: The Microsoft box is fixed in place and cannot be taken.
+PLAN: ",You see nothing unexpected in that direction.,0,False
+4,go north,"THINK: The Microsoft box is fixed in place and cannot be taken. There are portals and gateways that might be useful for navigation.
+PLAN: ",You have to open the portal first.,0,False
+5,open portal,"THINK: The portal needs to be opened to proceed north.
+PLAN: ",You have to unlock the portal with the key first.,0,False
+6,inventory,"THINK: The portal needs to be unlocked before moving forward.
+PLAN: ",You are carrying: a key.,0,False
+7,unlock portal with key,"THINK: The key in my inventory is likely the one needed to unlock the portal.
+PLAN: ",You unlock portal.,0,False
+8,go north,"THINK: The portal is now open, allowing access to the next area.
+PLAN: Go through the portal and explore the new room.",You have to open the portal first.,0,False
+9,go north,"THINK: The portal is now open, but I need to explore the new room to find the target object.
+PLAN: Go through the portal and explore the new room.",You have to open the portal first.,0,False
+10,go north,"THINK: The portal is now open, but I need to explore the new room to find the target object.
+PLAN: Go through the portal and explore the new room.",You have to open the portal first.,0,False
+11,go north,"THINK: The portal is now open, but I need to explore the new room to find the target object.
+PLAN: Go through the portal and explore the new room.",You have to open the portal first.,0,False
+12,go north,"THINK: The portal is now open, but I need to explore the new room to find the target object.
+PLAN: Go through the portal and explore the new room.",You have to open the portal first.,0,False
+13,open portal,"THINK: The portal is still closed, so I need the key to open it.
+PLAN: Go through the portal and explore the new room.",You open portal.,0,False
+14,go north,"THINK: The portal is now open, but I need to explore the new room to find the target object.
+PLAN: Go through the portal and explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.
+
+There is a Microsoft key on the floor.",0,False
+15,take Microsoft key,"THINK: The Microsoft key found here might be useful for unlocking the portal back to the laundry place.
+PLAN: Go through the portal and explore the new room.",You pick up the Microsoft key from the ground.,0,False
+16,go east,"THINK: The Microsoft key might be useful for unlocking a door or container in the next room.
+PLAN: Go through the portal and explore the new room.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+17,go west,"THINK: The Microsoft key might be useful for unlocking a door or container in the next room.
+PLAN: Go through the portal and explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+18,go east,"THINK: The portal is now open, but the new room is the canteen again, suggesting a loop or non-Euclidean space.
+PLAN: Go through the portal and explore the new room.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+19,go south,"THINK: The pantry does not contain the target object, and going west leads back to the canteen.
+PLAN: Go through the portal and explore the new room.",You can't go that way.,0,False
+20,go west,"THINK: The portal is open, but going south is not an option.
+PLAN: Go through the portal and explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+21,take box,"THINK: The portal is now open, but going south leads to the same canteen, so I need to find another way to progress.
+PLAN: Go through the portal and explore the new room.",That's fixed in place.,0,False
+22,go south,"THINK: The box is fixed in place, so I can't take it. I should go through the portal to explore the new room.
+PLAN: Go through the portal and explore the new room.","-= Laundry Place =-
+You are in a laundry place. An ordinary one.
+
+You see a Microsoft box. There's something strange about this being here, but you can't put your finger on it.
+
+There is an open portal leading north. There is a closed type 0 gateway leading south.",0,False
+23,go north,"THINK: The Microsoft box in the laundry place might be the target object.
+PLAN: Go through the portal to explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+24,go east,"THINK: The box in the canteen seems important, but I need to explore the laundry place first.
+PLAN: Go through the portal to explore the new room.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+25,go west,"THINK: The box in the pantry might be the target object, but I need to check the portal room first.
+PLAN: Go through the portal to explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+26,take box,"THINK: The box in the canteen might be the target object or related to it.
+PLAN: Go through the portal to explore the new room.",That's fixed in place.,0,False
+27,go south,"THINK: The box is fixed in place, so I cannot take it.
+PLAN: Go through the portal to explore the new room.","-= Laundry Place =-
+You are in a laundry place. An ordinary one.
+
+You see a Microsoft box. There's something strange about this being here, but you can't put your finger on it.
+
+There is an open portal leading north. There is a closed type 0 gateway leading south.",0,False
+28,go north,"THINK: The Microsoft box in the laundry place might be the target object.
+PLAN: Go through the portal to explore the new room.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+29,go east,"THINK: The box in the laundry place and the canteen might be the same, but I need to explore the laundry place first.
+PLAN: Go through the portal to explore the new room.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+30,go south,"THINK: The box in the laundry place is not fixed, so it might be the target object.
+PLAN: Go to the laundry place and take the box.",You can't go that way.,0,False
+31,go south,"THINK: The box in the laundry place is fixed in place, so taking it is not possible.
+PLAN: Go to the laundry place and take the box.",You can't go that way.,0,False
+32,go south,"THINK: The box is still in the laundry place, so I need to go there.
+PLAN: Go to the laundry place and take the box.",You can't go that way.,0,False
+33,go south,"THINK: The observation confirms you cannot go south from the canteen.
+PLAN: Go to the laundry place and take the box.",You can't go that way.,0,False
+34,go west,"THINK: The observation confirms you cannot go south from the canteen.
+PLAN: Go to the laundry place and take the box.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+35,take box,"THINK: The box in the canteen is not the one in the laundry place.
+PLAN: Go to the laundry place and take the box.",That's fixed in place.,0,False
+36,go east,"THINK: The box in the canteen is fixed in place, so taking it is not possible.
+PLAN: Go to the laundry place and take the box.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+37,go west,"THINK: The box is fixed in place in the canteen, so going to the laundry place won't help.
+PLAN: Go to the laundry place and take the box.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+38,go east,"THINK: The box in the canteen is the same as in the laundry place, so it's not the target object.
+PLAN: Go to the laundry place and take the box.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+39,go south,"THINK: The box in the pantry is not the one needed, as it is fixed in place. I should check the laundry place again.
+PLAN: Go to the laundry place and take the Microsoft box.",You can't go that way.,0,False
+40,take box,"THINK: The observation confirms the portal leads to the laundry place, but I need to find the Microsoft box in the canteen.
+PLAN: Go to the laundry place and take the Microsoft box.",You can't see any such thing.,0,False
+41,go west,"THINK: The box is not in the current room, so I need to go to the laundry place to take the Microsoft box.
+PLAN: Go to the laundry place and take the Microsoft box.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+42,go east,"THINK: The box is still in the canteen, so I need to go there and take it.
+PLAN: Go to the laundry place and take the Microsoft box.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+43,go east,"THINK: The observation confirms the box is in the canteen, not the pantry.
+PLAN: Go to the canteen and take the box.",You can't go that way.,0,False
+44,go west,"THINK: The box is still in the canteen, but I can't go that way, indicating a blockage or the need for a key.
+PLAN: Go to the canteen and take the box.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+45,go east,"THINK: The box is still in the canteen, so I can take it from there.
+PLAN: Go to the canteen and take the box.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+46,go east,"THINK: The box is already taken, so the plan needs to be adjusted.
+PLAN: Go to the canteen and look for the target object.",You can't go that way.,0,False
+47,go south,"THINK: The target object is not in the pantry, as I can't go east.
+PLAN: Go to the canteen and look for the target object.",You can't go that way.,0,False
+48,go east,"THINK: The target object is not in the pantry, as I can't move south from here.
+PLAN: Go to the canteen and look for the target object.",You can't go that way.,0,False
+49,go south,"THINK: The target object is not in the pantry or the direction I've explored so far.
+PLAN: Go to the canteen and look for the target object.",You can't go that way.,0,False
+50,look,"THINK: The observation confirms I cannot go south, so I need to stay in the canteen.
+PLAN: Go to the canteen and look for the target object.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+51,go east,"THINK: The target object is not in the pantry, and the exit to the canteen is unblocked.
+PLAN: Go to the canteen and look for the target object.",You can't go that way.,0,False
+52,go west,"THINK: The observation confirms the pantry does not have the target object, and I need to go to the canteen.
+PLAN: Go to the canteen and look for the target object.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+53,take box,"THINK: The box in the canteen might be the target object.
+PLAN: Go to the canteen and look for the target object.",That's fixed in place.,0,False
+54,go east,"THINK: The box is fixed in place and not takeable.
+PLAN: Go to the canteen and look for the target object.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+55,go east,"THINK: The box is fixed in place, so taking it is not possible. I need to explore further.
+PLAN: Go to the canteen and check if the box is there.",You can't go that way.,0,False
+56,go east,"THINK: The box is not in the pantry, so it might be in the canteen.
+PLAN: Go to the canteen and check if the box is there.",You can't go that way.,0,False
+57,go east,"THINK: The box is not in the pantry, so it might be in the canteen.
+PLAN: Go to the canteen and check for the box.",You can't go that way.,0,False
+58,go east,"THINK: The box is not in the pantry, so I need to go to the canteen.
+PLAN: Go to the canteen and check for the box.",You can't go that way.,0,False
+59,go east,"THINK: The box is not in the pantry, so I need to check the canteen again.
+PLAN: Go to the canteen and check for the box.",You can't go that way.,0,False
+60,go west,"THINK: The box is not in the pantry, so I need to check the canteen again.
+PLAN: Go to the canteen and check for the box.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+61,take box,"THINK: The box is visible and can be taken.
+PLAN: Take the box and explore further.",That's fixed in place.,0,False
+62,go east,"THINK: The box is fixed in place and cannot be taken.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+63,go west,"THINK: The box is fixed in place, so I cannot take it. I need to explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+64,go east,"THINK: The box is fixed in place, so I cannot take it directly. I should explore further to find a way to use or move it.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+65,go west,"THINK: The box is fixed in place in the canteen, so taking it is not possible.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+66,go east,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+67,go west,"THINK: The box is already taken, and the pantry seems empty. I should explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+68,take box,"THINK: The box is available to take, and exploring further might lead to the target object.
+PLAN: Take the box and explore further.",That's fixed in place.,0,False
+69,go east,"THINK: The box is fixed in place, so I cannot take it as is.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+70,go west,"THINK: The box is fixed in place, so taking it is not possible. Need to explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+71,go east,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+72,go west,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+73,go east,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+74,go west,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+75,go east,"THINK: The box is fixed in place, so taking it is not possible. I should explore further.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+76,go west,"THINK: The box is already taken, so the next step should be to explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+77,go east,"THINK: The box is already taken, so the next step should be to explore further.
+PLAN: Take the box and explore further.","-= Pantry =-
+Look around you. Take it all in. It's not every day someone gets to be in a pantry.
+
+You scan the room for a shelf, and you find a shelf. Make a note of this, you might have to put stuff on or in it later on. The shelf is normal. But oh no! there's nothing on this piece of junk.
+
+You don't like doors? Why not try going west, that entranceway is unblocked.",0,False
+78,go west,"THINK: The box is fixed in place, so taking it is not possible. Need to explore further.
+PLAN: Take the box and explore further.","-= Canteen =-
+This is going to sound unbelievable, but you've just entered a canteen. I guess you better just go and list everything you see here.
+
+You make out a box.
+
+There is an open portal leading south. There is an unblocked exit to the east.",0,False
+79,take box,"THINK: The box is still available and the goal is to find it.
+PLAN: Take the box and explore further.",That's fixed in place.,0,True

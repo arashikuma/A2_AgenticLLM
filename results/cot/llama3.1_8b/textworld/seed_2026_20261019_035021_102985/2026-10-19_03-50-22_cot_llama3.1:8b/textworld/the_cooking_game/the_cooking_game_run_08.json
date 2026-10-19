@@ -1,0 +1,62 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go south": 12,
+        "open sliding door": 1,
+        "look": 2,
+        "examine showcase": 3,
+        "examine cookbook": 5,
+        "take block of cheese from showcase": 1,
+        "go north": 14,
+        "go east": 6,
+        "open front door": 1,
+        "take knife and block of cheese": 1,
+        "chop block of cheese with knife": 1,
+        "take chopped block of cheese take red apple take knife take stove take red onion take white tuna take yellow onion take BBQ": 1,
+        "take red apple": 6,
+        "chop red apple with knife": 1,
+        "grill chopped red apple with BBQ": 1,
+        "Lets break it down step by step:\n\n We need to grill the chopped red apple but we cant do that directly We need to take the chopped red apple and the BBQ\n We already have the BBQ in our inventory so we just need to take the chopped red apple\n Once we have both the chopped red apple and the BBQ we can use the cook command to grill the chopped red apple\n\nSo the next step is:\n\ntake chopped red apple": 1,
+        "move BBQ to stove": 1,
+        "Lets break it down step by step:\n\n We need to grill the chopped red apple but we cant do that directly We need to take the chopped red apple and the BBQ\n We already have the BBQ in our inventory so we just need to take the chopped red apple\n Once we have both the chopped red apple and the BBQ we can use the cook command to grill the chopped red apple\n\nHowever we cant use the cook command yet because we dont have a suitable cooking tool in the room We need to move the BBQ to the stove\n\nBut wait we dont need to move the BBQ to the stove We can just use the BBQ to grill the chopped red apple\n\nSo the next step is:\n\ntake chopped red apple": 1,
+        "take chopped red apple": 2,
+        "cook chopped red apple with BBQ": 1,
+        "chop red onion with knife": 2,
+        "take red onion": 8,
+        "take block of cheese": 1,
+        "take white tuna": 2,
+        "take yellow onion": 5
+    },
+    "input_tokens": 147527,
+    "output_tokens": 13525,
+    "done": true,
+    "episode_return": 175.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.23529411764705882,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

@@ -1,0 +1,162 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,turn left,"To proceed, I'll analyze the current observation and plan the best course of action.
+
+Since there's a wall 4 steps forward, I can't move forward. The wall 2 steps left doesn't provide any useful information for navigation at this point.
+
+My goal is to reach the yellow key, but I don't have any information about its location yet. To gather more information, I'll try to turn to face the wall 2 steps left.
+
+ACTION: turn left","a wall 2 steps forward
+a yellow key 2 steps left",0,False
+1,go forward,"Now that I have more information, I can plan a course of action.
+
+Step 1: Since the yellow key is 2 steps left, I need to turn to face it. I'll turn left to face the key.
+
+Step 2: Now that I'm facing the key, I can try to pick it up. However, I need to make sure I'm close enough to interact with it. Since the key is 2 steps away, I'll move forward to get closer.
+
+Step 3: Once I'm close enough, I can pick up the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+2,go forward,"It seems I've moved too far to the left. I need to correct my course and get back on track to the yellow key.
+
+Step 1: I need to turn around to face the direction I was originally heading. I'll turn right.
+
+Step 2: Now that I'm facing the correct direction, I need to get closer to the key. I'll move forward to get closer.
+
+Step 3: Once I'm close enough, I can pick up the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+3,turn left,"To get to the yellow key, I need to move to the left. Since I'm currently facing the wall 1 step forward, I need to turn to the left to face the wall 3 steps left.
+
+Once I'm facing the correct direction, I can move forward to get closer to the key.
+
+ACTION: turn left","a wall 3 steps forward
+a wall 1 step right
+a yellow key 1 step left and 2 steps forward",0,False
+4,turn right,"To get to the yellow key, I need to move to the left and forward. Since I'm currently facing the wall 3 steps forward, I need to turn to the right to face the wall 1 step right.
+
+Once I'm facing the correct direction, I can move forward to get closer to the key.
+
+After that, I need to move to the left to get to the key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 3 steps left",0,False
+5,turn right,"To get to the yellow key, I need to move to the left to get closer to it. Since I'm currently facing the wall 3 steps left, I need to turn right to face the correct direction.
+
+Once I'm facing the correct direction, I can move forward to get closer to the key.
+
+After that, I need to move forward again to get even closer to the key.
+
+Finally, I can use the 'toggle' action to pick up the key.
+
+ACTION: turn right","a wall 4 steps forward
+a wall 1 step left",0,False
+6,turn left,"To get to the yellow key, I need to move to the left to get closer to it. Since I'm currently facing the wall 4 steps forward, I need to turn left to face the correct direction.
+
+Once I'm facing the correct direction, I can move forward to get closer to the key.
+
+After that, I need to move forward again to get even closer to the key.
+
+Finally, I can use the 'toggle' action to pick up the key.
+
+ACTION: turn left","a wall 1 step forward
+a wall 3 steps left",0,False
+7,go forward,"To get to the yellow key, I need to move to the left to get closer to it. Since I'm currently facing the wall 1 step forward, I need to turn left to face the correct direction.
+
+Once I'm facing the correct direction, I can move forward to get closer to the key.
+
+Now that I'm facing the correct direction, I can see that the yellow key is 2 steps forward and 1 step left. I can move forward to get closer to the key.
+
+Since I'm now facing the correct direction, I can move forward to get even closer to the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+8,go forward,"To get to the yellow key, I need to move to the left to get closer to it. Since I'm currently facing the wall 1 step forward, I need to turn left to face the correct direction.
+
+Once I'm facing the correct direction, I can see that the yellow key is 1 step left and 2 steps forward. I need to move forward to get closer to the key.
+
+However, I also need to move to the left to get closer to the key. Since I'm currently facing the correct direction, I can move forward and then turn left to get closer to the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+9,turn left,"To get to the yellow key, I need to move to the left to get closer to it. Since I'm currently facing the wall 1 step forward, I need to turn left to face the correct direction.
+
+Once I'm facing the correct direction, I can see that the yellow key is 1 step left and 2 steps forward. I need to move forward to get closer to the key.
+
+However, I also need to move to the left to get closer to the key. Since I'm currently facing the correct direction, I can move forward and then turn left to get closer to the key.
+
+ACTION: turn left","a wall 3 steps forward
+a wall 1 step right
+a yellow key 1 step left and 2 steps forward",0,False
+10,go forward,"To get to the yellow key, I need to move forward to get closer to it. Since I'm currently facing the wall 3 steps forward, I need to move forward to get closer to the key.
+
+Once I'm closer to the key, I can see that it's 1 step left and 2 steps forward. I need to move left to get closer to the key.
+
+However, I also need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward and then turn left to get closer to the key.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 1 step right
+a yellow key 1 step left and 1 step forward",0,False
+11,go forward,"To get to the yellow key, I need to move forward to get closer to it. Since I'm currently facing the wall 2 steps forward, I need to move forward to get closer to the key.
+
+Once I'm closer to the key, I can see that it's 1 step left and 1 step forward. I need to move left to get closer to the key.
+
+However, I also need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward and then turn left to get closer to the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+12,pick up,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: pick up","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+13,pick up,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: pick up","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+14,go forward,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+15,go forward,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+16,go forward,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right
+a yellow key 1 step left",0,False
+17,turn left,"To get to the yellow key, I need to move left to get closer to it. Since I'm currently facing the wall 1 step right, I need to turn left to face the correct direction.
+
+Next, I need to move forward to get closer to the key. Since I'm currently facing the correct direction, I can move forward.
+
+Finally, I need to pick up the yellow key.
+
+ACTION: turn left","a wall 1 step right
+a yellow key 1 step forward",0.746875,True

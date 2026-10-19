@@ -1,0 +1,43 @@
+{
+    "task": "BabyAI-MixedTrainLocal-v0/putnext",
+    "action_frequency": {
+        "turn left": 6,
+        "go forward": 9,
+        "pick up": 11,
+        "toggle": 2,
+        "drop": 1
+    },
+    "input_tokens": 22332,
+    "output_tokens": 926,
+    "done": true,
+    "episode_return": 0.79609375,
+    "num_steps": 29,
+    "failed_candidates": [],
+    "mission": "put the blue ball next to the purple key",
+    "progression": 1.0,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

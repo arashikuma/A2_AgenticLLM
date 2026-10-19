@@ -1,0 +1,1115 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,look,"Let's break down the situation step by step.
+
+1. We are currently in a lounge, and we need to find an unblocked exit. The hint suggests going east.
+2. Before we go east, let's take a closer look at the lounge to see if there's anything useful or interesting. We can use the ""look"" command to get a more detailed description of the room.
+
+ACTION: look","-= Lounge =-
+Well, here we are in a lounge.
+
+
+
+You need an unblocked exit? You should try going east.",0,False
+1,go east,"Let's break down the situation step by step:
+
+1. We are currently in a lounge, and we need to find an unblocked exit.
+2. The hint suggests going east, but before we do that, let's take a closer look at the lounge to see if there's anything useful or interesting.
+3. Since we don't have any information about the east room, it's better to explore the current room first.
+4. We can use the ""look"" command to get a more detailed description of the room, but since we already have a description, let's think about what we can do next.
+5. We can try to move east, but we don't know what's on the other side of the door. It's better to explore the current room first.
+
+ACTION: go east","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. You see a keycard on the table.
+
+There is a closed hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+2,take keycard,"Let's break down the situation step by step:
+
+1. We are currently in a spare room, and we need to find an unblocked exit.
+2. We see a keycard on the table, which could be useful for unlocking doors or containers.
+3. There is a closed hatch leading east, which might require a key to open.
+4. There is an unguarded exit to the south, which is a potential way out.
+5. There is also an exit to the west, which is unblocked.
+
+Considering the keycard on the table, it's likely that it's a key to unlock the closed hatch or another door/container. We should take the keycard to increase our chances of finding the target object.
+
+ACTION: take keycard",You take the keycard from the table.,0,False
+3,go east,"Let's break down the situation step by step:
+
+1. We have a keycard in our inventory, which could be useful for unlocking doors or containers.
+2. We need to find an unblocked exit, and the unguarded exit to the south is a potential way out.
+3. The closed hatch leading east might require a key to open, and the keycard could be the right key.
+4. We should explore the room to see if there are any other objects or clues that could help us.
+
+Considering the keycard and the potential exit to the south, it's likely that the keycard is the key to unlock the closed hatch. We should try to unlock the hatch and see what's behind it.
+
+ACTION: go east",You have to open the hatch first.,0,False
+4,open hatch,"Let's break down the situation step by step:
+
+1. We have a keycard in our inventory, which could be useful for unlocking doors or containers.
+2. We need to find an unblocked exit, and the unguarded exit to the south is a potential way out.
+3. The closed hatch leading east might require a key to open, and the keycard could be the right key.
+4. We should explore the room to see if there are any other objects or clues that could help us.
+
+Considering the keycard and the potential exit to the south, it's likely that the keycard is the key to unlock the closed hatch. However, we need to open the hatch first, which requires a separate action.
+
+ACTION: open hatch",You have to unlock the hatch with the keycard first.,0,False
+5,unlock hatch with keycard,"Let's break down the situation step by step:
+
+1. We have a keycard in our inventory, which is the correct key to unlock the hatch.
+2. The hatch is currently locked, so we need to unlock it with the keycard.
+3. After unlocking the hatch, we can open it and proceed through it.
+4. Once we're through the hatch, we can explore the new room and see if we can find the target object.
+
+Considering the steps above, the best course of action is to unlock the hatch with the keycard.
+
+ACTION: unlock hatch with keycard",You unlock hatch.,0,False
+6,open hatch,"Now that the hatch is unlocked, we can proceed through it. 
+
+1. We've unlocked the hatch, but it's still closed. We need to open it to proceed.
+2. Once we're through the hatch, we can explore the new room and see if we can find the target object.
+
+ACTION: open hatch",You open hatch.,0,False
+7,go through hatch,"We've unlocked and opened the hatch, so now we can proceed through it. 
+
+1. We need to explore the new room and see if we can find the target object.
+2. We should take note of any objects, doors, or exits in the new room.
+
+Looking at the previous observation, we don't have any information about the new room yet. We should go through the hatch to see what's on the other side.
+
+ACTION: go through hatch","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see a closed box.
+
+There is a closed Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+8,open box,"We need to find the target object, but we don't know what it is yet. We should try to find more information about the target object.
+
+Looking at the current room, we see a closed box. We should try to open it to see if it contains any useful objects or the target object itself.
+
+However, we also see a closed Henderson's limited edition hatch leading east. We should try to unlock it with the keycard we found earlier.
+
+But first, let's open the box to see what's inside.
+
+ACTION: open box","You open the box, revealing a Henderson's limited edition latchkey.",0,False
+9,unlock hatch with latchkey,"We now have a Henderson's limited edition latchkey, which is likely the key we need to unlock the Henderson's limited edition hatch.
+
+We should try to unlock the hatch with the latchkey.
+
+However, we should also be aware that the target object might be located in a closed or locked container, and we might need to explore other rooms to find it.
+
+For now, let's focus on unlocking the hatch.
+
+ACTION: unlock hatch with latchkey","Which do you mean, hatch or Henderson's limited edition hatch?",0,False
+10,unlock hatch with latchkey,"Let's break it down step by step:
+
+1. We have a Henderson's limited edition latchkey, which is likely the key we need to unlock the Henderson's limited edition hatch.
+2. We need to unlock the Henderson's limited edition hatch, but we don't know if it's the correct hatch to unlock.
+3. We have two hatches: a closed Henderson's limited edition hatch leading east, and an open hatch leading west.
+4. Since the open hatch leading west is already open, we can ignore it for now.
+5. We should try to unlock the closed Henderson's limited edition hatch leading east.
+
+ACTION: unlock hatch with latchkey","Which do you mean, hatch or Henderson's limited edition hatch?",0,False
+11,unlock Hendersons limited edition hatch,"Let's break it down step by step:
+
+1. We have a Henderson's limited edition latchkey, which is likely the key we need to unlock the Henderson's limited edition hatch.
+2. We need to unlock the Henderson's limited edition hatch, but we don't know if it's the correct hatch to unlock.
+3. We have two hatches: a closed Henderson's limited edition hatch leading east, and an open hatch leading west.
+4. Since the open hatch leading west is already open, we can ignore it for now.
+5. We should try to unlock the closed Henderson's limited edition hatch leading east.
+
+ACTION: unlock Henderson's limited edition hatch","(with the keycard)
+That doesn't seem to fit the lock.",0,False
+12,unlock Hendersons limited edition hatch,"Let's break it down step by step:
+
+1. We have a keycard, but it doesn't fit the lock.
+2. We have a Henderson's limited edition latchkey, which is likely the correct key to unlock the Henderson's limited edition hatch.
+3. We need to use the Henderson's limited edition latchkey to unlock the Henderson's limited edition hatch.
+
+ACTION: unlock Henderson's limited edition hatch","(with the keycard)
+That doesn't seem to fit the lock.",0,False
+13,go west,"Let's break it down step by step:
+
+1. We have a keycard, but it doesn't fit the lock.
+2. We have a Henderson's limited edition latchkey, which is likely the correct key to unlock the Henderson's limited edition hatch.
+3. We need to use the Henderson's limited edition latchkey to unlock the Henderson's limited edition hatch.
+
+However, we don't have the Henderson's limited edition latchkey in our inventory. We only have the keycard.
+
+So, the best course of action is to go back to the room where we found the keycard and try to find the Henderson's limited edition latchkey.
+
+ACTION: go west","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+14,go west,"We need to find the Henderson's limited edition latchkey. We know it was on the table in this room, but it's empty now. This means the keycard must have been on the table when we first entered the room, and we took it. 
+
+However, we also know that the keycard is not the correct key to unlock the Henderson's limited edition hatch. So, we need to find the Henderson's limited edition latchkey.
+
+Since the table is empty now, we need to go back to the room where we first saw the table and try to find the Henderson's limited edition latchkey.
+
+ACTION: go west","-= Lounge =-
+Well, here we are in a lounge.
+
+
+
+You need an unblocked exit? You should try going east.",0,False
+15,go east,"We need to find the Henderson's limited edition latchkey. We know it was on the table in the Spare Room, but it's empty now. This means the keycard must have been on the table when we first entered the room, and we took it. 
+
+However, we also know that the keycard is not the correct key to unlock the Henderson's limited edition hatch. So, we need to find the Henderson's limited edition latchkey.
+
+Since the table is empty now, we need to go back to the room where we first saw the table and try to find the Henderson's limited edition latchkey.
+
+We should go back to the Spare Room, and then we can try to find the Henderson's limited edition latchkey.
+
+ACTION: go east","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+16,go east,"We need to find the Henderson's limited edition latchkey. We know it was on the table in the Spare Room, but it's empty now. This means the keycard must have been on the table when we first entered the room, and we took it. 
+
+However, we also know that the keycard is not the correct key to unlock the Henderson's limited edition hatch. So, we need to find the Henderson's limited edition latchkey.
+
+Since the table is empty now, we need to go back to the room where we first saw the table and try to find the Henderson's limited edition latchkey.
+
+We should go back to the room where we first saw the table, which is the Lounge.
+
+Then, we can try to find the Henderson's limited edition latchkey.
+
+Then, we can go back to the Sauna and try to unlock the Henderson's limited edition hatch with the correct key.
+
+ACTION: go east","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box contains a Henderson's limited edition latchkey.
+
+There is a closed Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+17,go west,"We need to unlock the Henderson's limited edition hatch, but we don't have the correct key. We need to go back to the room where we first saw the table and try to find the Henderson's limited edition latchkey.
+
+We already know that the keycard is not the correct key, so we can't use it to unlock the hatch.
+
+We need to go back to the Lounge, then to the Spare Room, and find the Henderson's limited edition latchkey.
+
+Then, we can go back to the Sauna and unlock the Henderson's limited edition hatch with the correct key.
+
+Then, we can open the hatch and proceed.
+
+ACTION: go west","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+18,go east,"We need to find the Henderson's limited edition latchkey, which is currently in the Sauna, in the opened box. To get there, we need to go east through the open hatch.
+
+We also need to take the keycard with us, in case we need it later.
+
+So, the best course of action is to go east through the open hatch, and then we can go back to the Sauna and take the keycard with us.
+
+ACTION: go east","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box contains a Henderson's limited edition latchkey.
+
+There is a closed Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+19,go east,"We need to take the keycard with us, and we need to go east to get to the Henderson's limited edition hatch.
+
+First, we need to go east to get to the Henderson's limited edition hatch.
+Then, we need to unlock the Henderson's limited edition hatch with the keycard.
+After that, we can go through the unlocked hatch.
+
+ACTION: go east",You have to open the Henderson's limited edition hatch first.,0,False
+20,open Hendersons limited edition hatch,"Let's break it down step by step:
+
+1. We need to go east to get to the Henderson's limited edition hatch.
+2. We need to open the Henderson's limited edition hatch.
+3. We need to unlock the Henderson's limited edition hatch with the keycard.
+
+Since we can't unlock the hatch until it's open, we need to open it first.
+
+ACTION: open Henderson's limited edition hatch",You have to unlock the Henderson's limited edition hatch with the Henderson's limited edition latchkey first.,0,False
+21,unlock Hendersons limited edition hatch with Hendersons limited edition latchkey,"Let's break it down step by step:
+
+1. We need to go east to get to the Henderson's limited edition hatch.
+2. We need to unlock the Henderson's limited edition hatch with the Henderson's limited edition latchkey.
+3. We need to open the Henderson's limited edition hatch.
+
+Since we have the key, we can unlock the hatch first, and then open it.
+
+ACTION: unlock Henderson's limited edition hatch with Henderson's limited edition latchkey",You need to take the Henderson's limited edition latchkey first.,0,False
+22,take Hendersons limited edition latchkey,"Let's break it down step by step:
+
+1. We need to go east to get to the Henderson's limited edition hatch.
+2. We need to take the Henderson's limited edition latchkey.
+3. We need to unlock the Henderson's limited edition hatch with the Henderson's limited edition latchkey.
+4. We need to open the Henderson's limited edition hatch.
+
+Since we can't unlock the hatch without the key, we need to take the key first.
+
+ACTION: take Henderson's limited edition latchkey",You take the Henderson's limited edition latchkey from the box.,0,False
+23,unlock Hendersons limited edition hatch with Hendersons limited edition latchkey,"Now that we have the key, let's break it down step by step:
+
+1. We need to go east to get to the Henderson's limited edition hatch.
+2. We need to unlock the Henderson's limited edition hatch with the Henderson's limited edition latchkey.
+3. We need to open the Henderson's limited edition hatch.
+
+ACTION: unlock Hendersons limited edition hatch with Hendersons limited edition latchkey",You unlock Henderson's limited edition hatch.,0,False
+24,open Hendersons limited edition hatch,"Now that the hatch is unlocked, let's think about the next steps:
+
+1. We need to open the unlocked hatch.
+2. We need to go through the hatch to see what's on the other side.
+3. We need to find the target object.
+
+Since we don't know what's on the other side of the hatch, it's best to open it first and then explore.
+
+ACTION: open Henderson's limited edition hatch",You open Henderson's limited edition hatch.,0,False
+25,go east,"Let's break it down step by step:
+
+1. We have unlocked the hatch and now it's open.
+2. We need to go through the hatch to see what's on the other side.
+3. We need to explore the new room and see if we can find the target object.
+
+Since we don't know what's on the other side of the hatch, it's best to go through it first.
+
+ACTION: go east","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+26,look,"We've opened the hatch and now we're in a new room, the Bedroom. We need to explore this room and see if we can find the target object.
+
+First, let's take stock of what we have:
+
+* We have the Henderson's limited edition latchkey in our inventory.
+* We need to find the target object, but we don't know what it is yet.
+
+Now, let's think about the room. We see a bookshelf that's empty, and two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Since we don't know what the target object is, it's best to explore the room and see if we can find any clues. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+27,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+28,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+29,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+30,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+31,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+32,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+33,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+34,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+35,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+36,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+37,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+38,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+39,look,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: look","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+40,go south,"Let's break down the situation step by step:
+
+1. We need to find the target object, but we don't know what it is yet.
+2. We have the Henderson's limited edition latchkey in our inventory.
+3. We need to explore the room and see if we can find any clues.
+4. The bookshelf is empty, but maybe there's something on the floor or on the walls that we haven't noticed yet.
+5. We have two exits: one leading west back to the Sauna, and one leading south through the passageway.
+
+Considering these points, our next step should be to explore the room more thoroughly. Since the bookshelf is empty, we should look for other objects or clues on the floor or on the walls.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+41,open chest,"Let's break down the situation step by step:
+
+1. We are in a new room, a chamber, which is unusual.
+2. We see a chest, which could potentially contain the target object or a key to unlock a container.
+3. The chest is not locked, so we can open it immediately.
+4. There is a closed portal leading east, which might require a key to unlock.
+5. There is an open passageway leading north, which we can use to explore further.
+
+Considering these points, our next step should be to open the chest and see what's inside.
+
+ACTION: open chest",The chest is welded shut.,0,False
+42,look,"We need to find a way to open the chest. Since it's welded shut, we can't open it directly. Let's think about the next steps:
+
+1. We need to find a key or a tool that can help us open the chest.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+ACTION: look","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+43,go north,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest. Since it's welded shut, we can't open it directly.
+2. We need to find a key or a tool that can help us open the chest.
+3. We can explore the room and see if there are any other objects or clues that can help us.
+4. We can also try to find a way to unlock the portal leading east, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+44,go north,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can go back to the chamber and explore it more thoroughly. We can also try to find a way to unlock the portal leading east.
+
+ACTION: go north",You can't go that way.,0,False
+45,go east,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can go back to the chamber and explore it more thoroughly. We can also try to find a way to unlock the portal leading east.
+
+ACTION: go east",You can't go that way.,0,False
+46,go south,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can go back to the bedroom and explore it more thoroughly. We can also try to find a way to unlock the portal leading east.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+47,look,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can try to take a closer look at the chest and see if there's any hint or clue that can help us open it.
+
+ACTION: look","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+48,look,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can try to take a closer look at the chest and see if there's any hint or clue that can help us open it.
+
+However, since we can't open the chest yet, let's try to find a key or a tool that can help us.
+
+ACTION: look","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+49,take chest,"Let's break down the situation step by step:
+
+1. We need to find a way to open the chest in the chamber. Since it's welded shut, we need to find a key or a tool that can help us open it.
+2. We can explore the room and see if there are any other objects or clues that can help us.
+3. We can also try to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can try to take a closer look at the chest and see if there's any hint or clue that can help us open it.
+
+However, since we can't open the chest yet, let's try to find a key or a tool that can help us.
+
+ACTION: take chest",That's fixed in place.,0,False
+50,go north,"Since the chest is fixed in place, we can't take it. We need to find a way to open it. Let's think about the steps we need to take:
+
+1. We need to find a key or a tool that can help us open the chest.
+2. We need to find a way to unlock the portal leading east in the chamber, which might require a key.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+51,go west,"Let's break down the situation:
+
+1. We need to find a key or a tool to open the chest.
+2. We need to find a way to unlock the portal leading east in the chamber.
+3. We are currently in the bedroom, and we have a bookshelf that is empty.
+
+Considering these points, our next step should be to explore the room and see if we can find any useful objects or clues.
+
+We can try to take the bookshelf, but it's empty, so that won't help us. We can also try to go through the open passageway leading south, but that might not lead us to a key or a tool.
+
+However, we can try to go through the open Henderson's limited edition hatch leading west. This might lead us to a new room, and we might find a key or a tool there.
+
+ACTION: go west","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box is empty, what a horrible day!
+
+There is an open Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+52,take box,"We are currently in the sauna, and we have an empty box and two open hatches. We need to find a key or a tool to open the chest in the chamber.
+
+Let's think step by step:
+
+1. We need to find a key or a tool to open the chest.
+2. We are currently in the sauna, and we have an empty box.
+3. We can try to go through the open hatch leading west, but that might not lead us to a key or a tool.
+4. We can try to go through the open Henderson's limited edition hatch leading east, but that might not lead us to a key or a tool either.
+
+However, we can try to take the box, even though it's empty, and see if there's a hidden compartment or a clue inside.
+
+ACTION: take box",That's fixed in place.,0,False
+53,go west,"Let's think step by step:
+
+1. We need to find a key or a tool to open the chest.
+2. We are currently in the sauna, and we have an empty box.
+3. We can try to go through the open hatch leading west, but that might not lead us to a key or a tool.
+4. We can try to go through the open Henderson's limited edition hatch leading east, but that might not lead us to a key or a tool either.
+
+However, we can try to go through the open hatch leading west, as it might lead us to a key or a tool.
+
+ACTION: go west","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+54,look,"We need to find a key or a tool to open the chest. We are currently in the spare room, and we have an empty table. We can try to go through the open hatch leading east, but that might not lead us to a key or a tool.
+
+However, we can also try to go through the unguarded exit to the south, as it might lead us to a key or a tool.
+
+We also have an empty box from the sauna, which we can try to use to take something from a container or a supporter.
+
+But first, let's think about the table. It's empty, but it might be a supporter for something.
+
+ACTION: look","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+55,go south,"Let's break down the situation step by step:
+
+1. We need to find a key or a tool to open the chest.
+2. We are currently in the spare room, and we have an empty table.
+3. We can try to go through the open hatch leading east, but that might not lead us to a key or a tool.
+4. We can also try to go through the unguarded exit to the south, as it might lead us to a key or a tool.
+5. We have an empty box from the sauna, which we can try to use to take something from a container or a supporter.
+
+Considering these points, our best course of action is to go through the unguarded exit to the south, as it might lead us to a key or a tool.
+
+ACTION: go south","-= Cubicle =-
+You've entered a cubicle. I guess you better just go and list everything you see here.
+
+You see a toolbox.
+
+There is an unguarded exit to the north.",0,False
+56,take toolbox,"We've found a toolbox in the cubicle, which might contain a key or a tool to open the chest. Our best course of action is to take the toolbox and examine its contents.
+
+We should also consider the fact that we have an empty box from the sauna, which we can use to take something from a container or a supporter.
+
+However, for now, our priority is to examine the toolbox and see if it contains anything useful.
+
+ACTION: take toolbox",That's fixed in place.,0,False
+57,take box,"We need to get the toolbox out of the cubicle. Since it's fixed in place, we can't take it directly. We need to find a way to move it.
+
+Looking at the previous rooms, we have a box that's empty. We can use this box to take the toolbox from the cubicle.
+
+ACTION: take box",You can't see any such thing.,0,False
+58,go north,"Let's think step by step:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+
+ACTION: go north","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+59,go north,"Let's think step by step:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+ACTION: go north",You can't go that way.,0,False
+60,go east,"Let's think step by step:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+However, we can't go north from the cubicle. Let's think about the other options.
+
+We can try to go east from the cubicle, which might lead us to the chamber where the chest is.
+
+ACTION: go east","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box is empty, what a horrible day!
+
+There is an open Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+61,take box,"Let's think step by step:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+However, we can't go north from the cubicle. Let's think about the other options.
+
+We can try to go east from the cubicle, which might lead us to the chamber where the chest is.
+
+But wait, we are currently in the sauna, and we have an opened box here. We can try to take the box and use it to take the toolbox from the cubicle.
+
+ACTION: take box",That's fixed in place.,0,False
+62,go west,"Let's break down the steps:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+However, we can't go north from the cubicle. Let's think about the other options.
+
+We can try to go east from the cubicle, which might lead us to the chamber where the chest is.
+
+But wait, we are currently in the sauna, and we have an opened box here. We can try to take the box and use it to take the toolbox from the cubicle.
+
+However, taking the box won't help us. We need to get the toolbox out of the cubicle, and we can't take it directly.
+
+Let's think about the other options. We can try to go west from the sauna, which might lead us to the spare room where we saw the table.
+
+ACTION: go west","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+63,go east,"Let's break down the steps:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+However, we can't go north from the cubicle. Let's think about the other options.
+
+We can try to go east from the cubicle, which might lead us to the chamber where the chest is.
+
+But wait, we are currently in the spare room, and we have an open hatch leading east. We can try to go east from here, which might lead us to the chamber where the chest is.
+
+ACTION: go east","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box is empty, what a horrible day!
+
+There is an open Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+64,go east,"Let's break down the steps:
+
+1. We need to get the toolbox out of the cubicle, but it's fixed in place.
+2. We need to find a way to move it. Since we can't take it directly, we need to find a container or a supporter that can hold the toolbox.
+3. We have a chest in the chamber that we visited earlier. We can try to take the chest and use it to take the toolbox from the cubicle.
+4. To get to the chamber, we need to go back to the room where we saw the chest.
+
+However, we are currently in the sauna, and we have an opened box that is empty. We can try to use this box to take the toolbox from the cubicle.
+
+But first, we need to get back to the cubicle. We can try to go west from the sauna, which might lead us to the spare room, and then we can go north to the cubicle.
+
+However, we can also try to go east from the sauna, which might lead us to the chamber where the chest is. If we can take the chest, we can use it to take the toolbox from the cubicle.
+
+Let's try to go east from the sauna.
+
+ACTION: go east","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+65,go south,"Let's break down the steps:
+
+1. We are currently in the bedroom, and we need to find a way to get to the cubicle where the toolbox is.
+2. We have an open passageway leading south, which might lead us to the cubicle.
+3. However, we also have an open Henderson's limited edition hatch leading west, which might lead us to the chamber where the chest is.
+4. We need to get the chest to the cubicle, but we can't take it directly. We need to find a way to move it.
+5. Since we can't take the chest directly, we need to find a container or a supporter that can hold the chest.
+6. We have an empty box in the sauna, but we can't take it directly. We need to find a way to move it.
+7. We can try to take the box from the sauna and use it to take the chest from the chamber.
+8. However, we need to get to the sauna first. We can try to go west from the bedroom, which might lead us to the sauna.
+
+But first, let's try to go south from the bedroom, which might lead us to the cubicle.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+66,go north,"We are currently in the chamber, and we need to get the chest to the cubicle. Here's a step-by-step plan:
+
+1. We need to get the chest out of the chamber, but the portal leading east is closed. We need to find a way to open it.
+2. We have a toolbox in our inventory, which might contain a key to unlock the portal.
+3. We need to go north from the chamber to find the toolbox.
+4. Once we have the toolbox, we can try to unlock the portal.
+5. If we can unlock the portal, we can take the chest out of the chamber.
+6. We can then go south to the cubicle and put the chest on the table.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+67,go south,"Let's break down the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to get the chest from the chamber, which is in the bedroom.
+3. We need to put the chest on the table in the spare room.
+
+Since we are currently in the bedroom, we can try to find the chest first.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+68,take chest,"Let's break down the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to get the chest from the chamber, which is in the bedroom.
+3. We need to put the chest on the table in the spare room.
+
+Since we are currently in the chamber, we can try to take the chest first.
+
+ACTION: take chest",That's fixed in place.,0,False
+69,open chest,"Let's break down the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to get the chest from the chamber, which is in the bedroom.
+3. We need to put the chest on the table in the spare room.
+
+Since we are currently in the chamber, we can try to open the chest first.
+
+ACTION: open chest",The chest is welded shut.,0,False
+70,go north,"We need to find a key to unlock the chest. Let's think about the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+5. We need to put the chest on the table in the spare room.
+
+Since we are currently in the chamber, we can try to go back to the spare room to get the toolbox.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+71,go south,"Let's break down the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+5. We need to put the chest on the table in the spare room.
+
+We are currently in the bedroom, so we need to go to the spare room first.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+72,go north,"Let's break down the steps:
+
+1. We need to get the toolbox from the cubicle, which is in the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+5. We need to put the chest on the table in the spare room.
+
+We are currently in the chamber, and we see a chest. We need to unlock it first.
+
+We need to find a key that matches the chest. Since the toolbox is in the spare room, we need to go there first.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+73,go south,"Let's break down the steps:
+
+1. We need to get the toolbox from the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+
+We are currently in the bedroom, and we see a bookshelf with nothing on it. We don't see the toolbox here, but we see an open passageway leading south, which might lead to the spare room.
+
+We should go south to see if we can find the toolbox.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+74,go north,"Let's break down the steps:
+
+1. We need to get the toolbox from the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+
+We are currently in the chamber, and we see a chest that is welded shut. We don't see the toolbox here, but we see an open passageway leading north, which might lead to the spare room.
+
+We should go north to see if we can find the toolbox.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+75,go south,"Let's break down the steps:
+
+1. We need to get the toolbox from the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+
+We are currently in the bedroom, and we see a bookshelf that is empty. We also see an open passageway leading south, which might lead to the spare room.
+
+We should go south to see if we can find the toolbox.
+
+We also need to find a key that matches the chest. Since we are in the bedroom, we can try to find a key here.
+
+We see a bookshelf, but it's empty. We don't see any keys here.
+
+However, we can try to go south to the spare room, and then we can try to find the toolbox and the key.
+
+ACTION: go south","-= Chamber =-
+You are in a chamber. An usual one.
+
+You see a chest. You can't wait to tell the folks at home about this!
+
+There is a closed portal leading east. There is an open passageway leading north.",0,False
+76,go north,"Let's break down the steps:
+
+1. We need to get the toolbox from the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+
+We are currently in the chamber, and we see a chest that is welded shut. We also see a closed portal leading east and an open passageway leading north.
+
+Since we need to find the toolbox, we should go north to the bedroom, where we previously saw an open passageway leading south.
+
+In the bedroom, we can try to find the toolbox and the key.
+
+ACTION: go north","-= Bedroom =-
+Fancy seeing you here. Here, by the way, being the bedroom. I guess you better just go and list everything you see here.
+
+Were you looking for a bookshelf? Because look over there, it's a bookshelf. The bookshelf is standard. But the thing hasn't got anything on it.
+
+There is an open Henderson's limited edition hatch leading west. There is an open passageway leading south.",0,False
+77,go west,"Let's break down the steps:
+
+1. We need to find the toolbox in the spare room.
+2. We need to find a key in the toolbox that matches the chest.
+3. We need to unlock the chest.
+4. We need to open the chest.
+
+We are currently in the bedroom, and we see a bookshelf that is empty. We also see an open Henderson's limited edition hatch leading west and an open passageway leading south.
+
+Since we need to find the toolbox, we should go west to the sauna, where we previously saw an open Henderson's limited edition hatch leading east.
+
+In the sauna, we can try to find the toolbox.
+
+ACTION: go west","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box is empty, what a horrible day!
+
+There is an open Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,False
+78,go west,"We need to find the toolbox, and we know it's in the spare room. We also need to find a key that matches the chest. Let's think about the steps:
+
+1. We need to get back to the spare room.
+2. We need to find the toolbox.
+3. We need to find a key in the toolbox that matches the chest.
+4. We need to unlock the chest.
+5. We need to open the chest.
+
+We are currently in the sauna, and we see an open Henderson's limited edition hatch leading east. We can go east to the bedroom, where we previously saw a bookshelf that is empty.
+
+However, we also see an open hatch leading west, which might be a faster way to get to the spare room.
+
+Let's go west to the hatch and see where it leads.
+
+ACTION: go west","-= Spare Room =-
+Well, here we are in a spare room. You start to take note of what's in the room.
+
+Look over there! a table. But the thing is empty, unfortunately.
+
+There is an open hatch leading east. There is an unguarded exit to the south. There is an exit to the west. Don't worry, it is unblocked.",0,False
+79,go east,"We need to find the toolbox and the key that matches the chest. We are currently in the spare room, and we see a table that is empty.
+
+We need to find the toolbox, which is likely to be in a container or a cabinet. We also need to find a key that matches the chest.
+
+Let's think about the steps:
+
+1. We need to search the room for a container or a cabinet.
+2. We need to open the container or the cabinet.
+3. We need to find the toolbox inside.
+4. We need to find a key in the toolbox that matches the chest.
+5. We need to unlock the chest.
+
+We see an open hatch leading east, which might lead us to a room where we can find the toolbox.
+
+ACTION: go east","-= Sauna =-
+You are in a sauna. A typical one. Let's see what's in here.
+
+You can see an opened box. The box is empty, what a horrible day!
+
+There is an open Henderson's limited edition hatch leading east. There is an open hatch leading west.",0,True

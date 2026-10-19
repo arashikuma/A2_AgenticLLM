@@ -1,0 +1,54 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go": 1,
+        "Provide current location and destination for further assistance": 1,
+        "take Microsoft box": 5,
+        "go north": 18,
+        "inventory": 1,
+        "open portal with key": 7,
+        "look": 6,
+        "go south": 3,
+        "open type  gateway with key": 1,
+        "look at key": 1,
+        "examine key": 1,
+        "take Microsoft box\n\nIt seems the key you have does not match the lock on the type  gateway Lets take the Microsoft box and see if we can find a key that matches the lock": 1,
+        "take Microsoft box\n\nNow lets examine the Microsoft box to see if we can find any clues or keys inside": 1,
+        "examine Microsoft box": 10,
+        "examine type  gateway": 4,
+        "examine portal north": 18,
+        "examine type  gateway south": 1
+    },
+    "input_tokens": 75973,
+    "output_tokens": 13257,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

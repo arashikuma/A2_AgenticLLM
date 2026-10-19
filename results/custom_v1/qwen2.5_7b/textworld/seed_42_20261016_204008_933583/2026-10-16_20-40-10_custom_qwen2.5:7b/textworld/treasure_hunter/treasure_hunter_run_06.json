@@ -1,0 +1,52 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "take Microsoft box": 15,
+        "look": 1,
+        "look north": 3,
+        "look south": 3,
+        "go south": 4,
+        "open type 0 gateway": 1,
+        "go north": 11,
+        "inventory": 1,
+        "open portal": 2,
+        "unlock portal with key": 3,
+        "go through portal": 14,
+        "go east": 3,
+        "take Microsoft key": 12,
+        "go west": 3,
+        "take box": 4
+    },
+    "input_tokens": 76439,
+    "output_tokens": 2671,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

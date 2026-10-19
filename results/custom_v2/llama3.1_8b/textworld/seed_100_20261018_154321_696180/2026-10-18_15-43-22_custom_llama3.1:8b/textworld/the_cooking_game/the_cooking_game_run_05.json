@@ -1,0 +1,55 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 14,
+        "examine cookbook": 7,
+        "take raw purple potato": 1,
+        "open frosted-glass door": 1,
+        "examine room": 1,
+        "go south": 11,
+        "take raw yellow potato": 1,
+        "open fiberglass door": 2,
+        "take orange bell pepper": 12,
+        "take pork chop": 3,
+        "take purple potato": 3,
+        "take red onion": 13,
+        "take knife": 1,
+        "take white onion": 6,
+        "examine knife": 1,
+        "take red apple": 1,
+        "go east": 1,
+        "go west": 1
+    },
+    "input_tokens": 149987,
+    "output_tokens": 3149,
+    "done": true,
+    "episode_return": 78.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

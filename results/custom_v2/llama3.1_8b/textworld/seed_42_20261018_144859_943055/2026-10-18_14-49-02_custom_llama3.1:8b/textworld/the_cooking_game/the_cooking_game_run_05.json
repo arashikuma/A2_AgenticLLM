@@ -1,0 +1,59 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go west": 16,
+        "open commercial glass door": 1,
+        "examine showcase": 1,
+        "go east": 19,
+        "take block of cheese": 2,
+        "examine room": 6,
+        "look": 1,
+        "take tuna": 1,
+        "go north": 13,
+        "open door": 3,
+        "examine cookbook": 1,
+        "take knife": 2,
+        "take tomato": 1,
+        "chop tomato with knife": 1,
+        "take red hot pepper": 2,
+        "open plain door": 1,
+        "open screen door": 1,
+        "prepare meal": 1,
+        "examine recipe": 1,
+        "open barn door": 1,
+        "go south": 4,
+        "take red onion": 1
+    },
+    "input_tokens": 141626,
+    "output_tokens": 3986,
+    "done": true,
+    "episode_return": 154.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.23529411764705882,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

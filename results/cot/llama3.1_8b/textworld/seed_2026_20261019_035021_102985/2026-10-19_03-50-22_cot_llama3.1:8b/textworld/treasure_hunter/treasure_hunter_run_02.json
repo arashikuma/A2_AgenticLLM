@@ -1,0 +1,51 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go north": 12,
+        "take key": 1,
+        "go east": 13,
+        "go west": 13,
+        "go south": 12,
+        "open passageway": 2,
+        "unlock passageway": 1,
+        "look": 18,
+        "open Hendersons limited edition passageway": 2,
+        "take Hendersons limited edition key": 1,
+        "unlock Hendersons limited edition passageway with Hendersons limited edition key": 1,
+        "open safe": 1,
+        "goal": 2,
+        "take plate": 1
+    },
+    "input_tokens": 132098,
+    "output_tokens": 10678,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

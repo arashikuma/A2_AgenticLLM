@@ -1,0 +1,61 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "look": 7,
+        "go east": 14,
+        "take keycard": 1,
+        "look at keycard": 11,
+        "open hatch": 2,
+        "unlock hatch with keycard": 1,
+        "go through hatch": 1,
+        "open box": 1,
+        "take latchkey": 1,
+        "unlock Hendersons limited edition hatch with latchkey": 1,
+        "open Hendersons limited edition hatch": 1,
+        "Lets break down the plan:\n\n Weve opened the hatch so we can now explore the new room\n We need to find the target object but we dont know what it is yet\n We should look around the new room to see if we can find any clues or objects that might help us\n If we find a key or a lock we should try to unlock it with the latchkey we found earlier\n If we find the target object we should take it and try to leave the room\n\nCurrent Observation:\nYou are in a room with a computer terminal\n\nNext step:\nLook at the computer terminal to see if it has any useful information": 1,
+        "go south": 9,
+        "open chest": 1,
+        "go north": 9,
+        "try latchkey on chest": 1,
+        "examine chest": 1,
+        "unlock chest with latchkey": 1,
+        "examine portal": 1,
+        "examine hatch": 2,
+        "take  from hatch": 1,
+        "go west": 9,
+        "take from hatch": 2,
+        "examine box": 1
+    },
+    "input_tokens": 107895,
+    "output_tokens": 10232,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

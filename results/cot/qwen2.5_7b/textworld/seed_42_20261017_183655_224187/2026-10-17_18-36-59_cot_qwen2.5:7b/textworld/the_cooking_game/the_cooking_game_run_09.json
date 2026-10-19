@@ -1,0 +1,56 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 7,
+        "go south": 5,
+        "go east": 3,
+        "examine fiberglass door": 12,
+        "look": 4,
+        "examine surroundings": 4,
+        "inventory": 1,
+        "examine commercial glass door": 1,
+        "open fiberglass door": 1,
+        "examine cookbook": 1,
+        "take tomato from counter\n\nNext I will take the knife and slice the block of cheese": 1,
+        "take knife from counter": 4,
+        "examine counter": 5,
+        "take knife": 1,
+        "take tomato with knife": 1,
+        "take tomato": 2,
+        "slice block of cheese with knife": 1,
+        "take block of cheese from counter": 1,
+        "slice tomato with knife": 1
+    },
+    "input_tokens": 85769,
+    "output_tokens": 1573,
+    "done": true,
+    "episode_return": 17.0,
+    "num_steps": 56,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

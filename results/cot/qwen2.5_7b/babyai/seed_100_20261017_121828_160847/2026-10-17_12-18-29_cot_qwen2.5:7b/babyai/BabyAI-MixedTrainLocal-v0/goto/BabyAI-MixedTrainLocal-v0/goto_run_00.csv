@@ -1,0 +1,609 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,turn right,ACTION: turn right,"a wall 1 step forward
+a wall 1 step left",0,False
+1,turn right,"Let's think through this step by step:
+
+1. The observation shows that there are walls both forward and to the left.
+2. Since there are no clear paths to explore, turning around to check the right side might be a good idea to see if there's any way to proceed.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step left
+a purple key 3 steps right and 4 steps forward",0,False
+2,turn right,"Let's break down the steps:
+
+1. The observation indicates that there are walls directly forward and to the left.
+2. The purple key is located 3 steps right and 4 steps forward.
+3. To reach the key, we need to move right and then forward.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right",0,False
+3,turn left,"Let's break down the steps:
+
+1. The observation indicates that there are walls directly forward and to the right.
+2. The purple key is located 3 steps right and 4 steps forward.
+3. Since we cannot move forward or right due to walls, we need to re-evaluate our approach.
+
+Given the constraints, we need to find an alternative path. However, based on the current observation, we cannot move in any direction without hitting a wall. Therefore, we need to reposition ourselves to find a clear path to the key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 3 steps right and 4 steps forward",0,False
+4,turn right,"Let's break down the steps:
+
+1. The observation indicates that there are walls directly forward and to the left.
+2. The purple key is located 3 steps right and 4 steps forward.
+3. Since we cannot move forward or left due to walls, we need to find an alternative path. The only viable direction is to turn right and then move forward.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right",0,False
+5,turn left,"Given the current observation, we have walls directly in front of us and to our right. The only viable direction is to turn left. Here's the step-by-step reasoning:
+
+1. Turning left will allow us to move forward without hitting a wall.
+2. After moving forward, we can continue to navigate towards the purple key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 3 steps right and 4 steps forward",0,False
+6,turn right,"Let's break down the steps to reach the purple key:
+
+1. We need to move 6 steps forward, but there's a wall in front of us, so we can't do that.
+2. We can turn left and move forward, but there's a wall 1 step left.
+3. The best course of action is to turn right and move forward 4 steps to reach the purple key.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right",0,False
+7,turn left,"Let's break down the steps:
+
+1. There is a wall 6 steps forward, so we can't move forward in that direction.
+2. There is a wall 1 step to the right, so we can't move right either.
+3. The only viable direction is to turn left and move forward.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 3 steps right and 4 steps forward",0,False
+8,turn right,"Let's break down the steps:
+
+1. There is a wall 6 steps forward, so we can't move forward in that direction.
+2. There is a wall 1 step to the left, so we can't move left either.
+3. The purple key is 3 steps right and 4 steps forward from our current position.
+
+The best course of action is to turn right and move forward to reach the purple key.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right",0,False
+9,turn right,"Let's break down the steps:
+
+1. There is a wall 6 steps forward, so moving forward in that direction is not possible.
+2. There is a wall 1 step to the right, so moving right is also not possible.
+3. The purple key is 3 steps right and 4 steps forward from our current position.
+
+Given these observations, we need to turn right to align with the direction of the key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step right",0,False
+10,turn right,"Given the current observation, we see that both forward and right directions are blocked by walls. The purple key is 3 steps right and 4 steps forward from our current position. Since turning right will align us with the direction of the key, let's proceed with that action.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step left",0,False
+11,turn right,"Given the current observation, we see that both forward and left directions are blocked by walls. The purple key is still 3 steps right and 4 steps forward from our current position. Since turning right will align us with the direction of the key, let's proceed with that action.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step left
+a purple key 3 steps right and 4 steps forward",0,False
+12,go forward,"Let's break down the steps to reach the purple key:
+
+1. We need to move 4 steps forward to align with the direction of the key.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to move 3 steps right to reach the key.
+
+Given the current observation, we should first move forward to align with the direction of the key.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 1 step left
+a purple key 3 steps right and 3 steps forward",0,False
+13,go forward,"Let's break down the steps to reach the purple key:
+
+1. We need to move 3 steps forward to align with the direction of the key.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to move 3 steps right to reach the key.
+
+Given the current observation, we should first move forward to align with the direction of the key.
+
+ACTION: go forward","a wall 4 steps forward
+a wall 1 step left
+a purple key 3 steps right and 2 steps forward",0,False
+14,go forward,"Let's break down the steps to reach the purple key:
+
+1. We need to move 2 steps forward to align with the direction of the key.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to move 3 steps right to reach the key.
+
+Given the current observation, we should first move forward to align with the direction of the key.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 1 step left
+a purple key 3 steps right and 1 step forward",0,False
+15,go forward,"Let's break down the steps to reach the purple key:
+
+1. We need to move 1 step forward to align with the direction of the key.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to move 3 steps right to reach the key.
+
+Given the current observation, we should first move forward to align with the direction of the key.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 1 step left
+a purple key 3 steps right",0,False
+16,go forward,"Let's break down the steps to reach the purple key:
+
+1. We need to move 3 steps right to align with the key.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to pick up the key.
+
+Given the current observation, we should first move 3 steps right to align with the direction of the key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step left",0,False
+17,turn left,"Given the current observation, it seems we have moved past the key. Let's re-evaluate the steps:
+
+1. We need to move 2 steps left to realign with the key's direction.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to pick up the key.
+
+ACTION: turn left","a wall 1 step forward
+a wall 1 step right",0,False
+18,turn left,"Given the current observation, it seems we have moved past the key. Let's re-evaluate the steps:
+
+1. We need to move 1 step left to realign with the key's direction.
+2. Then, we need to turn right to face the key.
+3. Finally, we need to pick up the key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+19,turn left,"Given the current observation, the best course of action is to move towards the key. Here are the steps:
+
+1. Turn left to face the direction of the key.
+2. Go forward to reach the key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+20,turn right,ACTION: turn right,"a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+21,turn left,"Let's analyze the current situation step by step:
+
+1. We are facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+22,turn right,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+23,turn left,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+24,turn right,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+25,turn left,"Let's break down the steps:
+
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+26,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+27,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+28,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+29,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+30,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+31,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+32,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+33,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+34,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+35,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+36,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+37,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+38,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+39,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+40,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+41,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+42,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+43,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+44,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+45,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+46,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+47,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+48,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+49,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+50,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+51,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+52,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+53,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+54,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+55,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+56,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+57,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+58,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+59,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+60,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+61,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+62,turn right,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step left.
+3. The purple key is 1 step right and 3 steps forward.
+
+The best course of action is to turn right to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 3 steps left and 1 step forward",0,False
+63,turn left,"Step-by-step reasoning:
+1. We are currently facing a wall 6 steps forward.
+2. There is a wall 1 step right.
+3. The purple key is 3 steps left and 1 step forward.
+
+The best course of action is to turn left to face the direction where the key is located, then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,True

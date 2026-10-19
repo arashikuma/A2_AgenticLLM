@@ -1,0 +1,47 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 8,
+        "go west": 7,
+        "go north": 11,
+        "take key": 1,
+        "go south": 24,
+        "open passageway with key": 10,
+        "look": 12,
+        "inventory": 2,
+        "open drawer with key": 4,
+        "take key from drawer": 1
+    },
+    "input_tokens": 107485,
+    "output_tokens": 4381,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

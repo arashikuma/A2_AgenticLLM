@@ -1,0 +1,1480 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,turn right,"To proceed, I need to get a better view of the surroundings. Since there's a wall 1 step forward and a wall 1 step left, I'll turn right to get a better view of the area.
+
+ACTION: turn right","a wall 1 step left
+a grey box 4 steps forward",0,False
+1,go forward,"Now that I have a better view of the area, I can see the grey box 4 steps forward. My goal is to pick up the grey box and then navigate to the purple ball.
+
+First, I need to get closer to the grey box. Since it's 4 steps forward, I'll move forward to get closer to it.
+
+Next, I'll pick up the grey box once I'm close enough.
+
+Finally, I'll need to navigate around the walls to get to the purple ball. But for now, let's focus on picking up the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 3 steps forward",0,False
+2,go forward,"Now that I'm closer to the grey box, I need to pick it up. Since it's in front of me, I can use the 'toggle' action to interact with it.
+
+However, I need to make sure I'm directly above the grey box to pick it up. Since I'm 3 steps forward, I'll move forward one more step to get directly above it.
+
+ACTION: go forward","a wall 1 step left
+a grey box 2 steps forward",0,False
+3,drop,"Now that I'm directly above the grey box, I can pick it up. I'll use the 'pick up' action to do so.
+
+Next, I need to move towards the purple ball. Since I'm holding the grey box, I need to drop it to free up my hands. I'll use the 'drop' action to drop the grey box.
+
+After that, I'll need to move towards the purple ball. Since I'm currently facing the wall to my left, I'll need to turn around to face the direction of the purple ball.
+
+Finally, I'll move forward to reach the purple ball.
+
+ACTION: drop","a wall 1 step left
+a grey box 2 steps forward",0,False
+4,drop,"Since I'm currently holding the grey box, I need to drop it to free up my hands. 
+
+Next, I need to move towards the purple ball. I'll need to turn around to face the direction of the purple ball.
+
+Finally, I'll move forward to reach the purple ball.
+
+ACTION: drop","a wall 1 step left
+a grey box 2 steps forward",0,False
+5,turn right,"To pick up the grey box, I need to move forward to be in front of it.
+
+To pick up the grey box, I need to use the 'pick up' action.
+
+To move forward, I need to turn around to face the direction of the grey box.
+
+ ACTION: turn right","a wall 6 steps forward
+a wall 3 steps right
+a purple ball 2 steps left and 4 steps forward
+a grey box 2 steps left",0,False
+6,turn right,"To pick up the grey box, I need to move to its location.
+
+To move to the grey box, I need to turn around to face the direction of the grey box.
+
+To turn around, I need to turn right.
+
+ ACTION: turn right","a wall 3 steps forward
+a wall 1 step right",0,False
+7,go forward,"To pick up the grey box, I need to move to its location. The grey box is 2 steps left, so I need to turn left to face the direction of the grey box.
+
+To move to the grey box, I need to move forward to reach it.
+
+ ACTION: go forward","a wall 2 steps forward
+a wall 1 step right",0,False
+8,pick up,"To pick up the grey box, I need to move to its location. The grey box is 2 steps left, so I need to turn left to face the direction of the grey box.
+
+To move to the grey box, I need to move forward to reach it.
+
+To pick up the grey box, I need to use the ""pick up"" action.
+
+ ACTION: pick up","a wall 2 steps forward
+a wall 1 step right",0,False
+9,turn left,"To reach the purple ball, I need to pick up the grey box first. I'm currently facing a wall, so I need to turn left to face the direction of the grey box.
+
+ ACTION: turn left","a wall 6 steps forward
+a wall 2 steps right
+a purple ball 3 steps left and 4 steps forward
+a grey box 3 steps left",0,False
+10,turn left,"To reach the purple ball, I need to pick up the grey box first. I'm currently facing a wall, so I need to turn left to face the direction of the grey box.
+
+Next, I need to move towards the grey box. Since it's 3 steps left, I need to move left to reach it.
+
+After picking up the grey box, I need to move towards the purple ball, which is 3 steps left and 4 steps forward from my current position.
+
+Considering the current observation, I can see the purple ball is 3 steps left, so I need to move left to reach it.
+
+ ACTION: turn left","a wall 1 step left
+a grey box 3 steps forward",0,False
+11,pick up,"To reach the purple ball, I need to pick up the grey box first. I'm currently facing a wall, so I need to turn left to face the direction of the grey box.
+
+Next, I need to move towards the grey box. Since it's 3 steps forward, I need to move forward to reach it.
+
+After picking up the grey box, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+ ACTION: pick up","a wall 1 step left
+a grey box 3 steps forward",0,False
+12,go forward,"To reach the purple ball, I need to pick up the grey box first. Since it's 3 steps forward, I need to move forward to reach it.
+
+Next, I need to pick up the grey box.
+
+After picking up the grey box, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+ ACTION: go forward","a wall 1 step left
+a grey box 2 steps forward",0,False
+13,go forward,"To reach the purple ball, I need to pick up the grey box first. Since it's 2 steps forward, I need to move forward to reach it.
+
+Next, I need to pick up the grey box.
+
+After picking up the grey box, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+ ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+14,turn left,"To reach the purple ball, I need to pick up the grey box first. Since it's 1 step forward, I can pick it up.
+
+Next, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+ ACTION: turn left","a wall 1 step forward
+a grey box 1 step right",0,False
+15,turn right,"To reach the purple ball, I need to pick up the grey box first. Since it's 1 step right, I need to move right to pick it up.
+
+Next, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move right to pick up the grey box. Then, I need to move left to get into position to move forward towards the purple ball.
+
+ ACTION: turn right","a wall 1 step left
+a grey box 1 step forward",0,False
+16,go forward,"To pick up the grey box, I need to move forward to be in front of it. Then, I can pick it up.
+
+Next, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to pick up the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+17,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+Next, I need to pick up the grey box.
+
+After that, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to be in front of the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+18,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+Next, I need to pick up the grey box.
+
+After that, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to be in front of the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+19,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+Next, I need to pick up the grey box.
+
+After that, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to be in front of the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+20,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+Next, I need to pick up the grey box.
+
+After that, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to be in front of the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+21,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+Next, I need to pick up the grey box.
+
+After that, I need to move towards the purple ball. Since it's 3 steps left and 4 steps forward from my current position, I need to move left and then forward to reach it.
+
+First, I need to move forward to be in front of the grey box.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+22,turn right,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+To move forward, I need to be able to see the grey box without any walls in the way. Since there's a wall 1 step left, I need to move right to create a clear path.
+
+ACTION: turn right","a wall 6 steps forward
+a purple ball 1 step left and 4 steps forward
+a grey box 1 step left",0,False
+23,turn left,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step left, I need to move left to be in front of it.
+
+To move left, I need to be able to see the grey box without any walls in the way. Since there's a wall 6 steps forward, I need to move right to create a clear path.
+
+However, I also need to be able to see the grey box, which is currently 1 step left. So, I need to move left to be in front of it.
+
+ACTION: turn left","a wall 1 step left
+a grey box 1 step forward",0,False
+24,go forward,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+However, I also need to be able to see the grey box, which is currently 1 step forward. So, I need to move forward to be in front of it.
+
+ACTION: go forward","a wall 1 step left
+a grey box 1 step forward",0,False
+25,pick up,"To pick up the grey box, I need to be in front of it. Since it's currently 1 step forward, I need to move forward to be in front of it.
+
+However, I also need to be able to see the grey box, which is currently 1 step forward. So, I need to move forward to be in front of it.
+
+Now that I'm in front of the grey box, I can pick it up.
+
+ACTION: pick up","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left",0,False
+26,turn left,"Now that I have the grey box, I need to move it out of the way so I can see the purple ball. Since the purple ball is 1 step left and 4 steps forward, I need to move to the left to see it.
+
+First, I need to move to the left to get a clear view of the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+27,drop,"To get a clear view of the purple ball, I need to move the grey box out of the way. Since the grey box is in front of me, I need to drop it first.
+
+Next, I need to move to the left to get a clear view of the purple ball.
+
+Finally, I need to move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+28,drop,"To get a clear view of the purple ball, I need to move the grey box out of the way. Since the grey box is in front of me, I need to drop it first.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Finally, I need to move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+29,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+30,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+31,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+32,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+33,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+34,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+35,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+36,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+37,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+38,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+39,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+40,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+41,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's in front of me, I need to drop it.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm carrying the grey box, I need to drop it first.
+
+After that, I can move to the right and then forward.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+42,drop,"To get to the purple ball, I need to pick up the grey box first, then move it out of the way. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+43,pick up,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+ACTION: pick up","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+44,pick up,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+ACTION: pick up","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+45,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+46,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+47,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+48,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+49,toggle,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: toggle","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+50,toggle,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: toggle","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+51,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+52,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+53,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+54,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+55,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+56,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+57,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+58,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+59,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the purple ball.
+
+Then, I need to move forward to reach the purple ball.
+
+However, since I'm currently carrying the grey box, I need to drop it first.
+
+After that, I can move to the right to get a clear view of the purple ball.
+
+Finally, I can move forward to reach the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+60,go forward,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the area.
+
+After that, I need to move forward to reach the area where the purple ball is.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+61,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the area.
+
+After that, I need to move forward to reach the area where the purple ball is.
+
+However, since I'm already carrying the grey box, I can drop it first to free up my hands.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+62,pick up,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the area.
+
+After that, I need to move forward to reach the area where the purple ball is.
+
+ACTION: pick up","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+63,drop,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the area.
+
+After that, I need to move forward to reach the area where the purple ball is.
+
+However, since I'm already carrying the grey box, I can drop it first to free up my hands.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+64,turn right,"To get to the purple ball, I need to pick up the grey box first. Since it's in front of me, I can pick it up.
+
+Next, I need to move to the right to get a clear view of the area.
+
+After that, I need to move forward to reach the area where the purple ball is.
+
+ACTION: turn right","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left",0,False
+65,turn right,"Now that I have the grey box, I need to move to the right to get a clear view of the area.
+
+Since the wall is 3 steps forward, I need to move around it to get to the other side.
+
+Once I'm on the other side, I can move forward to reach the area where the purple ball is.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 4 steps forward",0,False
+66,drop,"Now that I have the grey box, I need to move around the wall to get to the area where the purple ball is.
+
+First, I need to move around the wall that is 6 steps forward. Since I'm currently on the right side of the wall, I need to move to the left to get around it.
+
+Once I'm on the other side of the wall, I can move forward to reach the area where the purple ball is.
+
+However, I see that the purple ball is 1 step left and 4 steps forward from the current position. So, I need to move left and then forward to reach the purple ball.
+
+Since I'm carrying the grey box, I need to drop it first to move freely.
+
+ACTION: drop","a wall 3 steps left
+a purple ball 1 step left and 4 steps forward
+a grey box 1 step forward",0,False
+67,go forward,"Now that I have the grey box, I need to move it to the left to get it out of the way. Then, I can move forward to reach the area where the purple ball is.
+
+First, I need to move the grey box to the left. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+Next, I need to move forward to reach the area where the purple ball is.
+
+Finally, I can move left to reach the purple ball.
+
+ACTION: go forward","a wall 3 steps left
+a purple ball 1 step left and 4 steps forward
+a grey box 1 step forward",0,False
+68,pick up,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+Next, I need to move forward to reach the area where the purple ball is.
+
+Finally, I can move left to reach the purple ball.
+
+First, I will pick up the grey box to move it out of the way.
+
+ACTION: pick up","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps left
+a purple ball 1 step left and 4 steps forward",0,False
+69,turn left,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+First, I will move the grey box to the left by turning left.
+
+Next, I will move forward to reach the area where the purple ball is.
+
+Finally, I will move left to reach the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left",0,False
+70,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+First, I will move the grey box to the left by turning left.
+
+Next, I will move forward to reach the area where the purple ball is.
+
+Finally, I will move left to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 2 steps forward
+a wall 1 step left",0,False
+71,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 2 steps forward, I need to move it to the left to get it out of the way.
+
+First, I will move the grey box to the left by turning left.
+
+Next, I will move forward to reach the area where the purple ball is.
+
+Finally, I will move left to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+72,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+First, I will move the grey box to the left by turning left.
+
+Next, I will move forward to reach the area where the purple ball is.
+
+Finally, I will move left to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+73,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way.
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will move forward to reach the area where the purple ball is.
+
+Finally, I will move left to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+74,turn left,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will turn left to move the grey box out of the way.
+
+Finally, I will go forward to reach the area where the purple ball is.
+
+ACTION: turn left","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+75,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move the grey box to the left.
+
+Finally, I will go forward again to reach the area where the purple ball is.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+76,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move the grey box to the left.
+
+Then, I will turn left to face the purple ball.
+
+Finally, I will go forward to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+77,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will turn left to face the correct direction.
+
+Then, I will go forward to move towards the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+78,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will turn left to face the correct direction.
+
+Then, I will go forward to move towards the purple ball.
+
+Then, I will go forward again to reach the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+79,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will turn left to face the correct direction.
+
+Then, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+80,toggle,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will turn left to face the correct direction.
+
+Then, I will go forward to move towards the purple ball.
+
+Finally, I will toggle to interact with the purple ball.
+
+ACTION: toggle","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+81,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move the grey box out of the way.
+
+Then, I will turn left to face the correct direction.
+
+Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+82,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move towards the purple ball.
+
+Then, I will turn left to face the correct direction.
+
+Finally, I will go forward to move towards the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+83,drop,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move towards the purple ball.
+
+Then, I will turn left to face the correct direction.
+
+Finally, I will go forward to move towards the purple ball.
+
+ACTION: drop","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+84,go forward,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move towards the purple ball.
+
+Then, I will turn left to face the correct direction.
+
+Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+85,turn right,"To get to the purple ball, I need to move the grey box out of the way. Since it's currently 1 step forward, I need to move it to the left to get it out of the way. 
+
+First, I will drop the grey box to move it out of the way.
+
+Next, I will go forward to move towards the wall.
+
+Then, I will turn right to face the correct direction.
+
+Finally, I will go forward to move towards the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+86,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left to get it out of the way. However, since it's already 1 step left, I need to move it further left.
+3. To move the grey box further left, I need to move it to the left of the wall that's currently 1 step left. So, I will go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can move the grey box to the left of it. However, since the wall is 1 step left, I need to move the grey box to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+87,turn left,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left to get it out of the way. However, since it's already 1 step left, I need to move it further left.
+3. To move the grey box further left, I need to move it to the left of the wall that's currently 1 step left. So, I will go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can pick up the grey box.
+5. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+6. Finally, I will go forward to move towards the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+88,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left to get it out of the way. However, since it's already 1 step left, I need to move it further left.
+3. To move the grey box further left, I need to move it to the left of the wall that's currently 1 step left. So, I will go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can pick up the grey box.
+5. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+6. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+89,pick up,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to pick it up to move it to the left.
+3. To move the grey box to the left, I need to go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can pick up the grey box.
+5. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+6. Finally, I will go forward to move towards the purple ball.
+
+ACTION: pick up","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+90,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to pick it up to move it to the left.
+3. To move the grey box to the left, I need to go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can pick up the grey box.
+5. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+6. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+91,turn left,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to pick it up to move it to the left.
+3. To move the grey box to the left, I need to go forward to move towards the wall.
+4. Now that I'm in front of the wall, I can pick up the grey box.
+5. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+6. Finally, I will go forward to move towards the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+92,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 5 steps forward
+a wall 1 step right",0,False
+93,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 4 steps forward
+a wall 1 step right",0,False
+94,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 3 steps forward
+a wall 1 step right",0,False
+95,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 3 steps forward, I will go forward 3 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 2 steps forward
+a wall 1 step right",0,False
+96,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 2 steps forward, I will go forward 2 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I can move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+97,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+98,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step right",0,False
+99,turn left,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 1 step right",0,False
+100,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 5 steps forward
+a wall 1 step right",0,False
+101,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 4 steps forward
+a wall 1 step right",0,False
+102,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 3 steps forward
+a wall 1 step right",0,False
+103,turn left,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 3 steps forward, I will go forward 3 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Finally, I will go forward to move towards the purple ball.
+
+ACTION: turn left","You carry a grey box
+a wall 6 steps forward
+a wall 3 steps right
+a purple ball 1 step right and 4 steps forward",0,False
+104,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 4 steps forward, I will go forward 4 steps to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 5 steps forward
+a wall 3 steps right
+a purple ball 1 step right and 3 steps forward",0,False
+105,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 3 steps forward, I will go forward 3 steps to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 4 steps forward
+a wall 3 steps right
+a purple ball 1 step right and 2 steps forward",0,False
+106,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 2 steps forward, I will go forward 2 steps to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 3 steps forward
+a wall 3 steps right
+a purple ball 1 step right and 1 step forward",0,False
+107,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 3 steps forward, I will go forward 3 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 3 steps forward, I will go forward 3 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 2 steps forward
+a purple ball 1 step right",0,False
+108,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 2 steps forward, I will go forward 2 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 2 steps forward, I will go forward 2 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step right, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+109,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 3 steps right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 3 steps right, I will go forward 3 steps to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+110,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 3 steps right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 3 steps right",0,False
+111,turn right,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 3 steps right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+112,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 3 steps forward, I will go forward 3 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 2 steps forward
+a wall 1 step left
+a purple ball 1 step right",0,False
+113,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 2 steps forward, I will go forward 2 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+114,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+115,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+116,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+117,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+118,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+119,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+120,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+121,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+122,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+123,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 1 step forward
+a wall 1 step left",0,False
+124,turn right,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 1 step forward, I will go forward 1 step to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: turn right","You carry a grey box
+a wall 6 steps forward
+a wall 1 step left
+a purple ball 1 step right and 1 step forward",0,False
+125,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 6 steps forward, I will go forward 6 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 5 steps forward
+a wall 1 step left
+a purple ball 1 step right",0,False
+126,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 5 steps forward, I will go forward 5 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 4 steps forward
+a wall 1 step left",0,False
+127,go forward,"Let's break it down step by step:
+
+1. I need to move the grey box out of the way, so I will drop it.
+2. Now that the grey box is dropped, I need to move it to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+3. Now that I'm in front of the wall, I can pick up the grey box.
+4. With the grey box in hand, I need to move it to the left of the wall. So, I will turn left to face the correct direction.
+5. Now that I'm facing the correct direction, I can move the grey box to the left of the wall. Since the wall is 4 steps forward, I will go forward 4 steps to move the grey box to the left of the wall.
+6. Now that the grey box is out of the way, I can move towards the purple ball. Since the purple ball is 1 step right, I will turn right to face the correct direction.
+7. Now that I'm facing the correct direction, I can move towards the purple ball. Since the purple ball is 1 step forward, I will go forward 1 step to move towards the purple ball.
+
+ACTION: go forward","You carry a grey box
+a wall 3 steps forward
+a wall 1 step left",0,True

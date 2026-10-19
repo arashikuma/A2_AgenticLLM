@@ -1,0 +1,50 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 10,
+        "take keycard from table": 2,
+        "go south": 5,
+        "go north": 5,
+        "go west": 4,
+        "take toolbox from cubicle": 1,
+        "open hatch": 2,
+        "unlock hatch with keycard": 1,
+        "take box from sauna": 1,
+        "take box from closed box": 2,
+        "open closed box": 2,
+        "open Henderson's limited edition hatch": 1,
+        "take Henderson's limited edition latchkey from floor": 44
+    },
+    "input_tokens": 92223,
+    "output_tokens": 3447,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

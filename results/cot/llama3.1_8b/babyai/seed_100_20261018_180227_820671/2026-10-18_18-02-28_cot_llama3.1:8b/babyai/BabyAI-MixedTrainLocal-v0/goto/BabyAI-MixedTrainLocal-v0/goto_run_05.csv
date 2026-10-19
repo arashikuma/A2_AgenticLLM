@@ -1,0 +1,555 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,turn left,"Let's break down the situation step by step.
+
+Since there's a wall 1 step forward, I can't move forward. And since there's a wall 1 step right, I can't move right either.
+
+My goal is to go to the purple key, but I don't know where it is yet. I need to get more information about my surroundings.
+
+I'll start by turning left to see if there's anything else in that direction. This will give me a better understanding of my environment and potentially reveal the location of the purple key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right",0,False
+1,turn right,"Let's analyze the situation step by step:
+
+1. I've turned left, and now I have a wall 6 steps forward and a wall 1 step right. This means I'm facing a long wall, and I need to navigate around it.
+2. Since I'm facing a long wall, moving forward won't help me. I need to turn to face the wall that's 1 step right.
+3. Once I turn to face the wall that's 1 step right, I can try to move forward to see if I can find a path to the purple key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step right",0,False
+2,go forward,"Let's analyze the situation step by step:
+
+1. I've turned right, and now I'm facing a wall 1 step forward and a wall 1 step right. This means I'm back to the original situation.
+2. Since I'm facing a wall 1 step forward, I need to move to the right to find a path.
+3. I can try to move forward to see if I can find a path to the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+3,turn left,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 1 step forward and a wall 1 step right, which means I'm in a dead-end situation.
+2. Since I'm in a dead-end, I need to try to find a way out by turning around.
+3. I can try to turn left to see if I can find a path to the purple key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right",0,False
+4,turn right,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 6 steps forward and a wall 1 step right, which means I'm in a dead-end situation.
+2. Since I'm in a dead-end, I need to try to find a way out by turning around.
+3. I can try to turn left to see if I can find a path to the purple key.
+4. If turning left doesn't work, I can try to turn right to see if I can find a path to the purple key.
+5. If neither turning left nor right works, I can try to go forward to see if I can find a path to the purple key.
+
+Since I've already tried turning left and it didn't work, I'll try turning right.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step right",0,False
+5,turn left,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 1 step forward and a wall 1 step right, which means I'm in a dead-end situation.
+2. Since I'm in a dead-end, I need to try to find a way out by turning around.
+3. I can try to turn left to see if I can find a path to the purple key.
+4. If turning left doesn't work, I can try to turn right to see if I can find a path to the purple key.
+5. Since I've already tried turning right and it didn't work, I'll try turning left.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right",0,False
+6,turn right,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 6 steps forward, which means I'm in a long corridor with no visible exit.
+2. I'm also facing a wall 1 step right, which means I'm not facing the direction of the purple key.
+3. Since I'm in a long corridor, I need to try to find a way to move forward.
+4. However, I'm facing a wall, so I need to turn around to move forward.
+5. I can try to turn right to see if I can find a path to the purple key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step right",0,False
+7,turn left,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 1 step forward, which means I'm blocked from moving forward.
+2. I'm also facing a wall 1 step right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right",0,False
+8,go forward,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 6 steps forward, which means I'm blocked from moving forward in that direction.
+2. I'm also facing a wall 1 step right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+However, since I've already tried turning left and it didn't change the observation, I should try a different approach.
+
+Considering the current observation, I should try to move in a direction that is not blocked by a wall. Since I'm facing a wall 1 step right, I can try to move forward instead of turning.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 1 step right",0,False
+9,turn right,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 5 steps forward, which means I'm blocked from moving forward in that direction.
+2. I'm also facing a wall 1 step right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+However, since I've already tried turning left and it didn't change the observation, I should try to turn right instead.
+
+ACTION: turn right","a wall 1 step forward
+a wall 2 steps right",0,False
+10,go forward,"Let's analyze the situation step by step:
+
+1. I'm facing a wall 1 step forward, which means I'm blocked from moving forward in that direction.
+2. I'm also facing a wall 2 steps right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+However, since I've already tried turning left and it didn't change the observation, I should try to turn right instead.
+
+But wait, I'm already facing a wall 2 steps right, so turning right won't help. I need to try something else.
+
+Let's think about the walls. I'm facing a wall 1 step forward, which means I'm blocked from moving forward. But I'm not facing a wall to my left. I can try to move left, but I'm not sure if it will help.
+
+However, I can try to move forward, and if I'm lucky, I might find a way around the wall.
+
+ACTION: go forward","a wall 1 step forward
+a wall 2 steps right",0,False
+11,turn left,"Let's break down the situation step by step:
+
+1. I'm facing a wall 1 step forward, which means I'm blocked from moving forward in that direction.
+2. I'm also facing a wall 2 steps right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+However, since I've already tried turning left and it didn't change the observation, I should try to turn right instead.
+
+But wait, I'm already facing a wall 2 steps right, so turning right won't help. I need to try something else.
+
+Let's think about the walls. I'm facing a wall 1 step forward, which means I'm blocked from moving forward. But I'm not facing a wall to my left. I can try to move left, but I'm not sure if it will help.
+
+However, I can try to turn left instead of moving left. This way, I can see if there's a path to the left that I haven't seen before.
+
+ACTION: turn left","a wall 5 steps forward
+a wall 1 step right",0,False
+12,turn left,"Let's break down the situation step by step:
+
+1. I'm facing a wall 5 steps forward, which means I'm blocked from moving forward in that direction.
+2. I'm also facing a wall 1 step right, which means I'm not facing the direction of the purple key.
+3. Since I'm facing two walls, I need to turn around to move in a different direction.
+4. I can try to turn left to see if I can find a path to the purple key.
+
+However, since I've already tried turning left and it didn't change the observation, I should try to turn right instead.
+
+But wait, I'm already facing a wall 1 step right, so turning right won't help. I need to try something else.
+
+Let's think about the walls. I'm facing a wall 5 steps forward, which means I'm blocked from moving forward. But I'm not facing a wall to my left. I can try to move left, but I'm not sure if it will help.
+
+However, I can try to turn left instead of moving left. This way, I can see if there's a path to the left that I haven't seen before.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 2 steps left
+a purple key 2 steps right and 4 steps forward",0,False
+13,turn right,"Now that I have a clear view of the environment, I can plan my course of action.
+
+1. I see that I'm facing a wall 6 steps forward, which means I'm blocked from moving forward in that direction.
+2. I also see that I'm facing a wall 2 steps left, which means I'm not facing the direction of the purple key.
+3. However, I see that the purple key is 2 steps right and 4 steps forward from my current position.
+4. Since I'm facing a wall 2 steps left, I need to turn around to move in a different direction.
+5. I can try to turn right to face the direction of the purple key.
+
+However, I'm not sure if I can reach the purple key by moving forward from my current position. I need to make sure that I'm not facing a wall in the direction of the purple key.
+
+Let me check the observation again. Ah, I see that the purple key is 2 steps right and 4 steps forward, but I'm facing a wall 2 steps left. This means that I need to turn right to face the direction of the purple key.
+
+ACTION: turn right","a wall 5 steps forward
+a wall 1 step right",0,False
+14,turn right,"Let's break down the steps to reach the purple key:
+
+1. I need to move to the right to face the direction of the purple key. Currently, I'm facing a wall 1 step right, which means I'm not yet facing the right direction.
+2. I need to move 2 steps to the right to face the direction of the purple key.
+3. Once I'm facing the right direction, I can move forward to reach the purple key.
+
+Since I'm currently facing a wall 1 step right, I need to move 1 step to the right to get closer to the direction of the purple key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 2 steps right",0,False
+15,go forward,"Let's break down the steps to reach the purple key:
+
+1. I need to move to the right to face the direction of the purple key. Currently, I'm facing a wall 2 steps right, which means I'm already facing the right direction.
+2. I need to move forward to reach the purple key. The purple key is 4 steps forward from my current position.
+
+Since I'm already facing the right direction, I can move forward to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 2 steps right",0,False
+16,turn left,"To reach the purple key, I need to move forward and then turn right to face the key. However, I'm currently facing a wall 2 steps right, which means I'm not facing the correct direction.
+
+First, I need to turn around to face the correct direction. I can do this by turning left.
+
+Next, I need to move forward to reach the wall that is 1 step forward from my current position.
+
+After that, I need to move forward again to reach the wall that is 4 steps forward from my current position.
+
+Finally, I need to turn right to face the purple key.
+
+ACTION: turn left","a wall 5 steps forward
+a wall 1 step right",0,False
+17,go forward,"To reach the purple key, I need to move forward to reach the wall that is 5 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 1 step forward from my current position. Then, I need to move forward again to reach the wall that is 4 steps forward from my current position. Finally, I need to turn right to face the purple key.
+
+ACTION: go forward","a wall 4 steps forward
+a wall 1 step right",0,False
+18,turn right,"To reach the purple key, I need to move forward to reach the wall that is 4 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 1 step forward from my current position. Then, I need to move forward again to reach the wall that is 4 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to turn right to face the purple key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 3 steps right",0,False
+19,go forward,"To reach the purple key, I need to move forward to reach the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 4 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to turn right to face the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps right",0,False
+20,turn right,"To reach the purple key, I need to move forward to reach the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 4 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to turn right to face the purple key.
+
+However, since the purple key is 2 steps right and 4 steps forward from the current position, I can simplify the plan. I can turn right to face the correct direction, and then move forward to reach the wall that is 4 steps forward from my current position.
+
+ACTION: turn right","a wall 3 steps forward
+a wall 1 step left",0,False
+21,turn right,"To reach the purple key, I need to move forward to reach the wall that is 3 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 4 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to turn right to face the purple key.
+
+However, since the purple key is 2 steps right and 4 steps forward from the current position, I can simplify the plan. I can turn right to face the correct direction, and then move forward to reach the wall that is 4 steps forward from my current position.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 3 steps left
+a purple key 1 step right and 4 steps forward",0,False
+22,go forward,"To reach the purple key, I need to move forward to reach the wall that is 6 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 4 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to move forward to reach the purple key.
+
+However, since the purple key is 1 step right and 4 steps forward from the current position, I can simplify the plan. I can move forward to reach the wall that is 6 steps forward from my current position, then turn right to face the correct direction, and then move forward to reach the purple key.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 3 steps left
+a purple key 1 step right and 3 steps forward",0,False
+23,go forward,"To reach the purple key, I need to move forward to reach the wall that is 5 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 3 steps forward from my current position, which is the wall in front of the purple key. Finally, I need to move forward to reach the purple key.
+
+However, since the purple key is 1 step right and 3 steps forward from the current position, I can simplify the plan. I can move forward to reach the wall that is 5 steps forward from my current position, then turn right to face the correct direction, and then move forward to reach the wall that is 3 steps forward from my current position, which is the wall in front of the purple key. Then, I can move forward to reach the purple key.
+
+ACTION: go forward","a wall 4 steps forward
+a wall 3 steps left
+a purple key 1 step right and 2 steps forward",0,False
+24,go forward,"To reach the purple key, I need to move forward to reach the wall that is 4 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 2 steps forward from my current position, which is the wall in front of the purple key. Then, I need to move forward to reach the purple key.
+
+However, since the purple key is 1 step right and 2 steps forward from the current position, I can simplify the plan. I can move forward to reach the wall that is 4 steps forward from my current position, then turn right to face the correct direction, and then move forward to reach the purple key.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 3 steps left
+a purple key 1 step right and 1 step forward",0,False
+25,go forward,"To reach the purple key, I need to move forward to reach the wall that is 3 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the wall that is 1 step forward from my current position, which is the wall in front of the purple key. Then, I need to move forward to reach the purple key.
+
+However, since the purple key is only 1 step forward from the current position, I can simplify the plan. I can move forward to reach the wall that is 3 steps forward from my current position, then turn right to face the correct direction, and then move forward to reach the purple key.
+
+But, since the purple key is only 1 step forward, I can just move forward.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 3 steps left
+a purple key 1 step right",0,False
+26,go forward,"To reach the purple key, I need to move forward to reach the wall that is 2 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward to reach the purple key.
+
+However, since the purple key is only 1 step forward and to the right, I can simplify the plan. I can move forward to reach the wall that is 2 steps forward from my current position, then turn right to face the correct direction, and then move forward to reach the purple key.
+
+But, since the purple key is only 1 step forward and to the right, I can just move forward and then turn right.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+27,go forward,"Let's break it down step by step:
+
+1. I need to move forward to reach the wall that is 1 step forward from my current position.
+2. Once I reach the wall, I need to turn right to face the correct direction.
+3. After turning right, I need to move forward to reach the purple key, which is 1 step forward and to the right.
+
+So, the best course of action is:
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+28,go forward,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+29,go forward,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the wall that is 3 steps left, and then I need to turn right again to face the purple key. Finally, I need to move forward to pick up the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+30,go forward,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the wall that is 3 steps left, and then I need to turn right again to face the purple key. Finally, I need to move forward to pick up the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 3 steps left",0,False
+31,turn right,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the wall that is 3 steps left, and then I need to turn right again to face the purple key. Finally, I need to move forward to pick up the purple key.
+
+ACTION: turn right","a wall 4 steps forward
+a wall 1 step left
+a purple key 1 step right and 1 step forward",0,False
+32,go forward,"To reach the purple key, I need to move forward to get past the wall that is 4 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 1 step left
+a purple key 1 step right",0,False
+33,go forward,"To reach the purple key, I need to move forward to get past the wall that is 3 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I need to move forward again to reach the purple key. However, since the purple key is 1 step right from the current position, I can simplify the plan.
+
+First, I need to move forward to get past the wall that is 3 steps forward from my current position. Then, I need to turn right to face the correct direction. After that, I can pick up the purple key.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 1 step left",0,False
+34,go forward,"To reach the purple key, I need to move forward to get past the wall that is 2 steps forward from my current position. Then, I need to move forward again to get past the remaining wall. After that, I need to turn right to face the correct direction. Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step left",0,False
+35,turn left,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to move forward again to get past the remaining wall. After that, I need to turn right to face the correct direction. Finally, I need to move forward again to reach the purple key.
+
+However, since the wall 1 step left is in the way, I need to move left first to get around it.
+
+ACTION: turn left","a wall 1 step forward
+a wall 1 step right",0,False
+36,go forward,"To reach the purple key, I need to move forward to get past the wall that is 1 step forward from my current position. Then, I need to move forward again to get past the remaining wall. After that, I need to turn right to face the correct direction. Finally, I need to move forward again to reach the purple key.
+
+However, since the wall 1 step left is not in the way anymore, I can move forward to get past the wall that is 1 step forward from my current position.
+
+Next, I need to move forward again to get past the remaining wall.
+
+After that, I need to turn right to face the correct direction.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+37,turn left,"To reach the purple key, I need to get past the wall that is 1 step forward from my current position. Since I'm currently facing the wall, I need to turn to face the other direction.
+
+Next, I need to move forward to get past the wall that is 1 step forward from my current position.
+
+After that, I need to move forward again to get past the remaining wall.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step right
+a purple key 1 step left and 2 steps forward",0,False
+38,turn left,"To reach the purple key, I need to get past the wall that is 6 steps forward from my current position. Since I'm currently facing the wall, I need to turn to face the other direction.
+
+Next, I need to move forward to get past the wall that is 6 steps forward from my current position.
+
+After that, I need to move forward again to get past the remaining wall.
+
+Finally, I need to move forward again to reach the purple key.
+
+However, since the purple key is 1 step left and 2 steps forward from the wall, I can take a more efficient route.
+
+I can turn left to face the purple key, and then move forward to reach it.
+
+ACTION: turn left","a wall 6 steps forward
+a wall 1 step left
+a purple key 2 steps right and 1 step forward",0,False
+39,turn right,"To reach the purple key, I need to get past the wall that is 6 steps forward from my current position. Since I'm currently facing the wall, I need to turn to face the other direction.
+
+Next, I need to move forward to get past the wall that is 6 steps forward from my current position.
+
+After that, I need to move forward again to get past the remaining wall.
+
+Finally, I need to move forward again to reach the purple key.
+
+However, since the purple key is 2 steps right and 1 step forward from the wall, I can take a more efficient route.
+
+I can turn right to face the purple key, and then move forward to reach it.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step right
+a purple key 1 step left and 2 steps forward",0,False
+40,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning left to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward again to get past the remaining wall that is 6 steps forward from my current position.
+
+After that, I need to move forward again to get past the remaining wall.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 1 step right
+a purple key 1 step left and 1 step forward",0,False
+41,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning left to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward again to get past the remaining wall that is 5 steps forward from my current position.
+
+After that, I need to move forward again to get past the remaining wall.
+
+Finally, I need to move forward again to reach the purple key.
+
+However, since the purple key is only 1 step forward from the current position, I can simplify the plan.
+
+ACTION: go forward","a wall 4 steps forward
+a wall 1 step right
+a purple key 1 step left",0,False
+42,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning left to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward again to get past the remaining wall that is 4 steps forward from my current position.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 1 step right",0,False
+43,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning left to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward to get past the remaining wall that is 3 steps forward from my current position.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 1 step right",0,False
+44,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning left to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward to get past the remaining wall that is 2 steps forward from my current position.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+45,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning right to face the wall, and then moving forward to get past it.
+
+Next, I need to move forward to get past the remaining wall that is 1 step forward from my current position.
+
+Finally, I need to move forward again to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+46,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning right to face the wall.
+
+Next, I need to move forward to get past the wall that is 1 step right from my current position.
+
+Then, I need to move forward again to get past the wall that is 1 step forward from my current position.
+
+Finally, I need to move forward one more time to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+47,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning right to face the wall.
+
+Next, I need to move forward to get past the wall that is 1 step right from my current position.
+
+Then, I need to move forward again to get past the wall that is 1 step forward from my current position.
+
+Finally, I need to move forward one more time to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+48,go forward,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning right to face the wall.
+
+Next, I need to move forward to get past the wall that is 1 step right from my current position.
+
+Then, I need to move forward again to get past the wall that is 1 step forward from my current position.
+
+Finally, I need to move forward one more time to reach the purple key.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step right",0,False
+49,turn right,"To reach the purple key, I need to get past the wall that is 1 step right from my current position. I can do this by turning right to face the wall.
+
+Next, I need to move forward to get past the wall that is 1 step right from my current position.
+
+Then, I need to move forward again to get past the wall that is 1 step forward from my current position.
+
+Finally, I need to move forward one more time to reach the purple key.
+
+ACTION: turn right","a wall 1 step forward
+a wall 1 step left",0,False
+50,go forward,"Let's break it down step by step:
+
+1. The purple key is 1 step left and 2 steps forward from the current position.
+2. The current position is blocked by a wall 1 step forward.
+3. To reach the purple key, I need to move past the wall 1 step forward.
+4. After moving past the wall, I will be facing the wall 1 step left, which is not a problem.
+5. Now, I need to move 2 steps forward to reach the purple key.
+
+So, the best course of action is to move past the wall 1 step forward.
+
+ACTION: go forward","a wall 1 step forward
+a wall 1 step left",0,False
+51,turn right,"To reach the purple key, I need to move past the wall 1 step forward. However, I am currently blocked by a wall 1 step forward and a wall 1 step left. 
+
+Since I can't move forward, I need to change my direction. I can turn right to face the wall 1 step right, which is not blocking me.
+
+Now, I can move forward to reach the wall 1 step right, and then I can turn left to face the purple key.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 1 step left
+a purple key 1 step right and 3 steps forward",0,False
+52,go forward,"To reach the purple key, I need to move past the wall 6 steps forward and the wall 1 step left. 
+
+First, I need to move past the wall 6 steps forward. However, I am currently blocked by a wall 6 steps forward. 
+
+To move past this wall, I need to move to the right, so I can go around it.
+
+Next, I need to move past the wall 1 step left. However, I am currently blocked by a wall 1 step left. 
+
+To move past this wall, I need to move to the right, so I can go around it.
+
+Now, I can move forward to reach the purple key.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 1 step left
+a purple key 1 step right and 2 steps forward",0,False
+53,go forward,"To reach the purple key, I need to move past the wall 5 steps forward and the wall 1 step left.
+
+First, I need to move past the wall 5 steps forward. However, I am currently blocked by a wall 5 steps forward. 
+
+To move past this wall, I need to move to the right, so I can go around it.
+
+Next, I need to move to the right to align myself with the purple key.
+
+Now, I can move forward to reach the purple key.
+
+ACTION: go forward","a wall 4 steps forward
+a wall 1 step left
+a purple key 1 step right and 1 step forward",0,False
+54,go forward,"To reach the purple key, I need to move past the wall 4 steps forward and the wall 1 step left.
+
+First, I need to move to the right to align myself with the purple key.
+
+Next, I need to move forward to reach the purple key.
+
+However, I can simplify the plan by moving forward first, and then turning right to align myself with the purple key.
+
+ACTION: go forward","a wall 3 steps forward
+a wall 1 step left
+a purple key 1 step right",0,False
+55,go forward,"To reach the purple key, I need to move past the wall 3 steps forward and the wall 1 step left.
+
+First, I need to move forward to reach the wall 3 steps forward.
+
+Next, I need to turn right to align myself with the purple key.
+
+Finally, I need to move forward to reach the purple key.
+
+ACTION: go forward","a wall 2 steps forward
+a wall 1 step left",0,False
+56,turn right,"To reach the purple key, I need to move past the wall 2 steps forward and the wall 1 step left.
+
+First, I need to move forward to reach the wall 2 steps forward.
+
+Next, I need to turn right to align myself with the purple key.
+
+Finally, I need to move forward to reach the purple key.
+
+ACTION: turn right","a wall 6 steps forward
+a wall 2 steps left
+a purple key 1 step right and 1 step forward",0,False
+57,go forward,"To reach the purple key, I need to move past the wall 6 steps forward and the wall 2 steps left.
+
+First, I need to move forward to reach the wall 6 steps forward, but since I'm already in front of it, I need to move left to align myself with the purple key.
+
+Next, I need to move forward to reach the purple key.
+
+ACTION: go forward","a wall 5 steps forward
+a wall 2 steps left
+a purple key 1 step right",0,False
+58,turn right,"To reach the purple key, I need to move past the wall 5 steps forward and the wall 2 steps left.
+
+First, I need to move right to align myself with the purple key.
+
+Next, I need to move forward to reach the purple key.
+
+ACTION: turn right","a wall 2 steps right
+a purple key 1 step forward",0.17031249999999998,True

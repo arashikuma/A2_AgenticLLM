@@ -1,0 +1,47 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 7,
+        "go north": 4,
+        "go west": 6,
+        "take key": 1,
+        "go south": 36,
+        "unlock passageway with key": 15,
+        "inventory": 1,
+        "look": 8,
+        "look\n\nThis will confirm if the key is in our inventory and if the passageway is still closed": 1,
+        "take object from countertop": 1
+    },
+    "input_tokens": 92059,
+    "output_tokens": 3350,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

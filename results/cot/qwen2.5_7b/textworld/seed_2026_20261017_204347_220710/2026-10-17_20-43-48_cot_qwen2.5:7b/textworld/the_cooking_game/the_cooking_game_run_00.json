@@ -1,0 +1,55 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "take raw white tuna from showcase": 1,
+        "take cheese from showcase": 21,
+        "examine cookbook": 6,
+        "go south": 10,
+        "open sliding door": 1,
+        "go north": 8,
+        "examine showcase": 13,
+        "look": 4,
+        "take cookbook from showcase": 2,
+        "look inventory": 3,
+        "go east": 3,
+        "look showcase": 1,
+        "look inside showcase": 1,
+        "look for cheese": 1,
+        "look in fridge": 2,
+        "look inside fridge": 1,
+        "look in showcase": 1,
+        "go to fridge and look inside": 1
+    },
+    "input_tokens": 116373,
+    "output_tokens": 2027,
+    "done": true,
+    "episode_return": 159.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.11764705882352941,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 30,
+        "examine closed fiberglass door": 3,
+        "go south": 30,
+        "go west": 4,
+        "examine closed commercial glass door": 3,
+        "go east": 3,
+        "open closed fiberglass door": 1,
+        "open closed commercial glass door": 6
+    },
+    "input_tokens": 134932,
+    "output_tokens": 2754,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

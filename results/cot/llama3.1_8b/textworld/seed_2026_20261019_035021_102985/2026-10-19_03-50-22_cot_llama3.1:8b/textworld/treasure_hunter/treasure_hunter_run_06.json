@@ -1,0 +1,52 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go north": 8,
+        "take key": 5,
+        "go east": 18,
+        "go west": 16,
+        "go south": 10,
+        "open passageway": 2,
+        "unlock passageway": 5,
+        "look": 7,
+        "open Hendersons limited edition passageway": 2,
+        "We need to get back to the office to try to unlock the Hendersons limited edition passageway We can see the key on the floor so we should pick it up Then we can go east to get back to the office\n\nFirst lets pick up the key: take key\nThen lets go east: go east": 1,
+        "We need to get back to the lounge to pick up the key but we cant go east from the canteen Lets go west to the lounge\n\nThen we can pick up the key and go back to the vault to unlock the passageway\n\nFirst lets go west from the canteen: go west": 1,
+        "take key go east": 1,
+        "take Hendersons limited edition key go east": 1,
+        "take Hendersons limited edition key": 1,
+        "unlock Hendersons limited edition passageway": 2
+    },
+    "input_tokens": 124334,
+    "output_tokens": 10556,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

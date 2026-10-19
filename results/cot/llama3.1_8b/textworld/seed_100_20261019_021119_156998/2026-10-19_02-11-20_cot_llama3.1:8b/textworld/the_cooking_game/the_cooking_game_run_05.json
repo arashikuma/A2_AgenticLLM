@@ -1,0 +1,47 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go east": 33,
+        "look": 1,
+        "go north": 7,
+        "go west": 30,
+        "go south": 4,
+        "open sliding patio door": 1,
+        "open door": 1,
+        "open wooden door": 1,
+        "take orange bell pepper take tomato take yellow apple take green hot pepper go south go east": 1,
+        "take orange bell pepper": 1
+    },
+    "input_tokens": 182469,
+    "output_tokens": 12987,
+    "done": true,
+    "episode_return": 7.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

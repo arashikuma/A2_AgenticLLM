@@ -1,0 +1,562 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,go north,"THINK: The living room has no direct path to the kitchen, but there is an exit to the north which might lead to it.
+PLAN: ","-= Kitchen =-
+You arrive in a kitchen. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You can make out a table. The table is massive. On the table you make out a cookbook. You can make out a counter. The counter is vast. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a knife. You can't wait to tell the folks at home about this! What's that over there? It looks like it's a stove. But the thing is empty, unfortunately.
+
+There is a closed frosted-glass door leading north. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Kitchen =-0/2",0,False
+1,examine cookbook,"THINK: The kitchen contains ingredients and a cookbook, which are essential for finding and preparing the recipe.
+PLAN: ","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+orange bell pepper
+  pork chop
+  purple potato
+  red onion
+  white onion
+
+Directions:
+dice the orange bell pepper
+  grill the orange bell pepper
+  slice the pork chop
+  grill the pork chop
+  slice the purple potato
+  grill the purple potato
+  slice the red onion
+  roast the red onion
+  dice the white onion
+  grill the white onion
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-0/3",0,False
+2,take purple potato,"THINK: The recipe requires ingredients that are not currently in the inventory, and I need to prepare them according to the directions.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You take the purple potato from the counter.
+
+
+Your score has just gone up by one point.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+3,take red onion,"THINK: The purple potato is now in the inventory, but the recipe requires an orange bell pepper, a pork chop, and a red onion.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","I only understood you as far as wanting to take the red apple.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+4,take white onion,"THINK: The observation confirms the need to take the purple potato and red onion, and the plan is still valid.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+5,go south,"THINK: The white onion is not on the counter; I need to check other areas.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is a closed fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/5",1,False
+6,examine sofa,"THINK: The red onion is not on the counter in the kitchen, so I need to find it in the living room.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","The sofa is reliable.
+
+
+>                                                                                                                                -= Livingroom =-1/6",1,False
+7,take purple potato,"THINK: The sofa is reliable, but it doesn't help with the goal.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You already have that.
+
+
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+8,take knife,"THINK: The purple potato is already in my inventory, so taking it again won't help.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+9,take red onion,"THINK: The purple potato is already in the inventory, and the knife is not visible in the living room.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+10,go south,"THINK: The red onion is not in the living room, so it's not in the kitchen either. I need to find it in the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You have to open the fiberglass door first.
+
+
+>                                                                                                                                -= Livingroom =-1/8",1,False
+11,open fiberglass door,"THINK: The observation indicates that the fiberglass door needs to be opened first to proceed.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You open fiberglass door.
+
+
+>                                                                                                                                -= Livingroom =-1/9",1,False
+12,go south,"THINK: The door is now open, but I need to find the red onion and white onion.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/10",1,False
+13,go north,"THINK: The driveway does not have the necessary ingredients or tools, and the goal is to find and prepare the meal in the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/11",1,False
+14,take white onion,"THINK: The observation confirms the need to take the purple potato, knife, and red onion, and then proceed to the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/11",1,False
+15,go south,"THINK: The white onion is not in the livingroom, so I need to find it in the kitchen.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/12",1,False
+16,go south,"THINK: The white onion is not in the driveway, so it must be in the livingroom.
+PLAN: go south, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Driveway =-1/13",1,False
+17,go east,"THINK: The driveway does not have a table, so examining it won't help.
+PLAN: go south, examine table","-= Street =-
+You find yourself in a street. An ordinary kind of place.
+
+
+
+There is a closed sliding door leading east. There is an exit to the west. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Street =-1/14",1,False
+18,examine table,"THINK: The sliding door to the east is closed, so I need to find a way to open it or find another path.
+PLAN: go south, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/14",1,False
+19,go west,"THINK: The table is not visible, so it likely does not contain the white onion.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/15",1,False
+20,go south,"THINK: The observation confirms there is no table in the driveway, so examining it is not possible.
+PLAN: go south, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Driveway =-1/16",1,False
+21,go north,"THINK: The driveway does not have any useful items, and the table was not on the street.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/17",1,False
+22,go east,"THINK: The table is not visible, so it likely does not contain the white onion.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/18",1,False
+23,go west,"THINK: The bedroom does not contain any edible items or tools needed for the recipe.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/19",1,False
+24,go east,"THINK: The table is not in the livingroom, so examining it won't help.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/20",1,False
+25,go west,"THINK: The bedroom does not have any items that could be useful for the recipe.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/21",1,False
+26,go east,"THINK: The observation confirms there is no table in the livingroom, so examining the table is not possible.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/22",1,False
+27,go west,"THINK: The bedroom does not have any items to find the recipe or ingredients.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/23",1,False
+28,go south,"THINK: The table is not visible in the livingroom, so it's not there.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/24",1,False
+29,go north,"THINK: The table is not in the driveway, so it's not there to examine.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/25",1,False
+30,go east,"THINK: The observation confirms the livingroom layout and there is no table to examine.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/26",1,False
+31,go west,"THINK: The bedroom does not have a table, so examining it will not help find the recipe.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/27",1,False
+32,go east,"THINK: The living room does not have a table, so examining the table is not possible.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/28",1,False
+33,go west,"THINK: The bedroom does not have any items that could be useful for the recipe.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/29",1,False
+34,go south,"THINK: The living room does not have a table, so the recipe must be elsewhere.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/30",1,False
+35,go north,"THINK: The observation confirms there is no useful information in the driveway.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/31",1,False
+36,go east,"THINK: The fiberglass door is open, so there's no need to go through the driveway again.
+PLAN: go south, examine table","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/32",1,False
+37,go west,"THINK: The bedroom does not have any items that could be useful for the recipe.
+PLAN: go south, examine table","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/33",1,False
+38,go south,"THINK: The livingroom does not have a table, so examining the table is not possible.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/34",1,False
+39,go east,"THINK: The observation shows that the fiberglass door is open and there is an exit to the east, but no new items are visible.
+PLAN: go south, examine table","-= Street =-
+You find yourself in a street. An ordinary kind of place.
+
+
+
+There is a closed sliding door leading east. There is an exit to the west. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Street =-1/35",1,False
+40,go east,"THINK: The observation shows that the sliding door leads to a room with a table, which might be useful for finding the recipe.
+PLAN: go south, examine table","You have to open the sliding door first.
+
+
+>                                                                                                                                -= Street =-1/36",1,False
+41,go south,"THINK: The sliding door needs to be opened before proceeding.
+PLAN: go south, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/37",1,False
+42,go south,"THINK: The sliding door needs to be opened to proceed, but it is closed.
+PLAN: go south, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/38",1,False
+43,examine table,"THINK: The observation confirms you cannot go south, so the plan needs to be adjusted.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/38",1,False
+44,go east,"THINK: The observation confirms there is no table on the street.
+PLAN: go east, examine table","You have to open the sliding door first.
+
+
+>                                                                                                                                -= Street =-1/39",1,False
+45,go east,"THINK: The sliding door needs to be opened to proceed.
+PLAN: go east, examine table","You have to open the sliding door first.
+
+
+>                                                                                                                                -= Street =-1/40",1,False
+46,open sliding door,"THINK: The sliding door needs to be opened to proceed.
+PLAN: go east, examine table","You open sliding door.
+
+
+>                                                                                                                                -= Street =-1/41",1,False
+47,go east,"THINK: The sliding door is now open, allowing access to the building.
+PLAN: go east, examine table","-= Supermarket =-
+You're now in a supermarket. You start to take note of what's in the room.
+
+You can see a showcase. But the thing is empty. Aw, here you were, all excited for there to be things on it!
+
+There is an open sliding door leading west.
+
+
+>                                                                                                                                -= Supermarket =-1/42",1,False
+48,go west,"THINK: The showcase is empty, so there are no ingredients there.
+PLAN: go east, examine table","-= Street =-
+You find yourself in a street. An ordinary kind of place.
+
+
+
+There is an open sliding door leading east. There is an exit to the west. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Street =-1/43",1,False
+49,go east,"THINK: The observation shows the sliding door is already open, so going east will lead to the supermarket.
+PLAN: go east, examine table","-= Supermarket =-
+You're now in a supermarket. You start to take note of what's in the room.
+
+You can see a showcase. But the thing is empty. Aw, here you were, all excited for there to be things on it!
+
+There is an open sliding door leading west.
+
+
+>                                                                                                                                -= Supermarket =-1/44",1,False
+50,examine showcase,"THINK: The showcase is empty, which might be important for finding ingredients.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/45",1,False
+51,open showcase,"THINK: The showcase being unstable suggests there might be something inside that could be useful.
+PLAN: go east, examine table","It isn't something you can open.
+
+
+>                                                                                                                                -= Supermarket =-1/46",1,False
+52,examine table,"THINK: The showcase is unstable but cannot be opened, so there's no food inside.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Supermarket =-1/46",1,False
+53,go east,"THINK: The table is not visible, so it's not in the supermarket.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/47",1,False
+54,go north,"THINK: The table is not visible, so it's not in the room.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/48",1,False
+55,go east,"THINK: The table is not visible, so it's not on the west wall as expected.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/49",1,False
+56,go north,"THINK: The table is not visible, so it might not be in this room.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/50",1,False
+57,examine showcase,"THINK: The table is not visible, and going north or east does not work, indicating the table might not be in this room.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/51",1,False
+58,examine table,"THINK: The showcase being unstable doesn't help in opening it, and the repeated attempts to go east or north indicate there are no exits in those directions.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Supermarket =-1/51",1,False
+59,go east,"THINK: The table is still not visible, which means it might not be in this room.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/52",1,False
+60,examine showcase,"THINK: The table is not in the current view, and I cannot go east. I need to find a way to open the showcase or find another way to proceed.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/53",1,False
+61,go east,"THINK: The showcase is unstable, but there's no visible item to take or use.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/54",1,False
+62,go north,"THINK: The showcase is unstable, but there is still no table to examine.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/55",1,False
+63,examine showcase,"THINK: The showcase is unstable, but there is still no visible item inside.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/56",1,False
+64,go east,"THINK: The showcase is unstable, but there is no visible way to interact with it or find useful items.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/57",1,False
+65,examine table,"THINK: The showcase is unstable, but there is no useful item on it or the table.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Supermarket =-1/57",1,False
+66,go north,"THINK: The observation confirms there is no table to examine, and I cannot go east.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/58",1,False
+67,examine showcase,"THINK: The table and showcase are the main objects in the room, but neither can be interacted with further.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/59",1,False
+68,go east,"THINK: The showcase is unstable, but there's no new information about the table or exits.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/60",1,False
+69,examine table,"THINK: The showcase is unstable, but examining the table and trying to interact with it might provide useful items.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Supermarket =-1/60",1,False
+70,go east,"THINK: The table and showcase are not providing any useful items or clues.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/61",1,False
+71,examine showcase,"THINK: The table and showcase are the only objects in the room, and neither can be interacted with further.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/62",1,False
+72,go east,"THINK: The showcase is unstable, but there's no new information about the table or exits.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/63",1,False
+73,go north,"THINK: The showcase is unstable, but there's no table to examine for useful items.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/64",1,False
+74,go east,"THINK: The showcase is unstable, but there is still no table to examine.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/65",1,False
+75,examine showcase,"THINK: The showcase is unstable, but examining the table or moving east does not provide new information.
+PLAN: go east, examine table","The showcase is unstable.
+
+
+>                                                                                                                                -= Supermarket =-1/66",1,False
+76,go east,"THINK: The showcase is unstable, but there's no new information about the table or exits.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/67",1,False
+77,examine table,"THINK: The showcase is unstable, but examining the table or moving east doesn't provide new information.
+PLAN: go east, examine table","You can't see any such thing.
+
+>                                                                                                                                -= Supermarket =-1/67",1,False
+78,go north,"THINK: The table and showcase are not helpful, and I cannot move in the east direction.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/68",1,False
+79,go east,"THINK: The table is still not visible, and I can't move east or north from this position.
+PLAN: go east, examine table","You can't go that way.
+
+
+>                                                                                                                                -= Supermarket =-1/69",1,True

@@ -1,0 +1,679 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,go north,"THINK: The living room has no direct path to the kitchen, but there is an exit to the north which might lead to it.
+PLAN: ","-= Kitchen =-
+You arrive in a kitchen. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You can make out a table. The table is massive. On the table you make out a cookbook. You can make out a counter. The counter is vast. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a knife. You can't wait to tell the folks at home about this! What's that over there? It looks like it's a stove. But the thing is empty, unfortunately.
+
+There is a closed frosted-glass door leading north. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Kitchen =-0/2",0,False
+1,examine cookbook,"THINK: The kitchen contains ingredients and a cookbook, which are essential for finding and preparing the recipe.
+PLAN: ","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+orange bell pepper
+  pork chop
+  purple potato
+  red onion
+  white onion
+
+Directions:
+dice the orange bell pepper
+  grill the orange bell pepper
+  slice the pork chop
+  grill the pork chop
+  slice the purple potato
+  grill the purple potato
+  slice the red onion
+  roast the red onion
+  dice the white onion
+  grill the white onion
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-0/3",0,False
+2,take purple potato,"THINK: The recipe requires ingredients that are not currently in the inventory, and I need to prepare them according to the directions.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You take the purple potato from the counter.
+
+
+Your score has just gone up by one point.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+3,take red onion,"THINK: The purple potato is now in the inventory, but the recipe requires an orange bell pepper, a pork chop, and a red onion.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","I only understood you as far as wanting to take the red apple.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+4,take white onion,"THINK: The observation confirms the need to take the purple potato and red onion, and the plan is still valid.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+5,go south,"THINK: The white onion is not on the counter; I need to check other areas.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is a closed fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/5",1,False
+6,examine sofa,"THINK: The red onion is not on the counter in the kitchen, so I need to find it in the living room.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","The sofa is reliable.
+
+
+>                                                                                                                                -= Livingroom =-1/6",1,False
+7,take purple potato,"THINK: The sofa is reliable, but it doesn't help with the goal.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You already have that.
+
+
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+8,take knife,"THINK: The purple potato is already in my inventory, so taking it again won't help.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+9,take red onion,"THINK: The purple potato is already in the inventory, and the knife is not visible in the living room.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/7",1,False
+10,go south,"THINK: The red onion is not in the living room, so it's not in the kitchen either. I need to find it in the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You have to open the fiberglass door first.
+
+
+>                                                                                                                                -= Livingroom =-1/8",1,False
+11,open fiberglass door,"THINK: The observation indicates that the fiberglass door needs to be opened first to proceed.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You open fiberglass door.
+
+
+>                                                                                                                                -= Livingroom =-1/9",1,False
+12,go south,"THINK: The door is now open, but I need to find the red onion and white onion.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/10",1,False
+13,go north,"THINK: The driveway does not have the necessary ingredients or tools, and the goal is to find and prepare the meal in the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/11",1,False
+14,take white onion,"THINK: The observation confirms the need to take the purple potato, knife, and red onion, and then proceed to the kitchen.
+PLAN: take purple potato, take knife, take red onion, take white onion, go south","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/11",1,False
+15,go south,"THINK: The white onion is not in the livingroom, so I need to find it in the kitchen.
+PLAN: go south, examine table","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/12",1,False
+16,go south,"THINK: The white onion is not in the kitchen, so it must be in the driveway.
+PLAN: go south, take white onion","You can't go that way.
+
+
+>                                                                                                                                -= Driveway =-1/13",1,False
+17,take white onion,"THINK: The driveway does not have any white onions, and going south is not possible.
+PLAN: go south, take white onion","You can't see any such thing.
+
+>                                                                                                                                -= Driveway =-1/13",1,False
+18,go south,"THINK: The white onion is not visible, so it's not in the driveway.
+PLAN: go south, take white onion","You can't go that way.
+
+
+>                                                                                                                                -= Driveway =-1/14",1,False
+19,take white onion,"THINK: The driveway does not have any exits to the south, so going south is not possible.
+PLAN: go south, take white onion","You can't see any such thing.
+
+>                                                                                                                                -= Driveway =-1/14",1,False
+20,go east,"THINK: The driveway does not have any white onions, and going south is not an option.
+PLAN: go south, take white onion","-= Street =-
+You find yourself in a street. An ordinary kind of place.
+
+
+
+There is a closed sliding door leading east. There is an exit to the west. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Street =-1/15",1,False
+21,open sliding door,"THINK: The observation shows the need to open the sliding door to proceed.
+PLAN: go south, take white onion","You open sliding door.
+
+
+>                                                                                                                                -= Street =-1/16",1,False
+22,go south,"THINK: The sliding door is now open, but there are no white onions to take.
+PLAN: go south, take white onion","You can't go that way.
+
+
+>                                                                                                                                -= Street =-1/17",1,False
+23,take white onion,"THINK: The sliding door is now open, but there is still no white onion visible.
+PLAN: go south, take white onion","You can't see any such thing.
+
+>                                                                                                                                -= Street =-1/17",1,False
+24,go west,"THINK: The white onion is not available in the current location.
+PLAN: go south, take white onion","-= Driveway =-
+If you're wondering why everything seems so ordinary all of a sudden, it's because you've just sauntered into the driveway.
+
+
+
+There is an open fiberglass door leading north. There is an exit to the east. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Driveway =-1/18",1,False
+25,go north,"THINK: The white onion is not available in the driveway, and going south from the street leads to a dead end.
+PLAN: go south, take white onion","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/19",1,False
+26,go east,"THINK: The white onion is not in the livingroom, so the previous plan to take it needs to be adjusted.
+PLAN: go east, take white onion","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/20",1,False
+27,go west,"THINK: The bedroom does not contain a white onion, so I need to find it elsewhere.
+PLAN: go east, take white onion","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/21",1,False
+28,take white onion,"THINK: The white onion is not in the bedroom, so it must be in the livingroom.
+PLAN: go east, take white onion","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/21",1,False
+29,examine bed,"THINK: The white onion is not in the livingroom.
+PLAN: go east, examine bed","You can't see any such thing.
+
+>                                                                                                                                -= Livingroom =-1/21",1,False
+30,go east,"THINK: The bed in the bedroom does not contain a white onion.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/22",1,False
+31,go west,"THINK: The bed in the bedroom does not contain any white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/23",1,False
+32,go east,"THINK: The bed in the bedroom does not contain a white onion.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/24",1,False
+33,go west,"THINK: The bed in the bedroom does not contain a white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/25",1,False
+34,go east,"THINK: The bed in the bedroom does not have a white onion.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/26",1,False
+35,go west,"THINK: The bed in the bedroom does not contain the white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/27",1,False
+36,go east,"THINK: The bed in the bedroom does not have any onions.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/28",1,False
+37,go west,"THINK: The bed in the bedroom does not have a white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/29",1,False
+38,go east,"THINK: The bed in the bedroom does not have a white onion.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/30",1,False
+39,go west,"THINK: The bed in the bedroom does not contain the white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/31",1,False
+40,go east,"THINK: The bed in the bedroom does not have any ingredients.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/32",1,False
+41,go west,"THINK: The bed in the bedroom is empty, no new items to take.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/33",1,False
+42,examine sofa,"THINK: The bed in the bedroom does not have any onions, so we need to continue searching in the livingroom.
+PLAN: go east, examine bed","The sofa is reliable.
+
+
+>                                                                                                                                -= Livingroom =-1/34",1,False
+43,go east,"THINK: The sofa being reliable does not provide any useful information for finding the recipe or ingredients.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/35",1,False
+44,go west,"THINK: The bed in the bedroom does not have a white onion.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/36",1,False
+45,go east,"THINK: The bed in the bedroom does not have any items, so we need to explore other areas.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/37",1,False
+46,go west,"THINK: The bed in the bedroom does not have any items, so we need to continue exploring.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/38",1,False
+47,go east,"THINK: The bed in the bedroom is empty, which might be important for the recipe.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/39",1,False
+48,go west,"THINK: The bed in the bedroom does not have any items, so we need to continue exploring.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/40",1,False
+49,go east,"THINK: The bed in the bedroom does not contain any items that could be useful.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/41",1,False
+50,go west,"THINK: The bed in the bedroom does not have any items, so we need to explore other areas.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/42",1,False
+51,go east,"THINK: The bed in the bedroom is empty, which might not be relevant to finding the recipe.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/43",1,False
+52,go west,"THINK: The bed in the bedroom does not have any items, so we need to explore other areas.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/44",1,False
+53,go east,"THINK: The bed in the bedroom does not contain any useful items.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/45",1,False
+54,go west,"THINK: The bed in the bedroom does not have any items, so we need to explore other areas.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/46",1,False
+55,go east,"THINK: The bed in the bedroom is empty, which might be important for the recipe.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/47",1,False
+56,go west,"THINK: The bed in the bedroom does not have any items, so we need to explore other areas.
+PLAN: go east, examine bed","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is an open fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-1/48",1,False
+57,go east,"THINK: The bed in the bedroom is empty, which might be useful later but not immediately.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/49",1,False
+58,examine bed,"THINK: The bed is empty, which might be important for the recipe.
+PLAN: go east, examine bed","The bed is balanced.
+
+
+>                                                                                                                                -= Bedroom =-1/50",1,False
+59,go east,"THINK: The bed is balanced, which doesn't provide any useful information for finding the recipe or ingredients.
+PLAN: go east, examine bed","You can't go that way.
+
+
+>                                                                                                                                -= Bedroom =-1/51",1,False
+60,go north,"THINK: The bed does not have any items to interact with.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/52",1,False
+61,go east,"THINK: The corridor has exits that could lead to the bedroom or other rooms, but the bed in the bedroom is still empty.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/53",1,False
+62,go west,"THINK: The bathroom does not contain any relevant items for the goal, and the bed was already examined.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/54",1,False
+63,go south,"THINK: The bed in the bedroom does not have any items, and going east leads to the bathroom, which does not contain any relevant items.
+PLAN: go east, examine bed","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/55",1,False
+64,go east,"THINK: The bed is empty, no new items to take or use.
+PLAN: go east, examine bed","You can't go that way.
+
+
+>                                                                                                                                -= Bedroom =-1/56",1,False
+65,examine bed,"THINK: The bed is still empty, and going east is not possible.
+PLAN: go east, examine bed","The bed is balanced.
+
+
+>                                                                                                                                -= Bedroom =-1/57",1,False
+66,go east,"THINK: The bed is balanced, which doesn't provide any useful information for finding the recipe or preparing food.
+PLAN: go east, examine bed","You can't go that way.
+
+
+>                                                                                                                                -= Bedroom =-1/58",1,False
+67,go north,"THINK: The bed is balanced, indicating no items are on it. Need to find ingredients.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/59",1,False
+68,go east,"THINK: The bed is balanced, and there are no new exits or items to interact with in the bedroom.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/60",1,False
+69,go west,"THINK: The bathroom does not contain any items needed for the recipe.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/61",1,False
+70,go east,"THINK: The bed in the bedroom is empty, and the corridor has a closed sliding patio door that might lead to a new area.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/62",1,False
+71,go east,"THINK: The bathroom does not contain any items needed for the recipe.
+PLAN: go east, examine bed","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-1/63",1,False
+72,go west,"THINK: The bathroom does not have any items that can help with the goal.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/64",1,False
+73,go east,"THINK: The corridor does not have any objects that could be useful for the recipe.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/65",1,False
+74,go west,"THINK: The bathroom does not contain any items needed for the recipe.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/66",1,False
+75,go east,"THINK: The corridor does not have any objects that could be useful for finding the recipe or preparing food.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/67",1,False
+76,go east,"THINK: The bathroom does not contain any useful items for the goal.
+PLAN: go east, examine bed","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-1/68",1,False
+77,go west,"THINK: The bathroom does not have any items that can help with the goal.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/69",1,False
+78,go east,"THINK: The corridor does not have any objects that could be related to the recipe or food preparation.
+PLAN: go east, examine bed","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/70",1,False
+79,go west,"THINK: The bathroom does not contain any useful items for the goal.
+PLAN: go east, examine bed","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/71",1,True

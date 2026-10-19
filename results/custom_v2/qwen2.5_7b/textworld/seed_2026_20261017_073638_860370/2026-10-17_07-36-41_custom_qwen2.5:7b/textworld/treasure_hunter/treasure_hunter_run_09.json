@@ -1,0 +1,50 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 18,
+        "go north": 6,
+        "go west": 8,
+        "take key": 2,
+        "inventory": 1,
+        "go south": 23,
+        "take key from inventory": 1,
+        "open passageway": 5,
+        "unlock passageway with key": 1,
+        "open Henderson's limited edition passageway": 3,
+        "open balsam door": 1,
+        "take Henderson's limited edition key from balsam door": 5,
+        "unlock Henderson's limited edition passageway with Henderson's limited edition key": 6
+    },
+    "input_tokens": 101646,
+    "output_tokens": 2600,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "custom",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

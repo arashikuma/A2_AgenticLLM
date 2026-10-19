@@ -1,0 +1,58 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 6,
+        "go east": 11,
+        "examine fiberglass door": 4,
+        "go south": 7,
+        "go west": 11,
+        "examine commercial glass door": 3,
+        "inventory": 1,
+        "look": 1,
+        "take lid from commercial glass door": 1,
+        "take lid off commercial glass door": 1,
+        "open commercial glass door": 1,
+        "take block of cheese from showcase\n\nNext we should examine the block of cheese to see if it needs to be processed before we can use it in the recipe": 1,
+        "examine block of cheese": 6,
+        "take raw white tuna from showcase": 8,
+        "examine showcase": 7,
+        "examine raw white tuna": 1,
+        "examine knife": 4,
+        "take knife from counter": 2,
+        "It seems there is no raw white tuna available in the showcase Lets explore the supermarket further to find other ingredients\n\nexamine counter": 1,
+        "examine counter": 2,
+        "examine floor": 1
+    },
+    "input_tokens": 120285,
+    "output_tokens": 2347,
+    "done": true,
+    "episode_return": 56.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "cot",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}
