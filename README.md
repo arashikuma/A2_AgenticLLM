@@ -17,6 +17,9 @@ A2/
     │   ├── qwen2.5_7b/        # Logs for Qwen-2.5-7B across BabyAI & TextWorld (Seeds: 42, 100, 2026)
     │   └── llama3.1_8b/       # Logs for Llama-3.1-8B across BabyAI & TextWorld (Seeds: 42, 100, 2026)
     └── run_manifest.csv       # Unified manifest indexing all runs, return codes, and progression metrics
+└── naive_prompt_and_results(overall and breakdown).tar   #  naive models' prompts and overall results and subtasks results (for table 2 ＆ 3 ＆ 4)
+└── reflection_results.tar     # the results for models with reflection (for table 6)
+
 ```
 
 ### Description of Key Files
