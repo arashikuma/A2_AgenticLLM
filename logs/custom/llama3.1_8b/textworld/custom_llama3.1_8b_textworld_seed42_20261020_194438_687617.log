@@ -1,0 +1,8 @@
+Run ID: custom_llama3.1_8b_textworld_seed42_20261020_194438_687617
+Project root: /local/s3782999/A2_agenticllm/BALROG
+Command: /usr/bin/python -u eval.py agent.type=custom envs.names=textworld agent.max_image_history=0 agent.max_text_history=16 eval.num_workers=1 envs.env_kwargs.seed=42 eval.save_trajectories=true eval.output_dir=/local/s3782999/A2_agenticllm/BALROG/results/custom/llama3.1_8b/textworld/seed_42_20261020_194438_687617 eval.num_episodes.babyai=10 eval.num_episodes.textworld=10 client.client_name=vllm client.model_id=llama3.1:8b client.base_url=http://localhost:11434/v1 client.generate_kwargs.temperature=0.0
+
+Traceback (most recent call last):
+  File "/local/s3782999/A2_agenticllm/BALROG/eval.py", line 8, in <module>
+    import hydra
+ModuleNotFoundError: No module named 'hydra'

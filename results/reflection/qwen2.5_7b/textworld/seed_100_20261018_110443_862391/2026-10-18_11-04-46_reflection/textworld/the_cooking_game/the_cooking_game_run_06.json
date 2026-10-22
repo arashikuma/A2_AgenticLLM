@@ -1,0 +1,52 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 15,
+        "take raw purple potato, red apple, raw yellow potato from counter": 1,
+        "take knife from counter": 4,
+        "examine cookbook": 3,
+        "take orange bell pepper from fridge": 4,
+        "go south": 6,
+        "go east": 12,
+        "go west": 7,
+        "open sliding patio door with knife": 1,
+        "examine sliding patio door": 7,
+        "examine counter": 3,
+        "examine fridge": 2,
+        "take lid from sliding patio door": 10,
+        "open sliding patio door with lid": 4,
+        "take cookbook": 1
+    },
+    "input_tokens": 145339,
+    "output_tokens": 3200,
+    "done": true,
+    "episode_return": 79.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.058823529411764705,
+    "process_num": null,
+    "seed": 100,
+    "agent": {
+        "type": "reflection",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

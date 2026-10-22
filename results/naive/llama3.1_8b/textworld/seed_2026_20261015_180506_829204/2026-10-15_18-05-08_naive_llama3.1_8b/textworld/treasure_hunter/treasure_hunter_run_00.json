@@ -1,0 +1,61 @@
+{
+    "task": "treasure_hunter",
+    "action_frequency": {
+        "go east": 13,
+        "go north": 7,
+        "look": 5,
+        "go west": 11,
+        "take key": 5,
+        "goal": 3,
+        "go south": 8,
+        "open safe": 1,
+        "open drawer": 5,
+        "take drawer": 1,
+        "take shelf": 1,
+        "unlock drawer with key": 1,
+        "take toaster": 1,
+        "open shelf": 2,
+        "open passageway": 2,
+        "unlock passageway with key": 1,
+        "take keycard": 1,
+        "take plate": 5,
+        "take Hendersons limited edition key": 1,
+        "unlock vault with Hendersons limited edition key": 1,
+        "open Hendersons limited edition passageway": 2,
+        "unlock Hendersons limited edition passageway with Hendersons limited edition key": 1,
+        "take shiny board": 1,
+        "open plate": 1
+    },
+    "input_tokens": 100595,
+    "output_tokens": 278,
+    "done": true,
+    "episode_return": 0.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.0,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "naive",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "llama3.1:8b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

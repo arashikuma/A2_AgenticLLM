@@ -1,0 +1,58 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "take cheese from showcase": 1,
+        "go south": 16,
+        "examine sliding door": 1,
+        "open sliding door": 1,
+        "go east": 7,
+        "open front door": 1,
+        "go west": 7,
+        "go north": 11,
+        "take raw white tuna from showcase": 1,
+        "examine front door": 1,
+        "examine bed": 3,
+        "examine sofa": 2,
+        "take red apple": 1,
+        "take tomato": 1,
+        "take red hot pepper": 1,
+        "take knife": 1,
+        "examine cookbook": 1,
+        "examine red apple": 1,
+        "take white tuna": 1,
+        "take yellow onion": 11,
+        "take red onion": 10
+    },
+    "input_tokens": 144277,
+    "output_tokens": 2857,
+    "done": true,
+    "episode_return": 177.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.17647058823529413,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "reflection",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

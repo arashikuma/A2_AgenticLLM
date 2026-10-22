@@ -1,0 +1,63 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "take cheese from showcase": 1,
+        "go south": 6,
+        "examine sliding door": 1,
+        "open sliding door": 1,
+        "go east": 4,
+        "open front door": 1,
+        "go north": 9,
+        "examine patio door": 1,
+        "open patio door": 1,
+        "take apple": 1,
+        "take yellow apple": 1,
+        "examine cookbook": 3,
+        "take red onion": 29,
+        "take red apple": 3,
+        "examine toolbox": 1,
+        "open frosted-glass door": 1,
+        "go fridge": 2,
+        "go west": 1,
+        "examine kitchen": 1,
+        "go pantry": 4,
+        "examine counter": 2,
+        "take raw purple potato": 1,
+        "take block of cheese": 2,
+        "take yellow onion": 1,
+        "examine knife": 1,
+        "look": 1
+    },
+    "input_tokens": 138689,
+    "output_tokens": 2929,
+    "done": true,
+    "episode_return": 128.0,
+    "num_steps": 80,
+    "failed_candidates": [],
+    "progression": 0.11764705882352941,
+    "process_num": null,
+    "seed": 2026,
+    "agent": {
+        "type": "reflection",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

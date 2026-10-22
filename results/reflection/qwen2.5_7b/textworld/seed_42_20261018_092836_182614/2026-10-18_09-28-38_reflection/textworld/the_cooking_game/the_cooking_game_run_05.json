@@ -1,0 +1,57 @@
+{
+    "task": "the_cooking_game",
+    "action_frequency": {
+        "go north": 6,
+        "go east": 5,
+        "examine fiberglass door": 1,
+        "go west": 3,
+        "open fiberglass door": 1,
+        "go south": 3,
+        "open screen door": 1,
+        "take yellow apple": 1,
+        "open barn door": 1,
+        "take yellow bell pepper": 1,
+        "take red hot pepper": 1,
+        "take red onion": 1,
+        "take green hot pepper": 1,
+        "take raw yellow potato": 1,
+        "examine table": 1,
+        "examine cookbook": 1,
+        "take tomato": 1,
+        "take knife": 1,
+        "chop tomato with knife": 1,
+        "chop red hot pepper with knife": 1
+    },
+    "input_tokens": 58073,
+    "output_tokens": 1231,
+    "done": true,
+    "episode_return": 36.0,
+    "num_steps": 33,
+    "failed_candidates": [],
+    "progression": 0.23529411764705882,
+    "process_num": null,
+    "seed": 42,
+    "agent": {
+        "type": "reflection",
+        "remember_cot": true,
+        "max_text_history": 16,
+        "max_image_history": 0,
+        "max_cot_history": 1,
+        "max_icl_history": 1000,
+        "cache_icl": false
+    },
+    "client": {
+        "client_name": "vllm",
+        "model_id": "qwen2.5:7b",
+        "base_url": "http://localhost:11434/v1",
+        "generate_kwargs": {
+            "temperature": 0.0,
+            "max_tokens": 8192,
+            "thinking_budget": null
+        },
+        "timeout": 60,
+        "max_retries": 5,
+        "delay": 2,
+        "alternate_roles": false
+    }
+}

@@ -1,0 +1,764 @@
+Step,Action,Reasoning,Observation,Reward,Done
+0,go north,"REFLECTIONS: []
+THINK: The observation confirms there is an exit to the north, contradicting the previous assumption of needing an exit without a door.
+PLAN: ","-= Kitchen =-
+You arrive in a kitchen. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You can make out a table. The table is massive. On the table you make out a cookbook. You can make out a counter. The counter is vast. On the counter you can make out a raw purple potato, a red apple, a raw yellow potato and a knife. You can't wait to tell the folks at home about this! What's that over there? It looks like it's a stove. But the thing is empty, unfortunately.
+
+There is a closed frosted-glass door leading north. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Kitchen =-0/2",0,False
+1,"take raw purple potato, red apple, raw yellow potato, knife from counter go north","REFLECTIONS: []
+THINK: The kitchen contains ingredients and a knife, which are needed for the recipe. The livingroom has an exit to the north.
+PLAN: Take the ingredients and knife, go north to the livingroom.","purple potato: You take the purple potato from the counter.
+red apple: You take the red apple from the counter.
+yellow potato: You take the yellow potato from the counter.
+knife: You take the knife from the counter.
+
+
+Your score has just gone up by one point.
+
+>                                                                                                                                -= Kitchen =-1/3",1,False
+2,examine cookbook,"REFLECTIONS: [""Always check the surroundings and confirm the agent's location and possible directions before moving""]
+THINK: The observation confirms the availability of the ingredients and the knife, which were previously noted. The plan remains valid.
+PLAN: ","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+orange bell pepper
+  pork chop
+  purple potato
+  red onion
+  white onion
+
+Directions:
+dice the orange bell pepper
+  grill the orange bell pepper
+  slice the pork chop
+  grill the pork chop
+  slice the purple potato
+  grill the purple potato
+  slice the red onion
+  roast the red onion
+  dice the white onion
+  grill the white onion
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-1/4",1,False
+3,go east,"REFLECTIONS: [""Always check the surroundings and confirm the agent's location and possible directions before moving"", 'Next, the agent should follow the recipe instructions or explore the environment for other actionable items']
+THINK: The observation confirms the need to follow the recipe instructions and explore the environment for the required ingredients.
+PLAN: take orange bell pepper, pork chop, red onion, white onion from fridge","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/5",1,False
+4,go south,"REFLECTIONS: [""Always check the surroundings and confirm the agent's location and possible directions before moving"", 'Next, the agent should follow the recipe instructions or explore the environment for other actionable items', 'Always check the available exits in the current observation before executing an action']
+THINK: The agent is in the corridor, which means it needs to return to the kitchen to follow the recipe instructions.
+PLAN: go south, take ingredients from counter, go east","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-1/6",1,False
+5,go north,"REFLECTIONS: ['Next, the agent should follow the recipe instructions or explore the environment for other actionable items', 'Always check the available exits in the current observation before executing an action', 'Always check the available directions before executing an action']
+THINK: The bedroom does not contain any actionable items related to the recipe, and the agent should continue exploring the house.
+PLAN: go north, examine cookbook, take raw ingredients","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/7",1,False
+6,examine cookbook,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available directions before executing an action', 'Always check if the target direction is blocked before attempting to move in that direction']
+THINK: The sliding patio door is closed and there are exits to the east and south, but the recipe requires ingredients from the kitchen.
+PLAN: go east, examine cookbook","You can't see any such thing.
+
+>                                                                                                                                -= Corridor =-1/7",1,False
+7,go east,"REFLECTIONS: ['Always check the available directions before executing an action', 'Always check if the target direction is blocked before attempting to move in that direction', 'Always ensure the action is relevant to the current environment before executing it']
+THINK: The cookbook is not visible in the corridor, so I need to go back to the kitchen.
+PLAN: go east, examine cookbook, take ingredients if necessary","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/8",1,False
+8,go west,"REFLECTIONS: ['Always check if the target direction is blocked before attempting to move in that direction', 'Always ensure the action is relevant to the current environment before executing it', 'Always check the available exits or actions before moving in a specific direction']
+THINK: The bathroom does not have the cookbook, confirming the need to check exits before moving.
+PLAN: go west","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/9",1,False
+9,go north,"REFLECTIONS: ['Always ensure the action is relevant to the current environment before executing it', 'Always check the available exits or actions before moving in a specific direction', 'Always check the short_term_context for valid directions before executing an action']
+THINK: The corridor has exits to the north, east, and west, but no direct path to the kitchen. I need to find a way to the kitchen.
+PLAN: go north, then check the room.","You have to open the sliding patio door first.
+
+
+>                                                                                                                                -= Corridor =-1/10",1,False
+10,go east,"REFLECTIONS: ['Always check the available exits or actions before moving in a specific direction', 'Always check the short_term_context for valid directions before executing an action', 'Always check and open any necessary doors before moving in a direction']
+THINK: The sliding patio door needs to be opened before moving north.
+PLAN: go east, open sliding patio door, go north","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-1/11",1,False
+11,go east,"REFLECTIONS: ['Always check the short_term_context for valid directions before executing an action', 'Always check and open any necessary doors before moving in a direction', 'Always check the available exits before moving in a specific direction']
+THINK: The sliding patio door needs to be opened before moving north.
+PLAN: go east, open sliding patio door, go north","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-1/12",1,False
+12,open sliding patio door,"REFLECTIONS: ['Always check and open any necessary doors before moving in a direction', 'Always check the available exits before moving in a specific direction', 'Always check the long-term context for any obstacles or restrictions before executing an action']
+THINK: The sliding patio door needs to be opened before moving north.
+PLAN: go north","You can't see any such thing.
+
+>                                                                                                                                -= Bathroom =-1/12",1,False
+13,open sliding patio door,"REFLECTIONS: ['Always check the available exits before moving in a specific direction', 'Always check the long-term context for any obstacles or restrictions before executing an action', 'Always ensure the action is relevant to the current environment before execution']
+THINK: The sliding patio door needs to be opened to proceed, indicating a previous oversight.
+PLAN: Open the sliding patio door and then go north.","You can't see any such thing.
+
+>                                                                                                                                -= Bathroom =-1/12",1,False
+14,go west,"REFLECTIONS: ['Always check the long-term context for any obstacles or restrictions before executing an action', 'Always ensure the action is relevant to the current environment before execution', 'Always ensure the action is relevant to the current environment before execution']
+THINK: The sliding patio door is not recognized, indicating it might not be in the bathroom.
+PLAN: Go back to the kitchen to find the cookbook and then proceed.","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is a closed sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-1/13",1,False
+15,go north,"REFLECTIONS: ['Always ensure the action is relevant to the current environment before execution', 'Always ensure the action is relevant to the current environment before execution', 'Always check the short-term context for valid directions before executing an action']
+THINK: The sliding patio door is not recognized, indicating it might not be in this room. I should check the kitchen for the cookbook again.
+PLAN: go north","You have to open the sliding patio door first.
+
+
+>                                                                                                                                -= Corridor =-1/14",1,False
+16,open sliding patio door,"REFLECTIONS: ['Always ensure the action is relevant to the current environment before execution', 'Always check the short-term context for valid directions before executing an action', 'Always check and open any required doors or barriers before moving in a direction']
+THINK: The sliding patio door needs to be opened before moving north.
+PLAN: Open the sliding patio door. Go north.","You open sliding patio door.
+
+
+>                                                                                                                                -= Corridor =-1/15",1,False
+17,go north,"REFLECTIONS: ['Always check the short-term context for valid directions before executing an action', 'Always check and open any required doors or barriers before moving in a direction', ""Always check the short-term context for any obstacles or the door's current state before executing the action""]
+THINK: The sliding patio door was closed, and opening it allowed access to the next room.
+PLAN: go north, examine cookbook, take orange bell pepper","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is a closed wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-1/16",1,False
+18,go north,"REFLECTIONS: ['Always check and open any required doors or barriers before moving in a direction', ""Always check the short-term context for any obstacles or the door's current state before executing the action"", 'Always check the available exits in the current observation before executing an action']
+THINK: The sliding patio door was already opened, so I can now go north.
+PLAN: go north, examine BBQ, take ingredients if available","-= Garden =-
+You are in a garden.
+
+
+
+There is an exit to the south. Don't worry, there is no door.
+
+There is an orange bell pepper, a tomato, a yellow apple and a green hot pepper on the floor.
+
+
+>                                                                                                                                -= Garden =-1/17",1,False
+19,take orange bell pepper,"REFLECTIONS: [""Always check the short-term context for any obstacles or the door's current state before executing the action"", 'Always check the available exits in the current observation before executing an action', 'Always ensure the chosen action aligns with the available exits or obstacles in the current environment']
+THINK: The garden has items that can be processed according to the recipe.
+PLAN: take orange bell pepper, take tomato, take yellow apple, take green hot pepper","You pick up the orange bell pepper from the ground.
+
+
+
+Your score has just gone up by one point.
+
+>                                                                                                                                -= Garden =-2/18",2,False
+20,take tomato,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always ensure the chosen action aligns with the available exits or obstacles in the current environment', 'Always check the long-term context for items that have been interacted with']
+THINK: The observation confirms there are no doors blocking exits, so I can move freely. I now have an orange bell pepper.
+PLAN: Take tomato, take yellow apple, take green hot pepper, go south, go east.","You pick up the tomato from the ground.
+
+
+
+>                                                                                                                                -= Garden =-2/19",2,False
+21,take yellow apple,"REFLECTIONS: ['Always ensure the chosen action aligns with the available exits or obstacles in the current environment', 'Always check the long-term context for items that have been interacted with', 'Check if the item is already in the inventory before attempting to pick it up']
+THINK: The observation confirms the need to check for items before picking them up to avoid duplicates.
+PLAN: ","You pick up the yellow apple from the ground.
+
+
+
+>                                                                                                                                -= Garden =-2/20",2,False
+22,take green hot pepper,"REFLECTIONS: ['Always check the long-term context for items that have been interacted with', 'Check if the item is already in the inventory before attempting to pick it up', 'Check if the object is already in the inventory before attempting to pick it up']
+THINK: The observation confirms that items can be picked up only once, aligning with past lessons.
+PLAN: ","You pick up the green hot pepper from the ground.
+
+
+
+>                                                                                                                                -= Garden =-2/21",2,False
+23,examine cookbook,"REFLECTIONS: ['Check if the item is already in the inventory before attempting to pick it up', 'Check if the object is already in the inventory before attempting to pick it up', ""Ensure the item is not already in the agent's inventory before attempting to take it""]
+THINK: The reflective lessons are correct, but the plan needs to be revised to account for the inventory.
+PLAN: Examine the cookbook; take orange bell pepper; take tomato.","You can't see any such thing.
+
+>                                                                                                                                -= Garden =-2/21",2,False
+24,go south,"REFLECTIONS: ['Check if the object is already in the inventory before attempting to pick it up', ""Ensure the item is not already in the agent's inventory before attempting to take it"", 'Always ensure the action is based on available objects or information in the environment before executing']
+THINK: The cookbook is not visible, so it's not in the garden. I should go back to the backyard to find it.
+PLAN: go south, examine sliding patio door, go north","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is a closed wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/22",2,False
+25,examine patio table,"REFLECTIONS: [""Ensure the item is not already in the agent's inventory before attempting to take it"", 'Always ensure the action is based on available objects or information in the environment before executing', 'Always check the available exits and paths described in the observation before executing an action']
+THINK: The observation confirms there is no cookbook in the garden, so I need to find it elsewhere.
+PLAN: go north, examine patio table","The patio table is stable.
+
+
+>                                                                                                                                -= Backyard =-2/23",2,False
+26,go east,"REFLECTIONS: ['Always ensure the action is based on available objects or information in the environment before executing', 'Always check the available exits and paths described in the observation before executing an action', 'Always ensure the target of the action exists in the environment before executing it']
+THINK: The patio table is stable, indicating no additional objects are available there.
+PLAN: Go to the BBQ and check if it has any ingredients or tools.","You have to open the wooden door first.
+
+
+>                                                                                                                                -= Backyard =-2/24",2,False
+27,take key from patio chair,"REFLECTIONS: ['Always check the available exits and paths described in the observation before executing an action', 'Always ensure the target of the action exists in the environment before executing it', 'Always check the long-term context for necessary interactions before moving']
+THINK: The wooden door needs to be opened before proceeding east.
+PLAN: take key from patio chair; open wooden door with key","You can't see any such thing.
+
+>                                                                                                                                -= Backyard =-2/24",2,False
+28,take key from patio chair,"REFLECTIONS: ['Always ensure the target of the action exists in the environment before executing it', 'Always check the long-term context for necessary interactions before moving', 'Always verify the current context before executing actions to ensure they are valid']
+THINK: The patio chair now has a key, which was not visible before.
+PLAN: Take key from patio chair. Open wooden door with key. Go east.","You can't see any such thing.
+
+>                                                                                                                                -= Backyard =-2/24",2,False
+29,examine BBQ,"REFLECTIONS: ['Always check the long-term context for necessary interactions before moving', 'Always verify the current context before executing actions to ensure they are valid', 'Always verify the current context before executing actions to ensure they are valid']
+THINK: The patio chair does not have a key; the key must be elsewhere.
+PLAN: Examine the BBQ for a key; if not, check the sliding patio door.","Useful for grilling things.
+
+
+>                                                                                                                                -= Backyard =-2/25",2,False
+30,open wooden door,"REFLECTIONS: ['Always verify the current context before executing actions to ensure they are valid', 'Always verify the current context before executing actions to ensure they are valid', 'Always ensure the action is relevant to the current environment and context before execution']
+THINK: The BBQ is useful for grilling things, but I need to open the wooden door first.
+PLAN: go east","You open wooden door.
+
+
+>                                                                                                                                -= Backyard =-2/26",2,False
+31,go south,"REFLECTIONS: ['Always verify the current context before executing actions to ensure they are valid', 'Always ensure the action is relevant to the current environment and context before execution', 'Always verify the state of the object before performing actions like opening a door']
+THINK: The patio chair does not have a key, and the door needs a key to open.
+PLAN: Go to the garden to find the key.","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/27",2,False
+32,examine sliding patio door,"REFLECTIONS: ['Always ensure the action is relevant to the current environment and context before execution', 'Always verify the state of the object before performing actions like opening a door', 'Always verify the availability of the chosen direction before executing the action']
+THINK: The sliding patio door was already open, so going south from the backyard was not the right direction. Now in the corridor, I should check if there's a cookbook or any other relevant items.
+PLAN: examine sliding patio door; examine inventory; go east","The sliding patio door looks ominous. You can see inside it.
+
+
+>                                                                                                                                -= Corridor =-2/28",2,False
+33,go east,"REFLECTIONS: ['Always verify the state of the object before performing actions like opening a door', 'Always verify the availability of the chosen direction before executing the action', 'Always check if the action logically leads to a change in the environment before executing it']
+THINK: The sliding patio door is open, so there's no need to open it again.
+PLAN: go east, examine kitchen","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/29",2,False
+34,go west,"REFLECTIONS: ['Always verify the availability of the chosen direction before executing the action', 'Always check if the action logically leads to a change in the environment before executing it', 'Always check the available exits before moving in a specific direction']
+THINK: The sliding patio door is not leading to the bathroom, so it's not a valid direction.
+PLAN: go west","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/30",2,False
+35,open sliding patio door,"REFLECTIONS: ['Always check if the action logically leads to a change in the environment before executing it', 'Always check the available exits before moving in a specific direction', 'Always check the short-term context for available exits before executing an action']
+THINK: The sliding patio door is now closed, indicating I need to open it first before proceeding.
+PLAN: go south, examine sliding patio door, open sliding patio door","That's already open.
+
+
+>                                                                                                                                -= Corridor =-2/31",2,False
+36,go north,"REFLECTIONS: ['Always check the available exits before moving in a specific direction', 'Always check the short-term context for available exits before executing an action', 'Check the current state before performing the action to avoid unnecessary movements']
+THINK: The sliding patio door is already open, so there's no need to open it again.
+PLAN: ","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/32",2,False
+37,take key from patio chair,"REFLECTIONS: ['Always check the short-term context for available exits before executing an action', 'Check the current state before performing the action to avoid unnecessary movements', 'Always check the available exits in the current observation before executing an action']
+THINK: The sliding patio door is already open, so going north will not lead to a new room.
+PLAN: Take the key from the patio chair, then go east to the wooden door.","You can't see any such thing.
+
+>                                                                                                                                -= Backyard =-2/32",2,False
+38,examine patio table,"REFLECTIONS: ['Check the current state before performing the action to avoid unnecessary movements', 'Always check the available exits in the current observation before executing an action', 'Always verify the current context before executing actions to ensure they are valid']
+THINK: The key is not on the patio chair; check other locations.
+PLAN: go south, examine patio table","The patio table is stable.
+
+
+>                                                                                                                                -= Backyard =-2/33",2,False
+39,examine BBQ,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always verify the current context before executing actions to ensure they are valid', 'Always ensure the action is based on the current context before execution']
+THINK: The patio table is stable, no key is present.
+PLAN: Examine the BBQ for ingredients.","Useful for grilling things.
+
+
+>                                                                                                                                -= Backyard =-2/34",2,False
+40,examine patio table,"REFLECTIONS: ['Always verify the current context before executing actions to ensure they are valid', 'Always ensure the action is based on the current context before execution', 'Always ensure the action is relevant to the current environment and context before execution']
+THINK: The BBQ is useful for grilling, but I need to find ingredients first.
+PLAN: Examine the patio table for ingredients. Take the key if found.","The patio table is stable.
+
+
+>                                                                                                                                -= Backyard =-2/35",2,False
+41,go south,"REFLECTIONS: ['Always ensure the action is based on the current context before execution', 'Always ensure the action is relevant to the current environment and context before execution', 'Always ensure the action is based on the current context before execution']
+THINK: The patio table is stable, so there's no new information about it. I need to find a key.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/36",2,False
+42,go east,"REFLECTIONS: ['Always ensure the action is relevant to the current environment and context before execution', 'Always ensure the action is based on the current context before execution', 'Always verify the availability of the chosen direction before executing the action']
+THINK: The patio chair and patio table were not useful, and the sliding patio door is already open. I need to find a key to open the wooden door.
+PLAN: go east, examine wooden door","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/37",2,False
+43,go west,"REFLECTIONS: ['Always ensure the action is based on the current context before execution', 'Always verify the availability of the chosen direction before executing the action', 'Always check the available exits or actions before moving in a specific direction']
+THINK: The patio chair and patio table in the backyard did not have any items, and going south from the corridor led to the bathroom, which also did not have any items.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/38",2,False
+44,go north,"REFLECTIONS: ['Always verify the availability of the chosen direction before executing the action', 'Always check the available exits or actions before moving in a specific direction', 'Check the short_term_context for available paths before executing an action']
+THINK: The patio chair and patio table did not yield any keys, and revisiting the bathroom did not provide new information.
+PLAN: ","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/39",2,False
+45,go north,"REFLECTIONS: ['Always check the available exits or actions before moving in a specific direction', 'Check the short_term_context for available paths before executing an action', 'Always check the available exits in the current observation before executing an action']
+THINK: The sliding patio door is already open, so going north through it is a valid action.
+PLAN: go north, examine patio table, take key if available","-= Garden =-
+You are in a garden.
+
+
+
+There is an exit to the south. Don't worry, there is no door.
+
+
+>                                                                                                                                -= Garden =-2/40",2,False
+46,go south,"REFLECTIONS: ['Check the short_term_context for available paths before executing an action', 'Always check the available exits in the current observation before executing an action', 'Always check the available exits or directions before attempting an action']
+THINK: The observation confirms there are no doors blocking the path, so the previous lesson about checking exits is still valid.
+PLAN: ","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/41",2,False
+47,go east,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available exits or directions before attempting an action', 'Always check the available exits before attempting to move in a specific direction']
+THINK: The sliding patio door is already open, and the wooden door leads east. I should check the backyard for any clues.
+PLAN: go east, examine BBQ, take key if available","-= Shed =-
+You are in a shed. An usual kind of place.
+
+You can make out a toolbox. You make out a workbench. The workbench is wooden. Looks like someone's already been here and taken everything off it, though. What's the point of an empty workbench?
+
+There is an open wooden door leading west.
+
+
+>                                                                                                                                -= Shed =-2/42",2,False
+48,go south,"REFLECTIONS: ['Always check the available exits or directions before attempting an action', 'Always check the available exits before attempting to move in a specific direction', 'Always check the available exits and obstacles in the current observation before executing an action']
+THINK: The shed has a toolbox and a workbench, but they are empty. The BBQ is in the backyard, so I need to go there.
+PLAN: go south, examine patio table, take key if available","You can't go that way.
+
+
+>                                                                                                                                -= Shed =-2/43",2,False
+49,go west,"REFLECTIONS: ['Always check the available exits before attempting to move in a specific direction', 'Always check the available exits and obstacles in the current observation before executing an action', 'Always check the long-term context for any restrictions or obstacles before executing an action']
+THINK: The shed has no south exit, confirming the need to check available exits.
+PLAN: ","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/44",2,False
+50,go south,"REFLECTIONS: ['Always check the available exits and obstacles in the current observation before executing an action', 'Always check the long-term context for any restrictions or obstacles before executing an action', 'Always check the available exits and actions that are valid based on the current observation before executing an action']
+THINK: The BBQ is available, but I need to find ingredients first.
+PLAN: go south, examine patio table, take key from patio chair","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/45",2,False
+51,go east,"REFLECTIONS: ['Always check the long-term context for any restrictions or obstacles before executing an action', 'Always check the available exits and actions that are valid based on the current observation before executing an action', 'Always check the available exits in the current observation before executing an action']
+THINK: The observation confirms there are no new exits or objects that were not previously noted. The corridor has no new information.
+PLAN: ","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/46",2,False
+52,go west,"REFLECTIONS: ['Always check the available exits and actions that are valid based on the current observation before executing an action', 'Always check the available exits in the current observation before executing an action', 'Always check the available exits or actions before moving in a specific direction']
+THINK: The observation confirms that going south from the backyard leads to the bathroom, reinforcing the need to check exits before acting.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/47",2,False
+53,go north,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available exits or actions before moving in a specific direction', 'Always check the available exits in the current observation before executing an action']
+THINK: The observation confirms that the sliding patio door leads north, and the wooden door leads east. The plan should focus on exploring these exits.
+PLAN: go north, then examine the patio table","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/48",2,False
+54,go south,"REFLECTIONS: ['Always check the available exits or actions before moving in a specific direction', 'Always check the available exits in the current observation before executing an action', 'Always check the available exits in the current observation before executing an action']
+THINK: The BBQ is available, but I need to find ingredients first.
+PLAN: go south, examine patio table, take carrot from patio table","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/49",2,False
+55,go east,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available exits in the current observation before executing an action', 'Always check the available exits in the current observation before executing an action']
+THINK: The observation confirms the need to check exits before moving.
+PLAN: ","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/50",2,False
+56,go west,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available exits in the current observation before executing an action', 'Always check the available exits or actions before moving in a specific direction']
+THINK: The observation confirms that the bathroom is a dead end and revisiting it will not lead to new areas.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/51",2,False
+57,go south,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available exits or actions before moving in a specific direction', 'Always check the short_term_context for valid directions before executing an action']
+THINK: The observation confirms the available exits are north, east, and west. The previous action of going east led to the bathroom, so I should try going south next.
+PLAN: go south","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-2/52",2,False
+58,go north,"REFLECTIONS: ['Always check the available exits or actions before moving in a specific direction', 'Always check the short_term_context for valid directions before executing an action', 'Always check the available directions before executing an action']
+THINK: The observation shows that going north leads to a bedroom, which is a new room, indicating that the previous assumption about the direction was incorrect.
+PLAN: go north","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/53",2,False
+59,go south,"REFLECTIONS: ['Always check the short_term_context for valid directions before executing an action', 'Always check the available directions before executing an action', 'Always check if the chosen direction is blocked before attempting to move in that direction']
+THINK: The sliding patio door and the exit to the east are still available, so revisiting the backyard might be useful.
+PLAN: go south","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-2/54",2,False
+60,go west,"REFLECTIONS: ['Always check the available directions before executing an action', 'Always check if the chosen direction is blocked before attempting to move in that direction', 'Always check the available directions before executing an action']
+THINK: The observation confirms that moving through doors is not possible, and I need to find a direction without a door.
+PLAN: go west","-= Livingroom =-
+You are in a livingroom. A standard kind of place.
+
+You see a sofa. But the thing is empty.
+
+There is a closed fiberglass door leading south. You need an exit without a door? You should try going east. There is an exit to the north.
+
+
+>                                                                                                                                -= Livingroom =-2/55",2,False
+61,go north,"REFLECTIONS: ['Always check if the chosen direction is blocked before attempting to move in that direction', 'Always check the available directions before executing an action', 'Always check the available exits before choosing a direction to move']
+THINK: The closed fiberglass door to the south is a new direction, and the north exit is available.
+PLAN: go north","-= Kitchen =-
+You arrive in a kitchen. A normal kind of place. The room seems oddly familiar, as though it were only superficially different from the other rooms in the building.
+
+You can make out a fridge. I mean, just wow! Isn't TextWorld just the best? You can make out an oven. You can make out a table. The table is massive. On the table you make out a cookbook. You can make out a counter. The counter is vast. But the thing is empty. What's that over there? It looks like it's a stove. But the thing is empty, unfortunately.
+
+There is a closed frosted-glass door leading north. You need an exit without a door? You should try going east. You don't like doors? Why not try going south, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Kitchen =-2/56",2,False
+62,examine cookbook,"REFLECTIONS: ['Always check the available directions before executing an action', 'Always check the available exits before choosing a direction to move', 'Always check the available exits in the current room before executing an action']
+THINK: The observation confirms the need to check exits and available actions before moving.
+PLAN: Take cookbook, examine it.","You open the copy of ""Cooking: A Modern Approach (3rd Ed.)"" and start reading:
+
+Recipe #1
+---------
+Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+orange bell pepper
+  pork chop
+  purple potato
+  red onion
+  white onion
+
+Directions:
+dice the orange bell pepper
+  grill the orange bell pepper
+  slice the pork chop
+  grill the pork chop
+  slice the purple potato
+  grill the purple potato
+  slice the red onion
+  roast the red onion
+  dice the white onion
+  grill the white onion
+  prepare meal
+
+
+
+>                                                                                                                                -= Kitchen =-2/57",2,False
+63,take orange bell pepper from fridge,"REFLECTIONS: ['Always check the available exits before choosing a direction to move', 'Always check the available exits in the current room before executing an action', 'The agent should explore the kitchen for interactive objects or follow the directions to prepare the meal']
+THINK: The observation confirms the need to explore the kitchen for ingredients and follow the recipe directions.
+PLAN: take orange bell pepper from fridge, take pork chop from counter, take purple potato from counter, take red onion from counter, take white onion from counter","You can't see any such thing.
+
+>                                                                                                                                -= Kitchen =-2/57",2,False
+64,take orange bell pepper from fridge,"REFLECTIONS: ['Always check the available exits in the current room before executing an action', 'The agent should explore the kitchen for interactive objects or follow the directions to prepare the meal', 'Always verify the current context and inventory before executing actions']
+THINK: The observation confirms the need to explore the kitchen for the required ingredients.
+PLAN: take orange bell pepper from fridge","You can't see any such thing.
+
+>                                                                                                                                -= Kitchen =-2/57",2,False
+65,go east,"REFLECTIONS: ['The agent should explore the kitchen for interactive objects or follow the directions to prepare the meal', 'Always verify the current context and inventory before executing actions', 'Always verify the current context and inventory before executing actions']
+THINK: The fridge does not contain an orange bell pepper, so the agent needs to find it elsewhere.
+PLAN: go to the backyard to find the orange bell pepper","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/58",2,False
+66,go south,"REFLECTIONS: ['Always verify the current context and inventory before executing actions', 'Always verify the current context and inventory before executing actions', 'Always check the available exits in the current observation before executing an action']
+THINK: The fridge is not in the corridor, so I need to return to the kitchen.
+PLAN: go south, examine fridge","-= Bedroom =-
+You've entered a bedroom.
+
+You can make out a bed. The bed is large. Unfortunately, there isn't a thing on it. Hopefully this doesn't make you too upset.
+
+You don't like doors? Why not try going north, that entranceway is not blocked by one. You need an exit without a door? You should try going west.
+
+
+>                                                                                                                                -= Bedroom =-2/59",2,False
+67,go east,"REFLECTIONS: ['Always verify the current context and inventory before executing actions', 'Always check the available exits in the current observation before executing an action', 'Always check the available directions in the current location before executing an action']
+THINK: The fridge is in the kitchen, so I need to go back there to take the orange bell pepper.
+PLAN: go east, take orange bell pepper from fridge, examine cookbook","You can't go that way.
+
+
+>                                                                                                                                -= Bedroom =-2/60",2,False
+68,go north,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always check the available directions in the current location before executing an action', 'Always check the long-term context for any restrictions or errors before executing actions']
+THINK: The fridge is not in the bedroom, so the orange bell pepper must be in the kitchen.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/61",2,False
+69,go north,"REFLECTIONS: ['Always check the available directions in the current location before executing an action', 'Always check the long-term context for any restrictions or errors before executing actions', 'Always check if the target direction is blocked before attempting to move in that direction']
+THINK: The sliding patio door and the exit to the east are not blocked, so I should try moving through them.
+PLAN: go north then go east","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/62",2,False
+70,go south,"REFLECTIONS: ['Always check the long-term context for any restrictions or errors before executing actions', 'Always check if the target direction is blocked before attempting to move in that direction', 'Always check the available exits in the current observation before executing an action']
+THINK: The observation confirms there are no exits to the north or east, and the fridge is not in the backyard. I need to return to the kitchen to find the orange bell pepper.
+PLAN: go south","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/63",2,False
+71,go east,"REFLECTIONS: ['Always check if the target direction is blocked before attempting to move in that direction', 'Always check the available exits in the current observation before executing an action', 'Always verify the availability of the chosen direction before executing the action']
+THINK: The observation confirms that the sliding patio door leads north, and there are exits to the east and west. The previous plan to go north from the kitchen was incorrect.
+PLAN: go east","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/64",2,False
+72,go north,"REFLECTIONS: ['Always check the available exits in the current observation before executing an action', 'Always verify the availability of the chosen direction before executing the action', 'Always check the available exits or actions before moving in a specific direction']
+THINK: The observation confirms the need to check exits before moving.
+PLAN: go north","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-2/65",2,False
+73,go west,"REFLECTIONS: ['Always verify the availability of the chosen direction before executing the action', 'Always check the available exits or actions before moving in a specific direction', 'Always check the long-term context for navigation instructions before executing actions']
+THINK: The observation confirms that the north direction is not available, reinforcing the need to check exits before moving.
+PLAN: ","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/66",2,False
+74,go east,"REFLECTIONS: ['Always check the available exits or actions before moving in a specific direction', 'Always check the long-term context for navigation instructions before executing actions', 'Always check the short-term context for valid directions before executing an action']
+THINK: The observation confirms that the sliding patio door and the east exit are the only available options, reinforcing the need to check exits carefully.
+PLAN: ","-= Bathroom =-
+You arrive in a bathroom. A typical kind of place. You try to gain information on your surroundings by using a technique you call ""looking.""
+
+You can make out a toilet. The toilet appears to be empty. You move on, clearly angry about your TextWorld experience.
+
+There is an exit to the west.
+
+
+>                                                                                                                                -= Bathroom =-2/67",2,False
+75,go east,"REFLECTIONS: ['Always check the long-term context for navigation instructions before executing actions', 'Always check the short-term context for valid directions before executing an action', 'Always check the available exits before moving in a specific direction']
+THINK: The observation confirms that going east from the bathroom leads to the corridor, validating the previous lesson about checking exits.
+PLAN: ","You can't go that way.
+
+
+>                                                                                                                                -= Bathroom =-2/68",2,False
+76,go west,"REFLECTIONS: ['Always check the short-term context for valid directions before executing an action', 'Always check the available exits before moving in a specific direction', 'Always check the long-term context for any obstacles or restrictions before executing an action']
+THINK: The bathroom has no valid east exit, confirming the need to check exits before moving.
+PLAN: Go back to the kitchen.","-= Corridor =-
+You arrive in a corridor. An ordinary one.
+
+
+
+There is an open sliding patio door leading north. There is an exit to the east. You don't like doors? Why not try going south, that entranceway is not blocked by one. You don't like doors? Why not try going west, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Corridor =-2/69",2,False
+77,go north,"REFLECTIONS: ['Always check the available exits before moving in a specific direction', 'Always check the long-term context for any obstacles or restrictions before executing an action', 'Always check the short-term context for valid directions before executing an action']
+THINK: The observation confirms that the sliding patio door is the only exit in the north direction, and the bathroom is not accessible from the corridor. The plan remains unchanged.
+PLAN: ","-= Backyard =-
+You've just sauntered into a backyard.
+
+You scan the room, seeing a patio chair. The patio chair is stylish. But oh no! there's nothing on this piece of garbage. Aw, and here you were, all excited for there to be things on it! You can see a patio table. The patio table is stylish. However, the patio table, like an empty patio table, has nothing on it. Hopefully, this discovery doesn't ruin your TextWorld experience! You can see a BBQ, so there's that.
+
+There is an open wooden door leading east. There is an open sliding patio door leading south. You don't like doors? Why not try going north, that entranceway is not blocked by one.
+
+
+>                                                                                                                                -= Backyard =-2/70",2,False
+78,take orange bell pepper from fridge,"REFLECTIONS: ['Always check the long-term context for any obstacles or restrictions before executing an action', 'Always check the short-term context for valid directions before executing an action', 'Always check the available exits in the current observation before executing an action']
+THINK: The observation confirms that the sliding patio door leads to the backyard, and there are no new exits in the corridor.
+PLAN: ","You can't see any such thing.
+
+>                                                                                                                                -= Backyard =-2/70",2,False
+79,go east,"REFLECTIONS: ['Always check the short-term context for valid directions before executing an action', 'Always check the available exits in the current observation before executing an action', 'Always ensure the item to be interacted with exists in the current environment before executing the action']
+THINK: The observation confirms there is no orange bell pepper in the backyard. I need to re-evaluate my path.
+PLAN: go east, check fridge in kitchen","-= Shed =-
+You are in a shed. An usual kind of place.
+
+You can make out a toolbox. You make out a workbench. The workbench is wooden. Looks like someone's already been here and taken everything off it, though. What's the point of an empty workbench?
+
+There is an open wooden door leading west.
+
+
+>                                                                                                                                -= Shed =-2/71",2,True
