@@ -35,9 +35,9 @@ A2/
 │   ├── cot/                   # results for chain of thought
 │   ├── custom/                # results for original BALROG custom
 │   ├── custom_v2/             # results for our modified custom (Think-Plan-Action)
-│   └── naive/                 # results for naive
-│   └── naive/                 # results for self-reflection
-└── naive_prompt_and_results(overall and breakdown).tar   #  naive models' prompts and overall results and subtasks results (for table 2 ＆ 3 ＆ 4)
+│   ├── naive/                 # results for naive
+│   └── reflection/                 # results for self-reflection
+├── naive_prompt_and_results(overall and breakdown).tar   #  naive models' prompts and overall results and subtasks results (for table 2 ＆ 3 ＆ 4)
 └── reflection_prompt and results.tar     # the results for models with reflection (for table 6)
 
 ```
@@ -45,7 +45,12 @@ A2/
 ### Description of Key Files
 * **`experiment/`**: Contains the decoupled automation pipeline designed to ensure reproducible benchmark runs across diverse models and seeds while enforcing strict variable control.
 * **`logs/naive/`**: Stores complete trace logs for all runs in Exercise 1. Each `.log` file records standard outputs, including detailed observations, full prompts, raw model completions, and environment transitions for qualitative error analysis.
+* **`logs/custom/`**: Stores complete trace logs for all custom from BALROG runs in Exercise 2.
+* **`logs/custom_v2/`**: Stores complete trace logs for all our custom (Think-Plan-Action) runs in Exercise 2.
+* **`logs/cot/`**: Stores complete trace logs for all chain-of-thought from BALROG runs in Exercise 2.
+* **`logs/reflection/`**: Stores complete trace logs for all self-reflection in Exercise 3.
 * **`logs/run_manifest.csv`**: A centralized structured ledger that tracks execution metadata, task statuses, and extracted progression scores across all seeds.
+* **`results/`**: Stores results of all runs for Exercise 1-3.
 
 ## 1. Hardware & Environment Setup
 
