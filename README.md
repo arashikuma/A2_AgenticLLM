@@ -38,7 +38,7 @@ A2/
 │   └── naive/                 # results for naive
 │   └── naive/                 # results for self-reflection
 └── naive_prompt_and_results(overall and breakdown).tar   #  naive models' prompts and overall results and subtasks results (for table 2 ＆ 3 ＆ 4)
-└── reflection_results.tar     # the results for models with reflection (for table 6)
+└── reflection_prompt and results.tar     # the results for models with reflection (for table 6)
 
 ```
 
